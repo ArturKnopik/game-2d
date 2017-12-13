@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/SFML_GAME.dir/main.cpp.obj"
-  "../SFML_GAME.pdb"
-  "../SFML_GAME.exe"
-  "../SFML_GAME.exe.manifest"
+  "C:/SFML_GAME_PROJECT/SFML_GAME.pdb"
+  "C:/SFML_GAME_PROJECT/SFML_GAME.exe"
+  "C:/SFML_GAME_PROJECT/SFML_GAME.exe.manifest"
   "libSFML_GAME.dll.a"
 )
 

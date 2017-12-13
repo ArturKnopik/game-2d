@@ -81,14 +81,284 @@ CMakeFiles/SFML_GAME.dir/main.cpp.obj.provides: CMakeFiles/SFML_GAME.dir/main.cp
 CMakeFiles/SFML_GAME.dir/main.cpp.obj.provides.build: CMakeFiles/SFML_GAME.dir/main.cpp.obj
 
 
+CMakeFiles/SFML_GAME.dir/src/MenuState.cpp.obj: CMakeFiles/SFML_GAME.dir/flags.make
+CMakeFiles/SFML_GAME.dir/src/MenuState.cpp.obj: CMakeFiles/SFML_GAME.dir/includes_CXX.rsp
+CMakeFiles/SFML_GAME.dir/src/MenuState.cpp.obj: ../src/MenuState.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Projekty\game-2d\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SFML_GAME.dir/src/MenuState.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SFML_GAME.dir\src\MenuState.cpp.obj -c C:\Projekty\game-2d\src\MenuState.cpp
+
+CMakeFiles/SFML_GAME.dir/src/MenuState.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SFML_GAME.dir/src/MenuState.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Projekty\game-2d\src\MenuState.cpp > CMakeFiles\SFML_GAME.dir\src\MenuState.cpp.i
+
+CMakeFiles/SFML_GAME.dir/src/MenuState.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SFML_GAME.dir/src/MenuState.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Projekty\game-2d\src\MenuState.cpp -o CMakeFiles\SFML_GAME.dir\src\MenuState.cpp.s
+
+CMakeFiles/SFML_GAME.dir/src/MenuState.cpp.obj.requires:
+
+.PHONY : CMakeFiles/SFML_GAME.dir/src/MenuState.cpp.obj.requires
+
+CMakeFiles/SFML_GAME.dir/src/MenuState.cpp.obj.provides: CMakeFiles/SFML_GAME.dir/src/MenuState.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/MenuState.cpp.obj.provides.build
+.PHONY : CMakeFiles/SFML_GAME.dir/src/MenuState.cpp.obj.provides
+
+CMakeFiles/SFML_GAME.dir/src/MenuState.cpp.obj.provides.build: CMakeFiles/SFML_GAME.dir/src/MenuState.cpp.obj
+
+
+CMakeFiles/SFML_GAME.dir/src/BasicButton.cpp.obj: CMakeFiles/SFML_GAME.dir/flags.make
+CMakeFiles/SFML_GAME.dir/src/BasicButton.cpp.obj: CMakeFiles/SFML_GAME.dir/includes_CXX.rsp
+CMakeFiles/SFML_GAME.dir/src/BasicButton.cpp.obj: ../src/BasicButton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Projekty\game-2d\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SFML_GAME.dir/src/BasicButton.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SFML_GAME.dir\src\BasicButton.cpp.obj -c C:\Projekty\game-2d\src\BasicButton.cpp
+
+CMakeFiles/SFML_GAME.dir/src/BasicButton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SFML_GAME.dir/src/BasicButton.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Projekty\game-2d\src\BasicButton.cpp > CMakeFiles\SFML_GAME.dir\src\BasicButton.cpp.i
+
+CMakeFiles/SFML_GAME.dir/src/BasicButton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SFML_GAME.dir/src/BasicButton.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Projekty\game-2d\src\BasicButton.cpp -o CMakeFiles\SFML_GAME.dir\src\BasicButton.cpp.s
+
+CMakeFiles/SFML_GAME.dir/src/BasicButton.cpp.obj.requires:
+
+.PHONY : CMakeFiles/SFML_GAME.dir/src/BasicButton.cpp.obj.requires
+
+CMakeFiles/SFML_GAME.dir/src/BasicButton.cpp.obj.provides: CMakeFiles/SFML_GAME.dir/src/BasicButton.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/BasicButton.cpp.obj.provides.build
+.PHONY : CMakeFiles/SFML_GAME.dir/src/BasicButton.cpp.obj.provides
+
+CMakeFiles/SFML_GAME.dir/src/BasicButton.cpp.obj.provides.build: CMakeFiles/SFML_GAME.dir/src/BasicButton.cpp.obj
+
+
+CMakeFiles/SFML_GAME.dir/src/Button.cpp.obj: CMakeFiles/SFML_GAME.dir/flags.make
+CMakeFiles/SFML_GAME.dir/src/Button.cpp.obj: CMakeFiles/SFML_GAME.dir/includes_CXX.rsp
+CMakeFiles/SFML_GAME.dir/src/Button.cpp.obj: ../src/Button.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Projekty\game-2d\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SFML_GAME.dir/src/Button.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SFML_GAME.dir\src\Button.cpp.obj -c C:\Projekty\game-2d\src\Button.cpp
+
+CMakeFiles/SFML_GAME.dir/src/Button.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SFML_GAME.dir/src/Button.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Projekty\game-2d\src\Button.cpp > CMakeFiles\SFML_GAME.dir\src\Button.cpp.i
+
+CMakeFiles/SFML_GAME.dir/src/Button.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SFML_GAME.dir/src/Button.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Projekty\game-2d\src\Button.cpp -o CMakeFiles\SFML_GAME.dir\src\Button.cpp.s
+
+CMakeFiles/SFML_GAME.dir/src/Button.cpp.obj.requires:
+
+.PHONY : CMakeFiles/SFML_GAME.dir/src/Button.cpp.obj.requires
+
+CMakeFiles/SFML_GAME.dir/src/Button.cpp.obj.provides: CMakeFiles/SFML_GAME.dir/src/Button.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/Button.cpp.obj.provides.build
+.PHONY : CMakeFiles/SFML_GAME.dir/src/Button.cpp.obj.provides
+
+CMakeFiles/SFML_GAME.dir/src/Button.cpp.obj.provides.build: CMakeFiles/SFML_GAME.dir/src/Button.cpp.obj
+
+
+CMakeFiles/SFML_GAME.dir/src/GameState.cpp.obj: CMakeFiles/SFML_GAME.dir/flags.make
+CMakeFiles/SFML_GAME.dir/src/GameState.cpp.obj: CMakeFiles/SFML_GAME.dir/includes_CXX.rsp
+CMakeFiles/SFML_GAME.dir/src/GameState.cpp.obj: ../src/GameState.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Projekty\game-2d\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SFML_GAME.dir/src/GameState.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SFML_GAME.dir\src\GameState.cpp.obj -c C:\Projekty\game-2d\src\GameState.cpp
+
+CMakeFiles/SFML_GAME.dir/src/GameState.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SFML_GAME.dir/src/GameState.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Projekty\game-2d\src\GameState.cpp > CMakeFiles\SFML_GAME.dir\src\GameState.cpp.i
+
+CMakeFiles/SFML_GAME.dir/src/GameState.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SFML_GAME.dir/src/GameState.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Projekty\game-2d\src\GameState.cpp -o CMakeFiles\SFML_GAME.dir\src\GameState.cpp.s
+
+CMakeFiles/SFML_GAME.dir/src/GameState.cpp.obj.requires:
+
+.PHONY : CMakeFiles/SFML_GAME.dir/src/GameState.cpp.obj.requires
+
+CMakeFiles/SFML_GAME.dir/src/GameState.cpp.obj.provides: CMakeFiles/SFML_GAME.dir/src/GameState.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/GameState.cpp.obj.provides.build
+.PHONY : CMakeFiles/SFML_GAME.dir/src/GameState.cpp.obj.provides
+
+CMakeFiles/SFML_GAME.dir/src/GameState.cpp.obj.provides.build: CMakeFiles/SFML_GAME.dir/src/GameState.cpp.obj
+
+
+CMakeFiles/SFML_GAME.dir/src/PlayState.cpp.obj: CMakeFiles/SFML_GAME.dir/flags.make
+CMakeFiles/SFML_GAME.dir/src/PlayState.cpp.obj: CMakeFiles/SFML_GAME.dir/includes_CXX.rsp
+CMakeFiles/SFML_GAME.dir/src/PlayState.cpp.obj: ../src/PlayState.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Projekty\game-2d\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SFML_GAME.dir/src/PlayState.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SFML_GAME.dir\src\PlayState.cpp.obj -c C:\Projekty\game-2d\src\PlayState.cpp
+
+CMakeFiles/SFML_GAME.dir/src/PlayState.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SFML_GAME.dir/src/PlayState.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Projekty\game-2d\src\PlayState.cpp > CMakeFiles\SFML_GAME.dir\src\PlayState.cpp.i
+
+CMakeFiles/SFML_GAME.dir/src/PlayState.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SFML_GAME.dir/src/PlayState.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Projekty\game-2d\src\PlayState.cpp -o CMakeFiles\SFML_GAME.dir\src\PlayState.cpp.s
+
+CMakeFiles/SFML_GAME.dir/src/PlayState.cpp.obj.requires:
+
+.PHONY : CMakeFiles/SFML_GAME.dir/src/PlayState.cpp.obj.requires
+
+CMakeFiles/SFML_GAME.dir/src/PlayState.cpp.obj.provides: CMakeFiles/SFML_GAME.dir/src/PlayState.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/PlayState.cpp.obj.provides.build
+.PHONY : CMakeFiles/SFML_GAME.dir/src/PlayState.cpp.obj.provides
+
+CMakeFiles/SFML_GAME.dir/src/PlayState.cpp.obj.provides.build: CMakeFiles/SFML_GAME.dir/src/PlayState.cpp.obj
+
+
+CMakeFiles/SFML_GAME.dir/src/PauseState.cpp.obj: CMakeFiles/SFML_GAME.dir/flags.make
+CMakeFiles/SFML_GAME.dir/src/PauseState.cpp.obj: CMakeFiles/SFML_GAME.dir/includes_CXX.rsp
+CMakeFiles/SFML_GAME.dir/src/PauseState.cpp.obj: ../src/PauseState.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Projekty\game-2d\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SFML_GAME.dir/src/PauseState.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SFML_GAME.dir\src\PauseState.cpp.obj -c C:\Projekty\game-2d\src\PauseState.cpp
+
+CMakeFiles/SFML_GAME.dir/src/PauseState.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SFML_GAME.dir/src/PauseState.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Projekty\game-2d\src\PauseState.cpp > CMakeFiles\SFML_GAME.dir\src\PauseState.cpp.i
+
+CMakeFiles/SFML_GAME.dir/src/PauseState.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SFML_GAME.dir/src/PauseState.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Projekty\game-2d\src\PauseState.cpp -o CMakeFiles\SFML_GAME.dir\src\PauseState.cpp.s
+
+CMakeFiles/SFML_GAME.dir/src/PauseState.cpp.obj.requires:
+
+.PHONY : CMakeFiles/SFML_GAME.dir/src/PauseState.cpp.obj.requires
+
+CMakeFiles/SFML_GAME.dir/src/PauseState.cpp.obj.provides: CMakeFiles/SFML_GAME.dir/src/PauseState.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/PauseState.cpp.obj.provides.build
+.PHONY : CMakeFiles/SFML_GAME.dir/src/PauseState.cpp.obj.provides
+
+CMakeFiles/SFML_GAME.dir/src/PauseState.cpp.obj.provides.build: CMakeFiles/SFML_GAME.dir/src/PauseState.cpp.obj
+
+
+CMakeFiles/SFML_GAME.dir/src/Block.cpp.obj: CMakeFiles/SFML_GAME.dir/flags.make
+CMakeFiles/SFML_GAME.dir/src/Block.cpp.obj: CMakeFiles/SFML_GAME.dir/includes_CXX.rsp
+CMakeFiles/SFML_GAME.dir/src/Block.cpp.obj: ../src/Block.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Projekty\game-2d\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SFML_GAME.dir/src/Block.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SFML_GAME.dir\src\Block.cpp.obj -c C:\Projekty\game-2d\src\Block.cpp
+
+CMakeFiles/SFML_GAME.dir/src/Block.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SFML_GAME.dir/src/Block.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Projekty\game-2d\src\Block.cpp > CMakeFiles\SFML_GAME.dir\src\Block.cpp.i
+
+CMakeFiles/SFML_GAME.dir/src/Block.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SFML_GAME.dir/src/Block.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Projekty\game-2d\src\Block.cpp -o CMakeFiles\SFML_GAME.dir\src\Block.cpp.s
+
+CMakeFiles/SFML_GAME.dir/src/Block.cpp.obj.requires:
+
+.PHONY : CMakeFiles/SFML_GAME.dir/src/Block.cpp.obj.requires
+
+CMakeFiles/SFML_GAME.dir/src/Block.cpp.obj.provides: CMakeFiles/SFML_GAME.dir/src/Block.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/Block.cpp.obj.provides.build
+.PHONY : CMakeFiles/SFML_GAME.dir/src/Block.cpp.obj.provides
+
+CMakeFiles/SFML_GAME.dir/src/Block.cpp.obj.provides.build: CMakeFiles/SFML_GAME.dir/src/Block.cpp.obj
+
+
+CMakeFiles/SFML_GAME.dir/include/Entity.cpp.obj: CMakeFiles/SFML_GAME.dir/flags.make
+CMakeFiles/SFML_GAME.dir/include/Entity.cpp.obj: CMakeFiles/SFML_GAME.dir/includes_CXX.rsp
+CMakeFiles/SFML_GAME.dir/include/Entity.cpp.obj: ../include/Entity.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Projekty\game-2d\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SFML_GAME.dir/include/Entity.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SFML_GAME.dir\include\Entity.cpp.obj -c C:\Projekty\game-2d\include\Entity.cpp
+
+CMakeFiles/SFML_GAME.dir/include/Entity.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SFML_GAME.dir/include/Entity.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Projekty\game-2d\include\Entity.cpp > CMakeFiles\SFML_GAME.dir\include\Entity.cpp.i
+
+CMakeFiles/SFML_GAME.dir/include/Entity.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SFML_GAME.dir/include/Entity.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Projekty\game-2d\include\Entity.cpp -o CMakeFiles\SFML_GAME.dir\include\Entity.cpp.s
+
+CMakeFiles/SFML_GAME.dir/include/Entity.cpp.obj.requires:
+
+.PHONY : CMakeFiles/SFML_GAME.dir/include/Entity.cpp.obj.requires
+
+CMakeFiles/SFML_GAME.dir/include/Entity.cpp.obj.provides: CMakeFiles/SFML_GAME.dir/include/Entity.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/include/Entity.cpp.obj.provides.build
+.PHONY : CMakeFiles/SFML_GAME.dir/include/Entity.cpp.obj.provides
+
+CMakeFiles/SFML_GAME.dir/include/Entity.cpp.obj.provides.build: CMakeFiles/SFML_GAME.dir/include/Entity.cpp.obj
+
+
+CMakeFiles/SFML_GAME.dir/include/Game.cpp.obj: CMakeFiles/SFML_GAME.dir/flags.make
+CMakeFiles/SFML_GAME.dir/include/Game.cpp.obj: CMakeFiles/SFML_GAME.dir/includes_CXX.rsp
+CMakeFiles/SFML_GAME.dir/include/Game.cpp.obj: ../include/Game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Projekty\game-2d\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SFML_GAME.dir/include/Game.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SFML_GAME.dir\include\Game.cpp.obj -c C:\Projekty\game-2d\include\Game.cpp
+
+CMakeFiles/SFML_GAME.dir/include/Game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SFML_GAME.dir/include/Game.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Projekty\game-2d\include\Game.cpp > CMakeFiles\SFML_GAME.dir\include\Game.cpp.i
+
+CMakeFiles/SFML_GAME.dir/include/Game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SFML_GAME.dir/include/Game.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Projekty\game-2d\include\Game.cpp -o CMakeFiles\SFML_GAME.dir\include\Game.cpp.s
+
+CMakeFiles/SFML_GAME.dir/include/Game.cpp.obj.requires:
+
+.PHONY : CMakeFiles/SFML_GAME.dir/include/Game.cpp.obj.requires
+
+CMakeFiles/SFML_GAME.dir/include/Game.cpp.obj.provides: CMakeFiles/SFML_GAME.dir/include/Game.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/include/Game.cpp.obj.provides.build
+.PHONY : CMakeFiles/SFML_GAME.dir/include/Game.cpp.obj.provides
+
+CMakeFiles/SFML_GAME.dir/include/Game.cpp.obj.provides.build: CMakeFiles/SFML_GAME.dir/include/Game.cpp.obj
+
+
+CMakeFiles/SFML_GAME.dir/include/settings.cpp.obj: CMakeFiles/SFML_GAME.dir/flags.make
+CMakeFiles/SFML_GAME.dir/include/settings.cpp.obj: CMakeFiles/SFML_GAME.dir/includes_CXX.rsp
+CMakeFiles/SFML_GAME.dir/include/settings.cpp.obj: ../include/settings.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Projekty\game-2d\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/SFML_GAME.dir/include/settings.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SFML_GAME.dir\include\settings.cpp.obj -c C:\Projekty\game-2d\include\settings.cpp
+
+CMakeFiles/SFML_GAME.dir/include/settings.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SFML_GAME.dir/include/settings.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Projekty\game-2d\include\settings.cpp > CMakeFiles\SFML_GAME.dir\include\settings.cpp.i
+
+CMakeFiles/SFML_GAME.dir/include/settings.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SFML_GAME.dir/include/settings.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Projekty\game-2d\include\settings.cpp -o CMakeFiles\SFML_GAME.dir\include\settings.cpp.s
+
+CMakeFiles/SFML_GAME.dir/include/settings.cpp.obj.requires:
+
+.PHONY : CMakeFiles/SFML_GAME.dir/include/settings.cpp.obj.requires
+
+CMakeFiles/SFML_GAME.dir/include/settings.cpp.obj.provides: CMakeFiles/SFML_GAME.dir/include/settings.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/include/settings.cpp.obj.provides.build
+.PHONY : CMakeFiles/SFML_GAME.dir/include/settings.cpp.obj.provides
+
+CMakeFiles/SFML_GAME.dir/include/settings.cpp.obj.provides.build: CMakeFiles/SFML_GAME.dir/include/settings.cpp.obj
+
+
 # Object files for target SFML_GAME
 SFML_GAME_OBJECTS = \
-"CMakeFiles/SFML_GAME.dir/main.cpp.obj"
+"CMakeFiles/SFML_GAME.dir/main.cpp.obj" \
+"CMakeFiles/SFML_GAME.dir/src/MenuState.cpp.obj" \
+"CMakeFiles/SFML_GAME.dir/src/BasicButton.cpp.obj" \
+"CMakeFiles/SFML_GAME.dir/src/Button.cpp.obj" \
+"CMakeFiles/SFML_GAME.dir/src/GameState.cpp.obj" \
+"CMakeFiles/SFML_GAME.dir/src/PlayState.cpp.obj" \
+"CMakeFiles/SFML_GAME.dir/src/PauseState.cpp.obj" \
+"CMakeFiles/SFML_GAME.dir/src/Block.cpp.obj" \
+"CMakeFiles/SFML_GAME.dir/include/Entity.cpp.obj" \
+"CMakeFiles/SFML_GAME.dir/include/Game.cpp.obj" \
+"CMakeFiles/SFML_GAME.dir/include/settings.cpp.obj"
 
 # External object files for target SFML_GAME
 SFML_GAME_EXTERNAL_OBJECTS =
 
 C:/SFML_GAME_PROJECT/SFML_GAME.exe: CMakeFiles/SFML_GAME.dir/main.cpp.obj
+C:/SFML_GAME_PROJECT/SFML_GAME.exe: CMakeFiles/SFML_GAME.dir/src/MenuState.cpp.obj
+C:/SFML_GAME_PROJECT/SFML_GAME.exe: CMakeFiles/SFML_GAME.dir/src/BasicButton.cpp.obj
+C:/SFML_GAME_PROJECT/SFML_GAME.exe: CMakeFiles/SFML_GAME.dir/src/Button.cpp.obj
+C:/SFML_GAME_PROJECT/SFML_GAME.exe: CMakeFiles/SFML_GAME.dir/src/GameState.cpp.obj
+C:/SFML_GAME_PROJECT/SFML_GAME.exe: CMakeFiles/SFML_GAME.dir/src/PlayState.cpp.obj
+C:/SFML_GAME_PROJECT/SFML_GAME.exe: CMakeFiles/SFML_GAME.dir/src/PauseState.cpp.obj
+C:/SFML_GAME_PROJECT/SFML_GAME.exe: CMakeFiles/SFML_GAME.dir/src/Block.cpp.obj
+C:/SFML_GAME_PROJECT/SFML_GAME.exe: CMakeFiles/SFML_GAME.dir/include/Entity.cpp.obj
+C:/SFML_GAME_PROJECT/SFML_GAME.exe: CMakeFiles/SFML_GAME.dir/include/Game.cpp.obj
+C:/SFML_GAME_PROJECT/SFML_GAME.exe: CMakeFiles/SFML_GAME.dir/include/settings.cpp.obj
 C:/SFML_GAME_PROJECT/SFML_GAME.exe: CMakeFiles/SFML_GAME.dir/build.make
 C:/SFML_GAME_PROJECT/SFML_GAME.exe: C:/SFML-2.4.2/lib/libsfml-graphics-s.a
 C:/SFML_GAME_PROJECT/SFML_GAME.exe: C:/SFML-2.4.2/lib/libsfml-window-s.a
@@ -98,7 +368,7 @@ C:/SFML_GAME_PROJECT/SFML_GAME.exe: C:/SFML-2.4.2/lib/libjpeg.a
 C:/SFML_GAME_PROJECT/SFML_GAME.exe: CMakeFiles/SFML_GAME.dir/linklibs.rsp
 C:/SFML_GAME_PROJECT/SFML_GAME.exe: CMakeFiles/SFML_GAME.dir/objects1.rsp
 C:/SFML_GAME_PROJECT/SFML_GAME.exe: CMakeFiles/SFML_GAME.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Projekty\game-2d\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable C:\SFML_GAME_PROJECT\SFML_GAME.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Projekty\game-2d\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable C:\SFML_GAME_PROJECT\SFML_GAME.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\SFML_GAME.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -107,6 +377,16 @@ CMakeFiles/SFML_GAME.dir/build: C:/SFML_GAME_PROJECT/SFML_GAME.exe
 .PHONY : CMakeFiles/SFML_GAME.dir/build
 
 CMakeFiles/SFML_GAME.dir/requires: CMakeFiles/SFML_GAME.dir/main.cpp.obj.requires
+CMakeFiles/SFML_GAME.dir/requires: CMakeFiles/SFML_GAME.dir/src/MenuState.cpp.obj.requires
+CMakeFiles/SFML_GAME.dir/requires: CMakeFiles/SFML_GAME.dir/src/BasicButton.cpp.obj.requires
+CMakeFiles/SFML_GAME.dir/requires: CMakeFiles/SFML_GAME.dir/src/Button.cpp.obj.requires
+CMakeFiles/SFML_GAME.dir/requires: CMakeFiles/SFML_GAME.dir/src/GameState.cpp.obj.requires
+CMakeFiles/SFML_GAME.dir/requires: CMakeFiles/SFML_GAME.dir/src/PlayState.cpp.obj.requires
+CMakeFiles/SFML_GAME.dir/requires: CMakeFiles/SFML_GAME.dir/src/PauseState.cpp.obj.requires
+CMakeFiles/SFML_GAME.dir/requires: CMakeFiles/SFML_GAME.dir/src/Block.cpp.obj.requires
+CMakeFiles/SFML_GAME.dir/requires: CMakeFiles/SFML_GAME.dir/include/Entity.cpp.obj.requires
+CMakeFiles/SFML_GAME.dir/requires: CMakeFiles/SFML_GAME.dir/include/Game.cpp.obj.requires
+CMakeFiles/SFML_GAME.dir/requires: CMakeFiles/SFML_GAME.dir/include/settings.cpp.obj.requires
 
 .PHONY : CMakeFiles/SFML_GAME.dir/requires
 

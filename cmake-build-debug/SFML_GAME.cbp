@@ -86,7 +86,64 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Projekty/game-2d/include/BasicButton.h">
+			<Option target="SFML_GAME"/>
+		</Unit>
+		<Unit filename="C:/Projekty/game-2d/include/Block.h">
+			<Option target="SFML_GAME"/>
+		</Unit>
+		<Unit filename="C:/Projekty/game-2d/include/Button.h">
+			<Option target="SFML_GAME"/>
+		</Unit>
+		<Unit filename="C:/Projekty/game-2d/include/Entity.cpp">
+			<Option target="SFML_GAME"/>
+		</Unit>
+		<Unit filename="C:/Projekty/game-2d/include/Entity.h">
+			<Option target="SFML_GAME"/>
+		</Unit>
+		<Unit filename="C:/Projekty/game-2d/include/Game.cpp">
+			<Option target="SFML_GAME"/>
+		</Unit>
+		<Unit filename="C:/Projekty/game-2d/include/Game.h">
+			<Option target="SFML_GAME"/>
+		</Unit>
+		<Unit filename="C:/Projekty/game-2d/include/GameState.h">
+			<Option target="SFML_GAME"/>
+		</Unit>
+		<Unit filename="C:/Projekty/game-2d/include/MenuState.h">
+			<Option target="SFML_GAME"/>
+		</Unit>
+		<Unit filename="C:/Projekty/game-2d/include/PauseState.h">
+			<Option target="SFML_GAME"/>
+		</Unit>
+		<Unit filename="C:/Projekty/game-2d/include/PlayState.h">
+			<Option target="SFML_GAME"/>
+		</Unit>
+		<Unit filename="C:/Projekty/game-2d/include/settings.cpp">
+			<Option target="SFML_GAME"/>
+		</Unit>
 		<Unit filename="C:/Projekty/game-2d/main.cpp">
+			<Option target="SFML_GAME"/>
+		</Unit>
+		<Unit filename="C:/Projekty/game-2d/src/BasicButton.cpp">
+			<Option target="SFML_GAME"/>
+		</Unit>
+		<Unit filename="C:/Projekty/game-2d/src/Block.cpp">
+			<Option target="SFML_GAME"/>
+		</Unit>
+		<Unit filename="C:/Projekty/game-2d/src/Button.cpp">
+			<Option target="SFML_GAME"/>
+		</Unit>
+		<Unit filename="C:/Projekty/game-2d/src/GameState.cpp">
+			<Option target="SFML_GAME"/>
+		</Unit>
+		<Unit filename="C:/Projekty/game-2d/src/MenuState.cpp">
+			<Option target="SFML_GAME"/>
+		</Unit>
+		<Unit filename="C:/Projekty/game-2d/src/PauseState.cpp">
+			<Option target="SFML_GAME"/>
+		</Unit>
+		<Unit filename="C:/Projekty/game-2d/src/PlayState.cpp">
 			<Option target="SFML_GAME"/>
 		</Unit>
 		<Unit filename="C:/Projekty/game-2d/CMakeLists.txt">

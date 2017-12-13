@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6"/>
 	<Project>
-		<Option title="SFML_GAME"/>
+		<Option title="SFML_"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
 		<Option virtualFolders="CMake Files\;CMake Files\cmake\;"/>
@@ -17,8 +17,8 @@
 					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Projekty/game-2d/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="SFML_GAME">
-				<Option output="C:/Projekty/game-2d/SFML_GAME.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="SFML_">
+				<Option output="C:/Projekty/game-2d/SFML_.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/Projekty/game-2d"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -35,14 +35,14 @@
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Projekty/game-2d/cmake-build-debug/Makefile&quot;  VERBOSE=1 SFML_GAME"/>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Projekty/game-2d/cmake-build-debug/Makefile&quot;  VERBOSE=1 SFML_"/>
 					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Projekty/game-2d/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Projekty/game-2d/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Projekty/game-2d/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="SFML_GAME/fast">
-				<Option output="C:/Projekty/game-2d/SFML_GAME.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="SFML_/fast">
+				<Option output="C:/Projekty/game-2d/SFML_.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/Projekty/game-2d"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -59,7 +59,7 @@
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Projekty/game-2d/cmake-build-debug/Makefile&quot;  VERBOSE=1 SFML_GAME/fast"/>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Projekty/game-2d/cmake-build-debug/Makefile&quot;  VERBOSE=1 SFML_/fast"/>
 					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Projekty/game-2d/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Projekty/game-2d/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Projekty/game-2d/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -87,7 +87,7 @@
 			</Target>
 		</Build>
 		<Unit filename="C:/Projekty/game-2d/main.cpp">
-			<Option target="SFML_GAME"/>
+			<Option target="SFML_"/>
 		</Unit>
 		<Unit filename="C:/Projekty/game-2d/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

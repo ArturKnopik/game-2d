@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+C:/Projekty/game-2d/main.cpp
+SFML/Graphics.hpp
+-
+
 C:/SFML-2.4.2/include/SFML/Config.hpp
 TargetConditionals.h
 C:/SFML-2.4.2/include/SFML/TargetConditionals.h
@@ -639,8 +643,4 @@ SFML/Config.hpp
 -
 
 C:/SFML-2.4.2/include/SFML/Window/WindowStyle.hpp
-
-C:/Users/Streaming/CLionProjects/SFMLGame/main.cpp
-SFML/Graphics.hpp
--
 

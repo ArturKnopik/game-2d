@@ -53,45 +53,45 @@ RM = "C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe" -E remove
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Streaming\CLionProjects\SFMLGame
+CMAKE_SOURCE_DIR = C:\Projekty\game-2d
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Streaming\CLionProjects\SFMLGame\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Projekty\game-2d\cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/SlidingPuzzle.dir
+# Target rules for target CMakeFiles/SFML_GAME.dir
 
 # All Build rule for target.
-CMakeFiles/SlidingPuzzle.dir/all:
-	$(MAKE) -f CMakeFiles\SlidingPuzzle.dir\build.make CMakeFiles/SlidingPuzzle.dir/depend
-	$(MAKE) -f CMakeFiles\SlidingPuzzle.dir\build.make CMakeFiles/SlidingPuzzle.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Streaming\CLionProjects\SFMLGame\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target SlidingPuzzle"
-.PHONY : CMakeFiles/SlidingPuzzle.dir/all
+CMakeFiles/SFML_GAME.dir/all:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/depend
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Projekty\game-2d\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target SFML_GAME"
+.PHONY : CMakeFiles/SFML_GAME.dir/all
 
 # Include target in all.
-all: CMakeFiles/SlidingPuzzle.dir/all
+all: CMakeFiles/SFML_GAME.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/SlidingPuzzle.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Streaming\CLionProjects\SFMLGame\cmake-build-debug\CMakeFiles 2
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/SlidingPuzzle.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Streaming\CLionProjects\SFMLGame\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/SlidingPuzzle.dir/rule
+CMakeFiles/SFML_GAME.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projekty\game-2d\cmake-build-debug\CMakeFiles 2
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/SFML_GAME.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projekty\game-2d\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/SFML_GAME.dir/rule
 
 # Convenience name for target.
-SlidingPuzzle: CMakeFiles/SlidingPuzzle.dir/rule
+SFML_GAME: CMakeFiles/SFML_GAME.dir/rule
 
-.PHONY : SlidingPuzzle
-
-# clean rule for target.
-CMakeFiles/SlidingPuzzle.dir/clean:
-	$(MAKE) -f CMakeFiles\SlidingPuzzle.dir\build.make CMakeFiles/SlidingPuzzle.dir/clean
-.PHONY : CMakeFiles/SlidingPuzzle.dir/clean
+.PHONY : SFML_GAME
 
 # clean rule for target.
-clean: CMakeFiles/SlidingPuzzle.dir/clean
+CMakeFiles/SFML_GAME.dir/clean:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/clean
+.PHONY : CMakeFiles/SFML_GAME.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/SFML_GAME.dir/clean
 
 .PHONY : clean
 

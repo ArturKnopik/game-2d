@@ -47,10 +47,10 @@ RM = "C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe" -E remove
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Streaming\CLionProjects\SFMLGame
+CMAKE_SOURCE_DIR = C:\Projekty\game-2d
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Streaming\CLionProjects\SFMLGame\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Projekty\game-2d\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Streaming\CLionProjects\SFMLGame\cmake-build-debug\CMakeFiles C:\Users\Streaming\CLionProjects\SFMLGame\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projekty\game-2d\cmake-build-debug\CMakeFiles C:\Projekty\game-2d\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Streaming\CLionProjects\SFMLGame\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projekty\game-2d\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -110,17 +110,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named SlidingPuzzle
+# Target rules for targets named SFML_GAME
 
 # Build rule for target.
-SlidingPuzzle: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 SlidingPuzzle
-.PHONY : SlidingPuzzle
+SFML_GAME: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 SFML_GAME
+.PHONY : SFML_GAME
 
 # fast build rule for target.
-SlidingPuzzle/fast:
-	$(MAKE) -f CMakeFiles\SlidingPuzzle.dir\build.make CMakeFiles/SlidingPuzzle.dir/build
-.PHONY : SlidingPuzzle/fast
+SFML_GAME/fast:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/build
+.PHONY : SFML_GAME/fast
 
 main.obj: main.cpp.obj
 
@@ -128,7 +128,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) -f CMakeFiles\SlidingPuzzle.dir\build.make CMakeFiles/SlidingPuzzle.dir/main.cpp.obj
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -137,7 +137,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles\SlidingPuzzle.dir\build.make CMakeFiles/SlidingPuzzle.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -146,7 +146,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles\SlidingPuzzle.dir\build.make CMakeFiles/SlidingPuzzle.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -155,7 +155,7 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... SlidingPuzzle
+	@echo ... SFML_GAME
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... main.obj

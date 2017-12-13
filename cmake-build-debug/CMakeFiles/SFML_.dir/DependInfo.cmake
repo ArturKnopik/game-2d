@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Streaming/CLionProjects/SFMLGame/main.cpp" "C:/Users/Streaming/CLionProjects/SFMLGame/cmake-build-debug/CMakeFiles/NomProjet.dir/main.cpp.obj"
+  "C:/Projekty/game-2d/main.cpp" "C:/Projekty/game-2d/cmake-build-debug/CMakeFiles/SFML_.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -15,6 +15,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../include"
+  "C:/SFML-2.4.2/include"
   )
 
 # Targets to which this target links.

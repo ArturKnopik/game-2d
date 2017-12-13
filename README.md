@@ -1,3 +1,16 @@
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsQNvEqjnkYAZa4ZjqcJTX2TNqcsu-T-RBw_PMH3ZAVr6QQczC3w"/>
+
+Skład:  
+  
+| Imię i nazwisko | Rola |  
+| -------- | -------- |  
+| Piotr Rozponczyk   | Developer (c++)   |  
+| Artur Knopik  | Developer (c++)   |  
+| Łukasz Włuka   | Grafik   |  
+| Tomasz Król   | Grafik   |  
+| Kordian Gajewski   | Człowiek od wszystkiego   |    
+
+-----
 
 ![](https://thinkspacestudio.com/images/z/zombiemazecalendar15c556c9919.jpg)
 # Instrukcja kompilacja/używania gotowego pliku .exe

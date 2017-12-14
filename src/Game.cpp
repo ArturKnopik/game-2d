@@ -5,7 +5,7 @@
 #include "game.h"
 #include "GameState.h"
 #include <iostream>
-#include "settings.cpp"
+#include "../src/settings.cpp"
 
 Game::Game()
 {

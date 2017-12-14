@@ -6,9 +6,6 @@ Skład:
 | -------- | -------- |  
 | Piotr Rozponczyk   | Developer (c++)   |  
 | Artur Knopik  | Developer (c++)   |  
-| Łukasz Włuka   | Grafik   |  
-| Tomasz Król   | Grafik   |  
-| Kordian Gajewski   | Człowiek od wszystkiego   |    
 
 -----
 

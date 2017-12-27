@@ -2,10 +2,10 @@
 // Created by Streaming on 2017-12-13.
 //
 
-#include "game.h"
+#include "Game.h"
 #include "GameState.h"
 #include <iostream>
-#include "../src/settings.cpp"
+#include "settings.cpp"
 
 Game::Game()
 {
@@ -37,12 +37,12 @@ std::shared_ptr<GameState> Game::CurrentState()
     if (states.empty())
     {
         return nullptr;
-        std::cout << "Game::Nullprt |  ";
+      //  std::cout << "Game::Nullprt |  ";
     }
     else
     {
         return states.back();
-        std::cout << "Game::CurrentState  |  ";
+     //   std::cout << "Game::CurrentState  |  ";
     }
 }
 

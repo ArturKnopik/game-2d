@@ -11,7 +11,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "c:/SFML_GAME_PROJECT")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
 include_directories(include)
-set(SOURCE_FILES main.cpp src/MenuState.cpp include/MenuState.h src/BasicButton.cpp include/BasicButton.h src/Button.cpp include/Button.h src/GameState.cpp include/GameState.h src/PlayState.cpp include/PlayState.h src/PauseState.cpp include/PauseState.h src/Block.cpp include/Block.h include/Entity.cpp include/Entity.h include/Game.cpp include/Game.h include/settings.cpp)
+set(SOURCE_FILES main.cpp src/MenuState.cpp include/MenuState.h src/BasicButton.cpp include/BasicButton.h src/Button.cpp include/Button.h src/GameState.cpp include/GameState.h src/PlayState.cpp include/PlayState.h src/PauseState.cpp include/PauseState.h src/Block.cpp include/Block.h src/Entity.cpp include/Entity.h src/Game.cpp include/Game.h src/settings.cpp include/Test.cpp include/Test.h)
 
 set(EXECUTABLE_NAME ${PROJECT_NAME})
 

@@ -29,7 +29,6 @@ public:
 private:
     std::vector<std::shared_ptr<GameState>> states;
 
-
 };
 
 #endif //SFML_GAME_GAME_H

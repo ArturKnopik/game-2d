@@ -4,17 +4,23 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Projekty/game-2d/include/Entity.cpp" "C:/Projekty/game-2d/cmake-build-debug/CMakeFiles/SFML_GAME.dir/Include/Entity.cpp.obj"
-  "C:/Projekty/game-2d/include/Game.cpp" "C:/Projekty/game-2d/cmake-build-debug/CMakeFiles/SFML_GAME.dir/Include/Game.cpp.obj"
-  "C:/Projekty/game-2d/include/settings.cpp" "C:/Projekty/game-2d/cmake-build-debug/CMakeFiles/SFML_GAME.dir/Include/settings.cpp.obj"
-  "C:/Projekty/game-2d/main.cpp" "C:/Projekty/game-2d/cmake-build-debug/CMakeFiles/SFML_GAME.dir/main.cpp.obj"
-  "C:/Projekty/game-2d/src/BasicButton.cpp" "C:/Projekty/game-2d/cmake-build-debug/CMakeFiles/SFML_GAME.dir/src/BasicButton.cpp.obj"
-  "C:/Projekty/game-2d/src/Block.cpp" "C:/Projekty/game-2d/cmake-build-debug/CMakeFiles/SFML_GAME.dir/src/Block.cpp.obj"
-  "C:/Projekty/game-2d/src/Button.cpp" "C:/Projekty/game-2d/cmake-build-debug/CMakeFiles/SFML_GAME.dir/src/Button.cpp.obj"
-  "C:/Projekty/game-2d/src/GameState.cpp" "C:/Projekty/game-2d/cmake-build-debug/CMakeFiles/SFML_GAME.dir/src/GameState.cpp.obj"
-  "C:/Projekty/game-2d/src/MenuState.cpp" "C:/Projekty/game-2d/cmake-build-debug/CMakeFiles/SFML_GAME.dir/src/MenuState.cpp.obj"
-  "C:/Projekty/game-2d/src/PauseState.cpp" "C:/Projekty/game-2d/cmake-build-debug/CMakeFiles/SFML_GAME.dir/src/PauseState.cpp.obj"
-  "C:/Projekty/game-2d/src/PlayState.cpp" "C:/Projekty/game-2d/cmake-build-debug/CMakeFiles/SFML_GAME.dir/src/PlayState.cpp.obj"
+  "C:/Dropbox/projekty/game-2d/main.cpp" "C:/Dropbox/projekty/game-2d/cmake-build-debug/CMakeFiles/SFML_GAME.dir/main.cpp.obj"
+  "C:/Dropbox/projekty/game-2d/src/Blocks/Block.cpp" "C:/Dropbox/projekty/game-2d/cmake-build-debug/CMakeFiles/SFML_GAME.dir/src/Blocks/Block.cpp.obj"
+  "C:/Dropbox/projekty/game-2d/src/Blocks/Dynamic.cpp" "C:/Dropbox/projekty/game-2d/cmake-build-debug/CMakeFiles/SFML_GAME.dir/src/Blocks/Dynamic.cpp.obj"
+  "C:/Dropbox/projekty/game-2d/src/Blocks/Entity.cpp" "C:/Dropbox/projekty/game-2d/cmake-build-debug/CMakeFiles/SFML_GAME.dir/src/Blocks/Entity.cpp.obj"
+  "C:/Dropbox/projekty/game-2d/src/Blocks/Player.cpp" "C:/Dropbox/projekty/game-2d/cmake-build-debug/CMakeFiles/SFML_GAME.dir/src/Blocks/Player.cpp.obj"
+  "C:/Dropbox/projekty/game-2d/src/Blocks/Static.cpp" "C:/Dropbox/projekty/game-2d/cmake-build-debug/CMakeFiles/SFML_GAME.dir/src/Blocks/Static.cpp.obj"
+  "C:/Dropbox/projekty/game-2d/src/Buttoms/BasicButton.cpp" "C:/Dropbox/projekty/game-2d/cmake-build-debug/CMakeFiles/SFML_GAME.dir/src/Buttoms/BasicButton.cpp.obj"
+  "C:/Dropbox/projekty/game-2d/src/Buttoms/Button.cpp" "C:/Dropbox/projekty/game-2d/cmake-build-debug/CMakeFiles/SFML_GAME.dir/src/Buttoms/Button.cpp.obj"
+  "C:/Dropbox/projekty/game-2d/src/Game.cpp" "C:/Dropbox/projekty/game-2d/cmake-build-debug/CMakeFiles/SFML_GAME.dir/src/Game.cpp.obj"
+  "C:/Dropbox/projekty/game-2d/src/GameStates/GameState.cpp" "C:/Dropbox/projekty/game-2d/cmake-build-debug/CMakeFiles/SFML_GAME.dir/src/GameStates/GameState.cpp.obj"
+  "C:/Dropbox/projekty/game-2d/src/GameStates/MenuState.cpp" "C:/Dropbox/projekty/game-2d/cmake-build-debug/CMakeFiles/SFML_GAME.dir/src/GameStates/MenuState.cpp.obj"
+  "C:/Dropbox/projekty/game-2d/src/GameStates/PauseState.cpp" "C:/Dropbox/projekty/game-2d/cmake-build-debug/CMakeFiles/SFML_GAME.dir/src/GameStates/PauseState.cpp.obj"
+  "C:/Dropbox/projekty/game-2d/src/GameStates/PlayState.cpp" "C:/Dropbox/projekty/game-2d/cmake-build-debug/CMakeFiles/SFML_GAME.dir/src/GameStates/PlayState.cpp.obj"
+  "C:/Dropbox/projekty/game-2d/src/SomeRandomStaff/Test.cpp" "C:/Dropbox/projekty/game-2d/cmake-build-debug/CMakeFiles/SFML_GAME.dir/src/SomeRandomStaff/Test.cpp.obj"
+  "C:/Dropbox/projekty/game-2d/src/Systems/CollisionChecker.cpp" "C:/Dropbox/projekty/game-2d/cmake-build-debug/CMakeFiles/SFML_GAME.dir/src/Systems/CollisionChecker.cpp.obj"
+  "C:/Dropbox/projekty/game-2d/src/Systems/CreatureSpawner.cpp" "C:/Dropbox/projekty/game-2d/cmake-build-debug/CMakeFiles/SFML_GAME.dir/src/Systems/CreatureSpawner.cpp.obj"
+  "C:/Dropbox/projekty/game-2d/src/settings.cpp" "C:/Dropbox/projekty/game-2d/cmake-build-debug/CMakeFiles/SFML_GAME.dir/src/settings.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -17,6 +17,7 @@ public:
     Game();
     ~Game();
 
+
     void pushState(std::shared_ptr<GameState> state);
     void popState();
 
@@ -24,7 +25,8 @@ public:
 
     void gameLoop();
 
-    sf::RenderWindow window;
+    std::shared_ptr<sf::RenderWindow> window;
+
 
 private:
     std::vector<std::shared_ptr<GameState>> states;

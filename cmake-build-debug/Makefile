@@ -38,19 +38,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2017.3.1\bin\cmake\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files\JetBrains\CLion 2017.3.1\bin\cmake\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Projekty\game-2d
+CMAKE_SOURCE_DIR = C:\Dropbox\projekty\game-2d
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Projekty\game-2d\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Dropbox\projekty\game-2d\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = C:\Projekty\game-2d\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2017.3.1\bin\cmake\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -69,7 +69,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2017.3.1\bin\cmake\bin\cmake.exe" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projekty\game-2d\cmake-build-debug\CMakeFiles C:\Projekty\game-2d\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Dropbox\projekty\game-2d\cmake-build-debug\CMakeFiles C:\Dropbox\projekty\game-2d\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projekty\game-2d\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Dropbox\projekty\game-2d\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,87 +122,6 @@ SFML_GAME/fast:
 	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/build
 .PHONY : SFML_GAME/fast
 
-include/Entity.obj: include/Entity.cpp.obj
-
-.PHONY : include/Entity.obj
-
-# target to build an object file
-include/Entity.cpp.obj:
-	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/include/Entity.cpp.obj
-.PHONY : include/Entity.cpp.obj
-
-include/Entity.i: include/Entity.cpp.i
-
-.PHONY : include/Entity.i
-
-# target to preprocess a source file
-include/Entity.cpp.i:
-	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/include/Entity.cpp.i
-.PHONY : include/Entity.cpp.i
-
-include/Entity.s: include/Entity.cpp.s
-
-.PHONY : include/Entity.s
-
-# target to generate assembly for a file
-include/Entity.cpp.s:
-	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/include/Entity.cpp.s
-.PHONY : include/Entity.cpp.s
-
-include/Game.obj: include/Game.cpp.obj
-
-.PHONY : include/Game.obj
-
-# target to build an object file
-include/Game.cpp.obj:
-	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/include/Game.cpp.obj
-.PHONY : include/Game.cpp.obj
-
-include/Game.i: include/Game.cpp.i
-
-.PHONY : include/Game.i
-
-# target to preprocess a source file
-include/Game.cpp.i:
-	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/include/Game.cpp.i
-.PHONY : include/Game.cpp.i
-
-include/Game.s: include/Game.cpp.s
-
-.PHONY : include/Game.s
-
-# target to generate assembly for a file
-include/Game.cpp.s:
-	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/include/Game.cpp.s
-.PHONY : include/Game.cpp.s
-
-include/settings.obj: include/settings.cpp.obj
-
-.PHONY : include/settings.obj
-
-# target to build an object file
-include/settings.cpp.obj:
-	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/include/settings.cpp.obj
-.PHONY : include/settings.cpp.obj
-
-include/settings.i: include/settings.cpp.i
-
-.PHONY : include/settings.i
-
-# target to preprocess a source file
-include/settings.cpp.i:
-	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/include/settings.cpp.i
-.PHONY : include/settings.cpp.i
-
-include/settings.s: include/settings.cpp.s
-
-.PHONY : include/settings.s
-
-# target to generate assembly for a file
-include/settings.cpp.s:
-	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/include/settings.cpp.s
-.PHONY : include/settings.cpp.s
-
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -230,194 +149,437 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-src/BasicButton.obj: src/BasicButton.cpp.obj
+src/Blocks/Block.obj: src/Blocks/Block.cpp.obj
 
-.PHONY : src/BasicButton.obj
-
-# target to build an object file
-src/BasicButton.cpp.obj:
-	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/BasicButton.cpp.obj
-.PHONY : src/BasicButton.cpp.obj
-
-src/BasicButton.i: src/BasicButton.cpp.i
-
-.PHONY : src/BasicButton.i
-
-# target to preprocess a source file
-src/BasicButton.cpp.i:
-	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/BasicButton.cpp.i
-.PHONY : src/BasicButton.cpp.i
-
-src/BasicButton.s: src/BasicButton.cpp.s
-
-.PHONY : src/BasicButton.s
-
-# target to generate assembly for a file
-src/BasicButton.cpp.s:
-	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/BasicButton.cpp.s
-.PHONY : src/BasicButton.cpp.s
-
-src/Block.obj: src/Block.cpp.obj
-
-.PHONY : src/Block.obj
+.PHONY : src/Blocks/Block.obj
 
 # target to build an object file
-src/Block.cpp.obj:
-	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/Block.cpp.obj
-.PHONY : src/Block.cpp.obj
+src/Blocks/Block.cpp.obj:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/Blocks/Block.cpp.obj
+.PHONY : src/Blocks/Block.cpp.obj
 
-src/Block.i: src/Block.cpp.i
+src/Blocks/Block.i: src/Blocks/Block.cpp.i
 
-.PHONY : src/Block.i
+.PHONY : src/Blocks/Block.i
 
 # target to preprocess a source file
-src/Block.cpp.i:
-	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/Block.cpp.i
-.PHONY : src/Block.cpp.i
+src/Blocks/Block.cpp.i:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/Blocks/Block.cpp.i
+.PHONY : src/Blocks/Block.cpp.i
 
-src/Block.s: src/Block.cpp.s
+src/Blocks/Block.s: src/Blocks/Block.cpp.s
 
-.PHONY : src/Block.s
+.PHONY : src/Blocks/Block.s
 
 # target to generate assembly for a file
-src/Block.cpp.s:
-	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/Block.cpp.s
-.PHONY : src/Block.cpp.s
+src/Blocks/Block.cpp.s:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/Blocks/Block.cpp.s
+.PHONY : src/Blocks/Block.cpp.s
 
-src/Button.obj: src/Button.cpp.obj
+src/Blocks/Dynamic.obj: src/Blocks/Dynamic.cpp.obj
 
-.PHONY : src/Button.obj
+.PHONY : src/Blocks/Dynamic.obj
 
 # target to build an object file
-src/Button.cpp.obj:
-	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/Button.cpp.obj
-.PHONY : src/Button.cpp.obj
+src/Blocks/Dynamic.cpp.obj:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/Blocks/Dynamic.cpp.obj
+.PHONY : src/Blocks/Dynamic.cpp.obj
 
-src/Button.i: src/Button.cpp.i
+src/Blocks/Dynamic.i: src/Blocks/Dynamic.cpp.i
 
-.PHONY : src/Button.i
+.PHONY : src/Blocks/Dynamic.i
 
 # target to preprocess a source file
-src/Button.cpp.i:
-	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/Button.cpp.i
-.PHONY : src/Button.cpp.i
+src/Blocks/Dynamic.cpp.i:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/Blocks/Dynamic.cpp.i
+.PHONY : src/Blocks/Dynamic.cpp.i
 
-src/Button.s: src/Button.cpp.s
+src/Blocks/Dynamic.s: src/Blocks/Dynamic.cpp.s
 
-.PHONY : src/Button.s
+.PHONY : src/Blocks/Dynamic.s
 
 # target to generate assembly for a file
-src/Button.cpp.s:
-	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/Button.cpp.s
-.PHONY : src/Button.cpp.s
+src/Blocks/Dynamic.cpp.s:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/Blocks/Dynamic.cpp.s
+.PHONY : src/Blocks/Dynamic.cpp.s
 
-src/GameState.obj: src/GameState.cpp.obj
+src/Blocks/Entity.obj: src/Blocks/Entity.cpp.obj
 
-.PHONY : src/GameState.obj
+.PHONY : src/Blocks/Entity.obj
 
 # target to build an object file
-src/GameState.cpp.obj:
-	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/GameState.cpp.obj
-.PHONY : src/GameState.cpp.obj
+src/Blocks/Entity.cpp.obj:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/Blocks/Entity.cpp.obj
+.PHONY : src/Blocks/Entity.cpp.obj
 
-src/GameState.i: src/GameState.cpp.i
+src/Blocks/Entity.i: src/Blocks/Entity.cpp.i
 
-.PHONY : src/GameState.i
+.PHONY : src/Blocks/Entity.i
 
 # target to preprocess a source file
-src/GameState.cpp.i:
-	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/GameState.cpp.i
-.PHONY : src/GameState.cpp.i
+src/Blocks/Entity.cpp.i:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/Blocks/Entity.cpp.i
+.PHONY : src/Blocks/Entity.cpp.i
 
-src/GameState.s: src/GameState.cpp.s
+src/Blocks/Entity.s: src/Blocks/Entity.cpp.s
 
-.PHONY : src/GameState.s
+.PHONY : src/Blocks/Entity.s
 
 # target to generate assembly for a file
-src/GameState.cpp.s:
-	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/GameState.cpp.s
-.PHONY : src/GameState.cpp.s
+src/Blocks/Entity.cpp.s:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/Blocks/Entity.cpp.s
+.PHONY : src/Blocks/Entity.cpp.s
 
-src/MenuState.obj: src/MenuState.cpp.obj
+src/Blocks/Player.obj: src/Blocks/Player.cpp.obj
 
-.PHONY : src/MenuState.obj
+.PHONY : src/Blocks/Player.obj
 
 # target to build an object file
-src/MenuState.cpp.obj:
-	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/MenuState.cpp.obj
-.PHONY : src/MenuState.cpp.obj
+src/Blocks/Player.cpp.obj:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/Blocks/Player.cpp.obj
+.PHONY : src/Blocks/Player.cpp.obj
 
-src/MenuState.i: src/MenuState.cpp.i
+src/Blocks/Player.i: src/Blocks/Player.cpp.i
 
-.PHONY : src/MenuState.i
+.PHONY : src/Blocks/Player.i
 
 # target to preprocess a source file
-src/MenuState.cpp.i:
-	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/MenuState.cpp.i
-.PHONY : src/MenuState.cpp.i
+src/Blocks/Player.cpp.i:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/Blocks/Player.cpp.i
+.PHONY : src/Blocks/Player.cpp.i
 
-src/MenuState.s: src/MenuState.cpp.s
+src/Blocks/Player.s: src/Blocks/Player.cpp.s
 
-.PHONY : src/MenuState.s
+.PHONY : src/Blocks/Player.s
 
 # target to generate assembly for a file
-src/MenuState.cpp.s:
-	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/MenuState.cpp.s
-.PHONY : src/MenuState.cpp.s
+src/Blocks/Player.cpp.s:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/Blocks/Player.cpp.s
+.PHONY : src/Blocks/Player.cpp.s
 
-src/PauseState.obj: src/PauseState.cpp.obj
+src/Blocks/Static.obj: src/Blocks/Static.cpp.obj
 
-.PHONY : src/PauseState.obj
+.PHONY : src/Blocks/Static.obj
 
 # target to build an object file
-src/PauseState.cpp.obj:
-	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/PauseState.cpp.obj
-.PHONY : src/PauseState.cpp.obj
+src/Blocks/Static.cpp.obj:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/Blocks/Static.cpp.obj
+.PHONY : src/Blocks/Static.cpp.obj
 
-src/PauseState.i: src/PauseState.cpp.i
+src/Blocks/Static.i: src/Blocks/Static.cpp.i
 
-.PHONY : src/PauseState.i
+.PHONY : src/Blocks/Static.i
 
 # target to preprocess a source file
-src/PauseState.cpp.i:
-	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/PauseState.cpp.i
-.PHONY : src/PauseState.cpp.i
+src/Blocks/Static.cpp.i:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/Blocks/Static.cpp.i
+.PHONY : src/Blocks/Static.cpp.i
 
-src/PauseState.s: src/PauseState.cpp.s
+src/Blocks/Static.s: src/Blocks/Static.cpp.s
 
-.PHONY : src/PauseState.s
+.PHONY : src/Blocks/Static.s
 
 # target to generate assembly for a file
-src/PauseState.cpp.s:
-	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/PauseState.cpp.s
-.PHONY : src/PauseState.cpp.s
+src/Blocks/Static.cpp.s:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/Blocks/Static.cpp.s
+.PHONY : src/Blocks/Static.cpp.s
 
-src/PlayState.obj: src/PlayState.cpp.obj
+src/Buttoms/BasicButton.obj: src/Buttoms/BasicButton.cpp.obj
 
-.PHONY : src/PlayState.obj
+.PHONY : src/Buttoms/BasicButton.obj
 
 # target to build an object file
-src/PlayState.cpp.obj:
-	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/PlayState.cpp.obj
-.PHONY : src/PlayState.cpp.obj
+src/Buttoms/BasicButton.cpp.obj:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/Buttoms/BasicButton.cpp.obj
+.PHONY : src/Buttoms/BasicButton.cpp.obj
 
-src/PlayState.i: src/PlayState.cpp.i
+src/Buttoms/BasicButton.i: src/Buttoms/BasicButton.cpp.i
 
-.PHONY : src/PlayState.i
+.PHONY : src/Buttoms/BasicButton.i
 
 # target to preprocess a source file
-src/PlayState.cpp.i:
-	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/PlayState.cpp.i
-.PHONY : src/PlayState.cpp.i
+src/Buttoms/BasicButton.cpp.i:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/Buttoms/BasicButton.cpp.i
+.PHONY : src/Buttoms/BasicButton.cpp.i
 
-src/PlayState.s: src/PlayState.cpp.s
+src/Buttoms/BasicButton.s: src/Buttoms/BasicButton.cpp.s
 
-.PHONY : src/PlayState.s
+.PHONY : src/Buttoms/BasicButton.s
 
 # target to generate assembly for a file
-src/PlayState.cpp.s:
-	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/PlayState.cpp.s
-.PHONY : src/PlayState.cpp.s
+src/Buttoms/BasicButton.cpp.s:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/Buttoms/BasicButton.cpp.s
+.PHONY : src/Buttoms/BasicButton.cpp.s
+
+src/Buttoms/Button.obj: src/Buttoms/Button.cpp.obj
+
+.PHONY : src/Buttoms/Button.obj
+
+# target to build an object file
+src/Buttoms/Button.cpp.obj:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/Buttoms/Button.cpp.obj
+.PHONY : src/Buttoms/Button.cpp.obj
+
+src/Buttoms/Button.i: src/Buttoms/Button.cpp.i
+
+.PHONY : src/Buttoms/Button.i
+
+# target to preprocess a source file
+src/Buttoms/Button.cpp.i:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/Buttoms/Button.cpp.i
+.PHONY : src/Buttoms/Button.cpp.i
+
+src/Buttoms/Button.s: src/Buttoms/Button.cpp.s
+
+.PHONY : src/Buttoms/Button.s
+
+# target to generate assembly for a file
+src/Buttoms/Button.cpp.s:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/Buttoms/Button.cpp.s
+.PHONY : src/Buttoms/Button.cpp.s
+
+src/Game.obj: src/Game.cpp.obj
+
+.PHONY : src/Game.obj
+
+# target to build an object file
+src/Game.cpp.obj:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/Game.cpp.obj
+.PHONY : src/Game.cpp.obj
+
+src/Game.i: src/Game.cpp.i
+
+.PHONY : src/Game.i
+
+# target to preprocess a source file
+src/Game.cpp.i:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/Game.cpp.i
+.PHONY : src/Game.cpp.i
+
+src/Game.s: src/Game.cpp.s
+
+.PHONY : src/Game.s
+
+# target to generate assembly for a file
+src/Game.cpp.s:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/Game.cpp.s
+.PHONY : src/Game.cpp.s
+
+src/GameStates/GameState.obj: src/GameStates/GameState.cpp.obj
+
+.PHONY : src/GameStates/GameState.obj
+
+# target to build an object file
+src/GameStates/GameState.cpp.obj:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/GameStates/GameState.cpp.obj
+.PHONY : src/GameStates/GameState.cpp.obj
+
+src/GameStates/GameState.i: src/GameStates/GameState.cpp.i
+
+.PHONY : src/GameStates/GameState.i
+
+# target to preprocess a source file
+src/GameStates/GameState.cpp.i:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/GameStates/GameState.cpp.i
+.PHONY : src/GameStates/GameState.cpp.i
+
+src/GameStates/GameState.s: src/GameStates/GameState.cpp.s
+
+.PHONY : src/GameStates/GameState.s
+
+# target to generate assembly for a file
+src/GameStates/GameState.cpp.s:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/GameStates/GameState.cpp.s
+.PHONY : src/GameStates/GameState.cpp.s
+
+src/GameStates/MenuState.obj: src/GameStates/MenuState.cpp.obj
+
+.PHONY : src/GameStates/MenuState.obj
+
+# target to build an object file
+src/GameStates/MenuState.cpp.obj:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/GameStates/MenuState.cpp.obj
+.PHONY : src/GameStates/MenuState.cpp.obj
+
+src/GameStates/MenuState.i: src/GameStates/MenuState.cpp.i
+
+.PHONY : src/GameStates/MenuState.i
+
+# target to preprocess a source file
+src/GameStates/MenuState.cpp.i:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/GameStates/MenuState.cpp.i
+.PHONY : src/GameStates/MenuState.cpp.i
+
+src/GameStates/MenuState.s: src/GameStates/MenuState.cpp.s
+
+.PHONY : src/GameStates/MenuState.s
+
+# target to generate assembly for a file
+src/GameStates/MenuState.cpp.s:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/GameStates/MenuState.cpp.s
+.PHONY : src/GameStates/MenuState.cpp.s
+
+src/GameStates/PauseState.obj: src/GameStates/PauseState.cpp.obj
+
+.PHONY : src/GameStates/PauseState.obj
+
+# target to build an object file
+src/GameStates/PauseState.cpp.obj:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/GameStates/PauseState.cpp.obj
+.PHONY : src/GameStates/PauseState.cpp.obj
+
+src/GameStates/PauseState.i: src/GameStates/PauseState.cpp.i
+
+.PHONY : src/GameStates/PauseState.i
+
+# target to preprocess a source file
+src/GameStates/PauseState.cpp.i:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/GameStates/PauseState.cpp.i
+.PHONY : src/GameStates/PauseState.cpp.i
+
+src/GameStates/PauseState.s: src/GameStates/PauseState.cpp.s
+
+.PHONY : src/GameStates/PauseState.s
+
+# target to generate assembly for a file
+src/GameStates/PauseState.cpp.s:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/GameStates/PauseState.cpp.s
+.PHONY : src/GameStates/PauseState.cpp.s
+
+src/GameStates/PlayState.obj: src/GameStates/PlayState.cpp.obj
+
+.PHONY : src/GameStates/PlayState.obj
+
+# target to build an object file
+src/GameStates/PlayState.cpp.obj:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/GameStates/PlayState.cpp.obj
+.PHONY : src/GameStates/PlayState.cpp.obj
+
+src/GameStates/PlayState.i: src/GameStates/PlayState.cpp.i
+
+.PHONY : src/GameStates/PlayState.i
+
+# target to preprocess a source file
+src/GameStates/PlayState.cpp.i:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/GameStates/PlayState.cpp.i
+.PHONY : src/GameStates/PlayState.cpp.i
+
+src/GameStates/PlayState.s: src/GameStates/PlayState.cpp.s
+
+.PHONY : src/GameStates/PlayState.s
+
+# target to generate assembly for a file
+src/GameStates/PlayState.cpp.s:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/GameStates/PlayState.cpp.s
+.PHONY : src/GameStates/PlayState.cpp.s
+
+src/SomeRandomStaff/Test.obj: src/SomeRandomStaff/Test.cpp.obj
+
+.PHONY : src/SomeRandomStaff/Test.obj
+
+# target to build an object file
+src/SomeRandomStaff/Test.cpp.obj:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/SomeRandomStaff/Test.cpp.obj
+.PHONY : src/SomeRandomStaff/Test.cpp.obj
+
+src/SomeRandomStaff/Test.i: src/SomeRandomStaff/Test.cpp.i
+
+.PHONY : src/SomeRandomStaff/Test.i
+
+# target to preprocess a source file
+src/SomeRandomStaff/Test.cpp.i:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/SomeRandomStaff/Test.cpp.i
+.PHONY : src/SomeRandomStaff/Test.cpp.i
+
+src/SomeRandomStaff/Test.s: src/SomeRandomStaff/Test.cpp.s
+
+.PHONY : src/SomeRandomStaff/Test.s
+
+# target to generate assembly for a file
+src/SomeRandomStaff/Test.cpp.s:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/SomeRandomStaff/Test.cpp.s
+.PHONY : src/SomeRandomStaff/Test.cpp.s
+
+src/Systems/CollisionChecker.obj: src/Systems/CollisionChecker.cpp.obj
+
+.PHONY : src/Systems/CollisionChecker.obj
+
+# target to build an object file
+src/Systems/CollisionChecker.cpp.obj:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/Systems/CollisionChecker.cpp.obj
+.PHONY : src/Systems/CollisionChecker.cpp.obj
+
+src/Systems/CollisionChecker.i: src/Systems/CollisionChecker.cpp.i
+
+.PHONY : src/Systems/CollisionChecker.i
+
+# target to preprocess a source file
+src/Systems/CollisionChecker.cpp.i:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/Systems/CollisionChecker.cpp.i
+.PHONY : src/Systems/CollisionChecker.cpp.i
+
+src/Systems/CollisionChecker.s: src/Systems/CollisionChecker.cpp.s
+
+.PHONY : src/Systems/CollisionChecker.s
+
+# target to generate assembly for a file
+src/Systems/CollisionChecker.cpp.s:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/Systems/CollisionChecker.cpp.s
+.PHONY : src/Systems/CollisionChecker.cpp.s
+
+src/Systems/CreatureSpawner.obj: src/Systems/CreatureSpawner.cpp.obj
+
+.PHONY : src/Systems/CreatureSpawner.obj
+
+# target to build an object file
+src/Systems/CreatureSpawner.cpp.obj:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/Systems/CreatureSpawner.cpp.obj
+.PHONY : src/Systems/CreatureSpawner.cpp.obj
+
+src/Systems/CreatureSpawner.i: src/Systems/CreatureSpawner.cpp.i
+
+.PHONY : src/Systems/CreatureSpawner.i
+
+# target to preprocess a source file
+src/Systems/CreatureSpawner.cpp.i:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/Systems/CreatureSpawner.cpp.i
+.PHONY : src/Systems/CreatureSpawner.cpp.i
+
+src/Systems/CreatureSpawner.s: src/Systems/CreatureSpawner.cpp.s
+
+.PHONY : src/Systems/CreatureSpawner.s
+
+# target to generate assembly for a file
+src/Systems/CreatureSpawner.cpp.s:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/Systems/CreatureSpawner.cpp.s
+.PHONY : src/Systems/CreatureSpawner.cpp.s
+
+src/settings.obj: src/settings.cpp.obj
+
+.PHONY : src/settings.obj
+
+# target to build an object file
+src/settings.cpp.obj:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/settings.cpp.obj
+.PHONY : src/settings.cpp.obj
+
+src/settings.i: src/settings.cpp.i
+
+.PHONY : src/settings.i
+
+# target to preprocess a source file
+src/settings.cpp.i:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/settings.cpp.i
+.PHONY : src/settings.cpp.i
+
+src/settings.s: src/settings.cpp.s
+
+.PHONY : src/settings.s
+
+# target to generate assembly for a file
+src/settings.cpp.s:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/src/settings.cpp.s
+.PHONY : src/settings.cpp.s
 
 # Help Target
 help:
@@ -428,39 +590,57 @@ help:
 	@echo ... SFML_GAME
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... include/Entity.obj
-	@echo ... include/Entity.i
-	@echo ... include/Entity.s
-	@echo ... include/Game.obj
-	@echo ... include/Game.i
-	@echo ... include/Game.s
-	@echo ... include/settings.obj
-	@echo ... include/settings.i
-	@echo ... include/settings.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... src/BasicButton.obj
-	@echo ... src/BasicButton.i
-	@echo ... src/BasicButton.s
-	@echo ... src/Block.obj
-	@echo ... src/Block.i
-	@echo ... src/Block.s
-	@echo ... src/Button.obj
-	@echo ... src/Button.i
-	@echo ... src/Button.s
-	@echo ... src/GameState.obj
-	@echo ... src/GameState.i
-	@echo ... src/GameState.s
-	@echo ... src/MenuState.obj
-	@echo ... src/MenuState.i
-	@echo ... src/MenuState.s
-	@echo ... src/PauseState.obj
-	@echo ... src/PauseState.i
-	@echo ... src/PauseState.s
-	@echo ... src/PlayState.obj
-	@echo ... src/PlayState.i
-	@echo ... src/PlayState.s
+	@echo ... src/Blocks/Block.obj
+	@echo ... src/Blocks/Block.i
+	@echo ... src/Blocks/Block.s
+	@echo ... src/Blocks/Dynamic.obj
+	@echo ... src/Blocks/Dynamic.i
+	@echo ... src/Blocks/Dynamic.s
+	@echo ... src/Blocks/Entity.obj
+	@echo ... src/Blocks/Entity.i
+	@echo ... src/Blocks/Entity.s
+	@echo ... src/Blocks/Player.obj
+	@echo ... src/Blocks/Player.i
+	@echo ... src/Blocks/Player.s
+	@echo ... src/Blocks/Static.obj
+	@echo ... src/Blocks/Static.i
+	@echo ... src/Blocks/Static.s
+	@echo ... src/Buttoms/BasicButton.obj
+	@echo ... src/Buttoms/BasicButton.i
+	@echo ... src/Buttoms/BasicButton.s
+	@echo ... src/Buttoms/Button.obj
+	@echo ... src/Buttoms/Button.i
+	@echo ... src/Buttoms/Button.s
+	@echo ... src/Game.obj
+	@echo ... src/Game.i
+	@echo ... src/Game.s
+	@echo ... src/GameStates/GameState.obj
+	@echo ... src/GameStates/GameState.i
+	@echo ... src/GameStates/GameState.s
+	@echo ... src/GameStates/MenuState.obj
+	@echo ... src/GameStates/MenuState.i
+	@echo ... src/GameStates/MenuState.s
+	@echo ... src/GameStates/PauseState.obj
+	@echo ... src/GameStates/PauseState.i
+	@echo ... src/GameStates/PauseState.s
+	@echo ... src/GameStates/PlayState.obj
+	@echo ... src/GameStates/PlayState.i
+	@echo ... src/GameStates/PlayState.s
+	@echo ... src/SomeRandomStaff/Test.obj
+	@echo ... src/SomeRandomStaff/Test.i
+	@echo ... src/SomeRandomStaff/Test.s
+	@echo ... src/Systems/CollisionChecker.obj
+	@echo ... src/Systems/CollisionChecker.i
+	@echo ... src/Systems/CollisionChecker.s
+	@echo ... src/Systems/CreatureSpawner.obj
+	@echo ... src/Systems/CreatureSpawner.i
+	@echo ... src/Systems/CreatureSpawner.s
+	@echo ... src/settings.obj
+	@echo ... src/settings.i
+	@echo ... src/settings.s
 .PHONY : help
 
 

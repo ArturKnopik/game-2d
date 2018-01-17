@@ -3,27 +3,32 @@
 //
 
 #include "Game.h"
-#include "GameState.h"
+#include "GameStates/GameState.h"
 #include <iostream>
 #include "settings.cpp"
 
 Game::Game()
 {
-    window.create(sf::VideoMode(WIDTH, HEIGHT), "Small Marrio Game");
-    window.setFramerateLimit(FPS);
+    window=std::make_shared<sf::RenderWindow>();
+    window->create(sf::VideoMode(WIDTH, HEIGHT), "Small Game");
+    window->setFramerateLimit(FPS);
 }
 
 
-
+/*!
+ *
+ * @param state
+ */
 void Game::pushState(std::shared_ptr<GameState> state)
 {
     states.push_back(state);
 }
 
-void Game::popState()
-{
-    //delete states[states.size() - 1];
-    states.pop_back();
+void Game::popState() {
+    if (!states.empty())
+    {
+        states.pop_back();
+    }
 }
 
 Game::~Game()
@@ -37,12 +42,10 @@ std::shared_ptr<GameState> Game::CurrentState()
     if (states.empty())
     {
         return nullptr;
-      //  std::cout << "Game::Nullprt |  ";
     }
     else
     {
         return states.back();
-     //   std::cout << "Game::CurrentState  |  ";
     }
 }
 
@@ -50,19 +53,19 @@ std::shared_ptr<GameState> Game::CurrentState()
 void Game::gameLoop()
 {
     sf::Clock clock;
-    std::cout << "Game::GameLoop  |  ";
-    while (window.isOpen())
+    while (window->isOpen())
     {
         sf::Time elapsed = clock.restart();
-        float  dt = elapsed.asSeconds();
+        float  dt = elapsed.asMicroseconds();
         if (CurrentState() == nullptr)
         {
+
             continue;
         }
         CurrentState()->input();
         CurrentState()->update(dt);
-        window.clear();
+        window->clear();
         CurrentState()->draw(dt);
-        window.display();
+        window->display();
     }
 }

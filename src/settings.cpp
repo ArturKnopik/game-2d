@@ -11,5 +11,5 @@ const int HEIGHT = 720;
 //game settings
 
 //double GRAVITY = 0.9;
-const int FPS = 60;
+const int FPS = 300;
 //float dt;

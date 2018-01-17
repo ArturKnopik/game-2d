@@ -1,8 +1,8 @@
-# Install script for directory: C:/Projekty/game-2d
+# Install script for directory: C:/Dropbox/projekty/game-2d
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/SlidingPuzzle")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/SFML_GAME")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Projekty/game-2d/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Dropbox/projekty/game-2d/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

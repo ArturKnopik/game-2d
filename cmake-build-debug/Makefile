@@ -122,6 +122,33 @@ SFML_GAME/fast:
 	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/build
 .PHONY : SFML_GAME/fast
 
+include/Blocks/SimpleEnemy.obj: include/Blocks/SimpleEnemy.cpp.obj
+
+.PHONY : include/Blocks/SimpleEnemy.obj
+
+# target to build an object file
+include/Blocks/SimpleEnemy.cpp.obj:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/include/Blocks/SimpleEnemy.cpp.obj
+.PHONY : include/Blocks/SimpleEnemy.cpp.obj
+
+include/Blocks/SimpleEnemy.i: include/Blocks/SimpleEnemy.cpp.i
+
+.PHONY : include/Blocks/SimpleEnemy.i
+
+# target to preprocess a source file
+include/Blocks/SimpleEnemy.cpp.i:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/include/Blocks/SimpleEnemy.cpp.i
+.PHONY : include/Blocks/SimpleEnemy.cpp.i
+
+include/Blocks/SimpleEnemy.s: include/Blocks/SimpleEnemy.cpp.s
+
+.PHONY : include/Blocks/SimpleEnemy.s
+
+# target to generate assembly for a file
+include/Blocks/SimpleEnemy.cpp.s:
+	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/include/Blocks/SimpleEnemy.cpp.s
+.PHONY : include/Blocks/SimpleEnemy.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -590,6 +617,9 @@ help:
 	@echo ... SFML_GAME
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... include/Blocks/SimpleEnemy.obj
+	@echo ... include/Blocks/SimpleEnemy.i
+	@echo ... include/Blocks/SimpleEnemy.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

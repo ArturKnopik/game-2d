@@ -1,11 +1,22 @@
 //
-// Created by Root on 13.01.2018.
+// Created by Root on 18.01.2018.
 //
 
-#include <iostream>
-#include "Blocks/Player.h"
+#include "SimpleEnemy.h"
 
-void Player::draw(std::shared_ptr<sf::RenderWindow> window)
+SimpleEnemy::SimpleEnemy(float cX, float cY, int cWidth, int cHeight, float cSpeed)
+        : Dynamic(cX, cY, cWidth, cHeight, cSpeed)
+{
+    if(texture.loadFromFile("resource/image/EnemyGraphic.png"))
+    {
+        sprite.setTexture(texture);
+        sprite.setTextureRect(sf::IntRect(0,0,spriteData.spriteWidth,spriteData.spriteHeight));
+        sprite.setPosition(cX,cY);
+    };
+
+}
+
+void SimpleEnemy::draw(std::shared_ptr<sf::RenderWindow> window)
 {
     switch (getStatus()) {
         case MOVING:
@@ -56,24 +67,11 @@ void Player::draw(std::shared_ptr<sf::RenderWindow> window)
     window->draw(sprite);
 }
 
-void Player::update(const float dt)
+void SimpleEnemy::update(const float dt)
 {
 
-    if(!isCollsion())
-    {
-        positions=positions;
-        oldPositions=positions;
-        sprite.setPosition(positions.x,positions.y);
-    }
-    else
-    {
-        positions=oldPositions;
-    }
-
-    //positions=oldPositions;
     switch (getStatus()) {
         case MOVING:
-       // std::cout<<positions.x<< " : "<<positions.y<<std::endl;
             spriteData.currentTime+=dt;
             if(spriteData.currentTime>=spriteData.timeToNextFrame)
             {
@@ -91,91 +89,29 @@ void Player::update(const float dt)
             switch (getDirectory()) {
                 case UP:
                     setStatus(MOVING);
-                    idleTime=0;
                     moveUp(dt);
                     break;
                 case DOWN:
                     setStatus(MOVING);
-                    idleTime=0;
                     moveDown(dt);
                     break;
                 case LEFT:
                     setStatus(MOVING);
-                    idleTime=0;
                     moveLeft(dt);
                     break;
                 case RIGHT:
                     setStatus(MOVING);
-                    idleTime=0;
                     moveRight(dt);
                     break;
             };
             break;
         case IDLE:
-        std::cout<<"IDLE"<<std::endl;
+            // std::cout<<"IDLE"<<std::endl;
             break;
         case STOP:
 
             break;
     };
-    idleTime+=dt;
-
-
-   // positions=oldPositions;
-\
-
+    positions=oldPositions;
+    sprite.setPosition(positions.x,positions.y);
 }
-
-Player::Player(float cX, float cY, int cWidth, int cHeight, float cSpeed)
-        : Dynamic(cX, cY, cWidth, cHeight, cSpeed)
-{
-    if(texture.loadFromFile("resource/image/playerJMP.png"))
-    {
-        sprite.setTexture(texture);
-        sprite.setTextureRect(sf::IntRect(0,0,spriteData.spriteWidth,spriteData.spriteHeight));
-        sprite.setPosition(cX,cY);
-    };
-}
-
-void Player::input(std::shared_ptr<sf::Event> event)
-{
-    // need change to switch()
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
-    {
-       setStatus(MOVING);
-       setDir(UP);
-        return;
-    }
-    else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
-    {
-        setStatus(MOVING);
-        setDir(DOWN);
-        return;
-    }
-    else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
-    {
-        setStatus(MOVING);
-        setDir(LEFT);
-        return;
-    }
-    else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
-    {
-        setStatus(MOVING);
-        setDir(RIGHT);
-        return;
-    }
-    else
-    {
-        if(idleTime>8000000)
-        {
-            setStatus(IDLE);
-        }
-        else
-        {
-            setStatus(STOP);
-        }
-    }
-
-}
-
-

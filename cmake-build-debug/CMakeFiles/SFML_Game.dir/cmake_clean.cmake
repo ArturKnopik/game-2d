@@ -16,6 +16,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/SFML_GAME.dir/src/Blocks/Static.cpp.obj"
   "CMakeFiles/SFML_GAME.dir/src/Blocks/Dynamic.cpp.obj"
   "CMakeFiles/SFML_GAME.dir/src/Blocks/Player.cpp.obj"
+  "CMakeFiles/SFML_GAME.dir/include/Blocks/SimpleEnemy.cpp.obj"
   "C:/SFML_GAME_PROJECT/SFML_GAME.pdb"
   "C:/SFML_GAME_PROJECT/SFML_GAME.exe"
   "C:/SFML_GAME_PROJECT/SFML_GAME.exe.manifest"

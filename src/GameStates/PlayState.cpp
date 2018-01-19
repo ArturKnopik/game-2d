@@ -3,13 +3,12 @@
 //
 
 #include "GameStates/PlayState.h"
-#include "GameStates/MenuState.h"
+//#include "GameStates/MenuState.h"
 #include "GameStates/PauseState.h"
+//#include <SFML/Graphics.hpp>
+//#include "GameStates/GameState.h"
+//#include <cstdlib>
 
-#include "Buttoms/BasicButton.h"
-
-#include <SFML/Graphics.hpp>
-#include "GameStates/GameState.h"
 PlayState::~PlayState()
 {
 }
@@ -20,23 +19,32 @@ void PlayState::draw(const float dt)
     {
         creatureVector[i]->draw(game->window);
     }
-    testBlock1->draw(game->window);
-    testBlock2->draw(game->window);
     player->draw(game->window);
+    simpleEnemy->draw(game->window);
 }
 
 void PlayState::update(const float dt)
 {
+    system("cls");
     cChecker1.spawnCreature(sf::seconds(5));
     cChecker.spawnCreatureDeltaTime(4000000,dt);
-    ch.checkAABB(testBlock1, testBlock2);
+    if(ch.checkAABB(player, simpleEnemy))
+    {
+        std::cout<<"Collsions: "<<std::endl;
+       player->setCollsion(true);
+    }
+    else
+    {
+        player->setCollsion(false);
+        std::cout<<std::endl;
+    }
     for(int i=0;i<creatureVector.size();i++)
     {
         creatureVector[i]->update(dt);
     }
-    testBlock1->update(dt);
-    testBlock2->update(dt);
+
     player->update(dt);
+    simpleEnemy->update(dt);
    // cChecker.drawTime(sf::seconds(1.5));
 
 }
@@ -72,7 +80,7 @@ PlayState::PlayState(std::shared_ptr<Game> game)
     cChecker1.init(creatureVector);
     this->game = game;
     player = std::make_shared<Player>(300,300,32,32 ,0.0001);
-    testBlock1 = std::make_shared<Block>(100, 100, 60, 60, sf::Color::Blue);
-    testBlock2 = std::make_shared<Block>(150, 150, 90, 90, sf::Color::Green);
+    player->positions.x=100;
+    simpleEnemy = std::make_shared<SimpleEnemy>(200,200,32,32 ,0.0001);
 
 }

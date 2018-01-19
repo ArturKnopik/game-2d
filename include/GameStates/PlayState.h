@@ -6,6 +6,7 @@
 #define SFML_GAME_PLAYSTATE_H
 
 #include <Blocks/Player.h>
+#include <Blocks/SimpleEnemy.h>
 #include "GameState.h"
 #include "Buttoms/Button.h"
 #include "Blocks/Block.h"
@@ -16,8 +17,7 @@ class PlayState : public GameState
 private:
     std::vector <std::shared_ptr<Block>> creatureVector;
     std::shared_ptr<sf::Event> event;
-    std::shared_ptr<Block> testBlock1;
-    std::shared_ptr<Block> testBlock2;
+    std::shared_ptr<SimpleEnemy> simpleEnemy;
     CreatureSpawner cChecker;
     CreatureSpawner cChecker1;
     CollisionChecker ch;

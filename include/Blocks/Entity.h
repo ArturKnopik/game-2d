@@ -7,14 +7,15 @@
 
 #include "SFML/Graphics.hpp"
 #include <memory>
+#include <iostream>
 
 
 struct Positions
 {
-    float x;
-    float y;
-    int width;
-    int height;
+    float x=0;
+    float y=0;
+    int width=32;
+    int height=32;
     float xCollision;
     float yCollsion;
     float xCollsionWidth;
@@ -24,12 +25,10 @@ struct Positions
 
 class Entity
 {
-protected:
-
 public:
     Positions positions;
     Entity()= delete;
-    Entity(const float cX, const float cY, const int cWidth, const int cHeight);
+    Entity( float cX,  float cY,  int cWidth,  int cHeight);
     virtual ~Entity();
     virtual void draw(std::shared_ptr<sf::RenderWindow> window) = 0;
     virtual void update(const float dt)=0;

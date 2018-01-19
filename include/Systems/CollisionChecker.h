@@ -6,11 +6,11 @@
 #define SFML_GAME_COLLISIONCHECKER_H
 
 #include <memory>
-#include "Blocks/Block.h"
+#include "Blocks/Entity.h"
 class CollisionChecker
 {
 public:
-    bool checkAABB(std::shared_ptr<Block> left, std::shared_ptr<Block> right);
+    bool checkAABB(std::shared_ptr<Entity> left, std::shared_ptr<Dynamic> right);
 };
 
 

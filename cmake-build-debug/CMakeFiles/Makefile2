@@ -65,7 +65,7 @@ CMAKE_BINARY_DIR = C:\Dropbox\projekty\game-2d\cmake-build-debug
 CMakeFiles/SFML_GAME.dir/all:
 	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/depend
 	$(MAKE) -f CMakeFiles\SFML_GAME.dir\build.make CMakeFiles/SFML_GAME.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Dropbox\projekty\game-2d\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18 "Built target SFML_GAME"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Dropbox\projekty\game-2d\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19 "Built target SFML_GAME"
 .PHONY : CMakeFiles/SFML_GAME.dir/all
 
 # Include target in all.
@@ -75,7 +75,7 @@ all: CMakeFiles/SFML_GAME.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/SFML_GAME.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Dropbox\projekty\game-2d\cmake-build-debug\CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Dropbox\projekty\game-2d\cmake-build-debug\CMakeFiles 19
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/SFML_GAME.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Dropbox\projekty\game-2d\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/SFML_GAME.dir/rule

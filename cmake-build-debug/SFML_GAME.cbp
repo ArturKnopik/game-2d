@@ -100,6 +100,12 @@
 		<Unit filename="C:/Dropbox/projekty/game-2d/include/Blocks/Player.h">
 			<Option target="SFML_GAME"/>
 		</Unit>
+		<Unit filename="C:/Dropbox/projekty/game-2d/include/Blocks/SimpleEnemy.cpp">
+			<Option target="SFML_GAME"/>
+		</Unit>
+		<Unit filename="C:/Dropbox/projekty/game-2d/include/Blocks/SimpleEnemy.h">
+			<Option target="SFML_GAME"/>
+		</Unit>
 		<Unit filename="C:/Dropbox/projekty/game-2d/include/Blocks/Static.h">
 			<Option target="SFML_GAME"/>
 		</Unit>

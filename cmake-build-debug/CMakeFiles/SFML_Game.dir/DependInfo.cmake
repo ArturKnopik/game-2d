@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Dropbox/projekty/game-2d/include/Blocks/SimpleEnemy.cpp" "C:/Dropbox/projekty/game-2d/cmake-build-debug/CMakeFiles/SFML_GAME.dir/include/Blocks/SimpleEnemy.cpp.obj"
   "C:/Dropbox/projekty/game-2d/main.cpp" "C:/Dropbox/projekty/game-2d/cmake-build-debug/CMakeFiles/SFML_GAME.dir/main.cpp.obj"
   "C:/Dropbox/projekty/game-2d/src/Blocks/Block.cpp" "C:/Dropbox/projekty/game-2d/cmake-build-debug/CMakeFiles/SFML_GAME.dir/src/Blocks/Block.cpp.obj"
   "C:/Dropbox/projekty/game-2d/src/Blocks/Dynamic.cpp" "C:/Dropbox/projekty/game-2d/cmake-build-debug/CMakeFiles/SFML_GAME.dir/src/Blocks/Dynamic.cpp.obj"

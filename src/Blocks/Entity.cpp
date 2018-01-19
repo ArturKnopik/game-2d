@@ -9,16 +9,16 @@ Entity::~Entity()
 {
 }
 
-Entity::Entity(const float cX, const float cY, const int cWidth, const int cHeight)
+Entity::Entity(float cX, float cY,  int cWidth,  int cHeight)
 {
-    positions.x=cX;
-    positions.y=cY;
-    positions.width=cWidth;
-    positions.height=cHeight;
-    positions.xCollision=cX;
-    positions.yCollsion=cX;
-    positions.xCollsionWidth=cWidth;
-    positions.yCollsionHeight=cHeight;
+    this->positions.x=cX;
+    this->positions.y=cY;
+    this->positions.width=cWidth;
+    this->positions.height=cHeight;
+    this->positions.xCollision=cX;
+    this->positions.yCollsion=cX;
+    this->positions.xCollsionWidth=cWidth;
+    this->positions.yCollsionHeight=cHeight;
 }
 
 

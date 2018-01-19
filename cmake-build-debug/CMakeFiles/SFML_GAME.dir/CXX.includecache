@@ -21,10 +21,16 @@ SFML/Graphics.hpp
 ../include/Blocks/SFML/Graphics.hpp
 memory
 -
+iostream
+-
 
 ../include/Blocks/Player.h
 Blocks/Dynamic.h
 ../include/Blocks/Blocks/Dynamic.h
+
+../include/Blocks/SimpleEnemy.h
+Dynamic.h
+../include/Blocks/Dynamic.h
 
 ../include/Blocks/Static.h
 Blocks/Entity.h
@@ -87,6 +93,8 @@ Blocks/Block.h
 ../include/GameStates/PlayState.h
 Blocks/Player.h
 -
+Blocks/SimpleEnemy.h
+-
 GameState.h
 ../include/GameStates/GameState.h
 Buttoms/Button.h
@@ -103,8 +111,8 @@ Systems/CreatureSpawner.h
 ../include/Systems/CollisionChecker.h
 memory
 -
-Blocks/Block.h
-../include/Systems/Blocks/Block.h
+Blocks/Entity.h
+../include/Systems/Blocks/Entity.h
 
 ../include/Systems/CreatureSpawner.h
 SFML/System/Clock.hpp
@@ -119,6 +127,18 @@ Blocks/Block.h
 ../include/Systems/Blocks/Block.h
 cstdlib
 -
+
+C:/Dropbox/projekty/game-2d/include/Blocks/Dynamic.h
+Blocks/Entity.h
+C:/Dropbox/projekty/game-2d/include/Blocks/Blocks/Entity.h
+
+C:/Dropbox/projekty/game-2d/include/Blocks/SimpleEnemy.cpp
+SimpleEnemy.h
+C:/Dropbox/projekty/game-2d/include/Blocks/SimpleEnemy.h
+
+C:/Dropbox/projekty/game-2d/include/Blocks/SimpleEnemy.h
+Dynamic.h
+C:/Dropbox/projekty/game-2d/include/Blocks/Dynamic.h
 
 C:/Dropbox/projekty/game-2d/include/Game.h
 vector
@@ -137,6 +157,10 @@ include/Game.h
 C:/Dropbox/projekty/game-2d/include/Game.h
 GameStates/MenuState.h
 C:/Dropbox/projekty/game-2d/GameStates/MenuState.h
+cstdlib
+-
+time.h
+-
 
 C:/Dropbox/projekty/game-2d/src/Blocks/Block.cpp
 Blocks/Block.h
@@ -199,22 +223,16 @@ iostream
 C:/Dropbox/projekty/game-2d/src/GameStates/PlayState.cpp
 GameStates/PlayState.h
 C:/Dropbox/projekty/game-2d/src/GameStates/GameStates/PlayState.h
-GameStates/MenuState.h
-C:/Dropbox/projekty/game-2d/src/GameStates/GameStates/MenuState.h
 GameStates/PauseState.h
 C:/Dropbox/projekty/game-2d/src/GameStates/GameStates/PauseState.h
-Buttoms/BasicButton.h
-C:/Dropbox/projekty/game-2d/src/GameStates/Buttoms/BasicButton.h
-SFML/Graphics.hpp
--
-GameStates/GameState.h
-C:/Dropbox/projekty/game-2d/src/GameStates/GameStates/GameState.h
 
 C:/Dropbox/projekty/game-2d/src/SomeRandomStaff/Test.cpp
 SomeRandomStaff/Test.h
 C:/Dropbox/projekty/game-2d/src/SomeRandomStaff/SomeRandomStaff/Test.h
 
 C:/Dropbox/projekty/game-2d/src/Systems/CollisionChecker.cpp
+Blocks/Dynamic.h
+-
 Systems/CollisionChecker.h
 C:/Dropbox/projekty/game-2d/src/Systems/Systems/CollisionChecker.h
 

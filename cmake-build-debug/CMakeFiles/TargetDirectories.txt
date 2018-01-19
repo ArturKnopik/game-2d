@@ -1,3 +1,0 @@
-C:/Dropbox/projekty/game-2d/cmake-build-debug/CMakeFiles/SFML_GAME.dir
-C:/Dropbox/projekty/game-2d/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Dropbox/projekty/game-2d/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -8,7 +8,7 @@
 
 #include "Dynamic.h"
 
-class SimpleEnemy
+class Rat
 : public Dynamic
 {
 private:
@@ -18,8 +18,8 @@ private:
    // float idleTime; //1000000 = 1s
     void getRandomMovment();
 public:
-    SimpleEnemy()=delete;
-    SimpleEnemy(float cX, float cY, int cWidth, int cHeight, float cSpeed);
+    Rat()=delete;
+    Rat(float cX, float cY, int cWidth, int cHeight, float cSpeed);
     void draw(std::shared_ptr<sf::RenderWindow> window) override;
     void update(const float dt) override;
 

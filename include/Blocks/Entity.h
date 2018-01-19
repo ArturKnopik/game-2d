@@ -9,7 +9,17 @@
 #include <memory>
 #include <iostream>
 
-
+struct SpriteData
+{
+    int timeToNextFrame=300000; //1000000 = 1s
+    int currentTime=0;
+    int numbersOfFrame=2;
+    int currentFrame=0;
+    int spriteWidth=32;
+    int spriteHeight=32;
+    int spriteOffsetX=0;
+    int spriteOffsetY=0;
+};
 struct Positions
 {
     float x=0;
@@ -25,7 +35,11 @@ struct Positions
 
 class Entity
 {
+private:
+    bool collsion=false;
 public:
+    bool isCollsion();
+    void setCollsion(bool isCollsion);
     Positions positions;
     Entity()= delete;
     Entity( float cX,  float cY,  int cWidth,  int cHeight);

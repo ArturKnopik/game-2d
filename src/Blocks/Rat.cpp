@@ -2,9 +2,9 @@
 // Created by Root on 18.01.2018.
 //
 
-#include "SimpleEnemy.h"
+#include "Blocks/Rat.h"
 
-SimpleEnemy::SimpleEnemy(float cX, float cY, int cWidth, int cHeight, float cSpeed)
+Rat::Rat(float cX, float cY, int cWidth, int cHeight, float cSpeed)
         : Dynamic(cX, cY, cWidth, cHeight, cSpeed)
 {
     if(texture.loadFromFile("resource/image/EnemyGraphic.png"))
@@ -16,7 +16,7 @@ SimpleEnemy::SimpleEnemy(float cX, float cY, int cWidth, int cHeight, float cSpe
 
 }
 
-void SimpleEnemy::draw(std::shared_ptr<sf::RenderWindow> window)
+void Rat::draw(std::shared_ptr<sf::RenderWindow> window)
 {
     switch (getStatus()) {
         case MOVING:
@@ -67,7 +67,7 @@ void SimpleEnemy::draw(std::shared_ptr<sf::RenderWindow> window)
     window->draw(sprite);
 }
 
-void SimpleEnemy::update(const float dt)
+void Rat::update(const float dt)
 {
     std::cout<<currentTimeToChangeStateAndDir<<std::endl;
 
@@ -136,7 +136,7 @@ void SimpleEnemy::update(const float dt)
     sprite.setPosition(positions.x,positions.y);
 }
 
-void SimpleEnemy::getRandomMovment()
+void Rat::getRandomMovment()
 {
     int randomStatus= rand()%2;
     switch(randomStatus)

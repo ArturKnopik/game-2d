@@ -63,15 +63,6 @@ void Dynamic::setDir(Directory dir)
     this->dir=dir;
 }
 
-void Dynamic::setCustomSpriteData( int timeToNextFrame, int numbersOfFrame, Directory imageDir, int spriteX, int spriteY, int spriteWidth, int spriteHeight)
-{
-    spriteData.timeToNextFrame=timeToNextFrame;
-    spriteData.numbersOfFrame=numbersOfFrame-1;
-    spriteData.imageDir=imageDir;
-    spriteData.spriteWidth=spriteWidth;
-    spriteData.spriteHeight=spriteHeight;
-}
-
 void Dynamic::draw(std::shared_ptr<sf::RenderWindow> window)
 {
     switch (getStatus()) {
@@ -126,12 +117,4 @@ void Dynamic::draw(std::shared_ptr<sf::RenderWindow> window)
 void Dynamic::update(const float dt)
 {
 
-}
-
-bool Dynamic::isCollsion() {
-    return collsion;
-}
-
-void Dynamic::setCollsion(bool collsion) {
-    this->collsion = collsion;
 }

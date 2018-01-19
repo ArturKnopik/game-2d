@@ -37,3 +37,12 @@ Positions & Positions::operator =( const Positions & right )
     }
     return * this;
 }
+
+
+bool Entity::isCollsion() {
+    return collsion;
+}
+
+void Entity::setCollsion(bool collsion) {
+    this->collsion = collsion;
+}

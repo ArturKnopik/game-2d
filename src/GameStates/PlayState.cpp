@@ -2,6 +2,7 @@
 // Created by Streaming on 2017-12-13.
 //
 
+#include <Blocks/Water.h>
 #include "GameStates/PlayState.h"
 //#include "GameStates/MenuState.h"
 #include "GameStates/PauseState.h"
@@ -15,6 +16,11 @@ PlayState::~PlayState()
 
 void PlayState::draw(const float dt)
 {
+    for(int i=0;i<mapEntity.size();i++)
+    {
+        mapEntity[i]->draw(game->window);
+    }
+
     for(int i=0;i<creatureVector.size();i++)
     {
         creatureVector[i]->draw(game->window);
@@ -51,6 +57,11 @@ void PlayState::update(const float dt)
     simpleEnemy->update(dt);
    // cChecker.drawTime(sf::seconds(1.5));
 
+    for(int i=0;i<mapEntity.size();i++)
+    {
+        mapEntity[i]->update(dt);
+    }
+
 }
 
 void PlayState::input()
@@ -71,8 +82,6 @@ void PlayState::input()
                 if (event->key.code == sf::Keyboard::F1)
                     creatureVector.clear();
                 break;
-
-
         }
     }
 }
@@ -85,6 +94,15 @@ PlayState::PlayState(std::shared_ptr<Game> game)
     this->game = game;
     player = std::make_shared<Player>(300,300,32,32 ,0.0001);
     player->positions.x=100;
-    simpleEnemy = std::make_shared<SimpleEnemy>(200,200,32,32 ,0.00002);
+    simpleEnemy = std::make_shared<Rat>(200,200,32,32 ,0.00002);
+    mapEntity.push_back(std::make_shared<Water>(68,132,32,32,false,C));
+    mapEntity.push_back(std::make_shared<Water>(68,164,32,32,true,C));
+    mapEntity.push_back(std::make_shared<Water>(100,164,32,32,true,C));
+    mapEntity.push_back(std::make_shared<Ground>(100,100,32,32,false,C));
+    mapEntity.push_back(std::make_shared<Ground>(68,100,32,32,false,W));
+    mapEntity.push_back(std::make_shared<Ground>(100,132,32,32,false,S));
+    mapEntity.push_back(std::make_shared<Ground>(68,132,32,32,false,SW));
+
+
 
 }

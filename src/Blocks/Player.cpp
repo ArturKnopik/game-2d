@@ -70,7 +70,6 @@ void Player::update(const float dt)
         positions=oldPositions;
     }
 
-    //positions=oldPositions;
     switch (getStatus()) {
         case MOVING:
        // std::cout<<positions.x<< " : "<<positions.y<<std::endl;

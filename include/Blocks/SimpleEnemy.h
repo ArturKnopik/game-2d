@@ -12,7 +12,8 @@ class SimpleEnemy
 : public Dynamic
 {
 private:
-    float timeToChangeStateAndDir;
+    int timeToChangeStateAndDir=5000000;
+    int currentTimeToChangeStateAndDir=0;
 
    // float idleTime; //1000000 = 1s
     void getRandomMovment();

@@ -5,7 +5,7 @@
 #include <time.h>
 int main()
 {
-    srand(NULL);
+    srand( time( NULL ) );
     std::shared_ptr<Game> game;
     game = std::make_shared<Game>() ;
     game->pushState(std::make_shared<MenuState>(game));

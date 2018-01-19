@@ -69,9 +69,30 @@ void SimpleEnemy::draw(std::shared_ptr<sf::RenderWindow> window)
 
 void SimpleEnemy::update(const float dt)
 {
+    std::cout<<currentTimeToChangeStateAndDir<<std::endl;
 
+    currentTimeToChangeStateAndDir+=dt;
+    if(currentTimeToChangeStateAndDir>timeToChangeStateAndDir) {
+        currentTimeToChangeStateAndDir = 0;
+        getRandomMovment();
+    }
+
+    if(!isCollsion())
+    {
+        positions=positions;
+        oldPositions=positions;
+        sprite.setPosition(positions.x,positions.y);
+    }
+    else
+    {
+        positions=oldPositions;
+        getRandomMovment();
+    }
+    std::cout<<"Mouse: "<<positions.x<<":"<<positions.y<<std::endl;
     switch (getStatus()) {
+
         case MOVING:
+
             spriteData.currentTime+=dt;
             if(spriteData.currentTime>=spriteData.timeToNextFrame)
             {
@@ -112,6 +133,36 @@ void SimpleEnemy::update(const float dt)
 
             break;
     };
-    positions=oldPositions;
     sprite.setPosition(positions.x,positions.y);
+}
+
+void SimpleEnemy::getRandomMovment()
+{
+    int randomStatus= rand()%2;
+    switch(randomStatus)
+    {
+        case 0:
+            setStatus(STOP);
+            break;
+        case 1:
+            setStatus(MOVING);
+            int randomDir=rand()%4;
+            switch(randomDir)
+            {
+                case 0:
+                    setDir(UP);
+                    break;
+                case 1:
+                    setDir(DOWN);
+                    break;
+                case 2:
+                    setDir(LEFT);
+                    break;
+                case 3:
+                    setDir(RIGHT);
+                    break;
+            }
+
+            break;
+    }
 }

@@ -19,6 +19,7 @@ Entity::Entity(float cX, float cY,  int cWidth,  int cHeight)
     this->positions.yCollsion=cX;
     this->positions.xCollsionWidth=cWidth;
     this->positions.yCollsionHeight=cHeight;
+
 }
 
 
@@ -39,10 +40,15 @@ Positions & Positions::operator =( const Positions & right )
 }
 
 
-bool Entity::isCollsion() {
-    return collsion;
+bool Entity::isColsion()
+{
+    if(colision==COLLISIONTRUE)
+    {
+        return true;
+    }
+    else return false;
 }
 
-void Entity::setCollsion(bool collsion) {
-    this->collsion = collsion;
+void Entity::setColsion(CollisionEnum colision) {
+    this->colision = colision;
 }

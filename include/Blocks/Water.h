@@ -17,7 +17,7 @@ private:
     bool animated;
 public:
     Water()=delete;
-    Water(float cX, float cY, int cWidth, int cHeight, bool cAnimated, siteOfPicture cSiteOfPic);
+    Water(float cX, float cY, int cWidth, int cHeight, AnimatedEnum cAnimated, siteOfPicture cSiteOfPic);
     ~Water();
     void draw(std::shared_ptr<sf::RenderWindow> window);
     void update(const float dt);

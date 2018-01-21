@@ -19,6 +19,11 @@ enum siteOfPicture
     S=7,
     SE=8
 };
+enum AnimatedEnum
+{
+    ANIMATE_TRUE,
+    ANIMATE_FALSE
+};
 
 class Static :
         public Entity

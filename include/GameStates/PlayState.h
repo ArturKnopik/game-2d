@@ -19,7 +19,7 @@ class PlayState : public GameState
 private:
     std::vector <std::shared_ptr<Block>> creatureVector;
     std::shared_ptr<sf::Event> event;
-    std::shared_ptr<Rat> simpleEnemy;
+    std::shared_ptr<Rat> simpleRat;
     CreatureSpawner cChecker;
     CreatureSpawner cChecker1;
     CollisionChecker ch;

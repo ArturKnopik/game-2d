@@ -8,6 +8,11 @@
 #include "SFML/Graphics.hpp"
 #include <memory>
 #include <iostream>
+enum CollisionEnum
+{
+    COLLISIONTRUE=0,
+    COLLISIONFALSE=1
+};
 
 struct SpriteData
 {
@@ -36,15 +41,15 @@ struct Positions
 class Entity
 {
 private:
-    bool collsion=false;
+    CollisionEnum colision=COLLISIONFALSE;
 public:
-    bool isCollsion();
-    void setCollsion(bool isCollsion);
+    bool isColsion();
+    void setColsion(CollisionEnum colision);
     Positions positions;
     Entity()= delete;
     Entity( float cX,  float cY,  int cWidth,  int cHeight);
     virtual ~Entity();
-    virtual void draw(std::shared_ptr<sf::RenderWindow> window) = 0;
+    virtual void draw(std::shared_ptr<sf::RenderWindow> window) =0;
     virtual void update(const float dt)=0;
     //virtual void input(std::shared_ptr<sf::Event> event)=0;
 };

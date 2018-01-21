@@ -69,7 +69,7 @@ void Rat::draw(std::shared_ptr<sf::RenderWindow> window)
 
 void Rat::update(const float dt)
 {
-    std::cout<<currentTimeToChangeStateAndDir<<std::endl;
+   // std::cout<<currentTimeToChangeStateAndDir<<std::endl;
 
     currentTimeToChangeStateAndDir+=dt;
     if(currentTimeToChangeStateAndDir>timeToChangeStateAndDir) {
@@ -77,7 +77,7 @@ void Rat::update(const float dt)
         getRandomMovment();
     }
 
-    if(!isCollsion())
+    if(!isColsion())
     {
         positions=positions;
         oldPositions=positions;
@@ -88,7 +88,7 @@ void Rat::update(const float dt)
         positions=oldPositions;
         getRandomMovment();
     }
-    std::cout<<"Mouse: "<<positions.x<<":"<<positions.y<<std::endl;
+    //std::cout<<"Mouse: "<<positions.x<<":"<<positions.y<<std::endl;
     switch (getStatus()) {
 
         case MOVING:

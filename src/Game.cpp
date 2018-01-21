@@ -60,11 +60,6 @@ void Game::gameLoop()
     {
         sf::Time elapsed = clock.restart();
         float  dt = elapsed.asMicroseconds();
-        if (CurrentState() == nullptr)
-        {
-
-            continue;
-        }
         CurrentState()->input();
         CurrentState()->update(dt);
         window->clear();

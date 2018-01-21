@@ -8,6 +8,7 @@
 Dynamic::Dynamic(float cX, float cY, int cWidth, int cHeight, float cSpeed)
         :Entity(cX, cY, cWidth, cHeight), speed(cSpeed)
 {
+    setColsion(COLLISIONTRUE);
     texture.setSmooth(true);
     if(speed<0)
     {

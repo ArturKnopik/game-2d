@@ -58,8 +58,7 @@ void Player::draw(std::shared_ptr<sf::RenderWindow> window)
 
 void Player::update(const float dt)
 {
-
-    if(!isCollsion())
+    if(!isColsion())
     {
         positions=positions;
         oldPositions=positions;
@@ -72,7 +71,6 @@ void Player::update(const float dt)
 
     switch (getStatus()) {
         case MOVING:
-       // std::cout<<positions.x<< " : "<<positions.y<<std::endl;
             spriteData.currentTime+=dt;
             if(spriteData.currentTime>=spriteData.timeToNextFrame)
             {
@@ -111,7 +109,7 @@ void Player::update(const float dt)
             };
             break;
         case IDLE:
-        std::cout<<"IDLE"<<std::endl;
+        std::cout<<"IDLE: "<<idleTime<<std::endl;
             break;
         case STOP:
 

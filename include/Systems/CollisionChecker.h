@@ -6,11 +6,16 @@
 #define SFML_GAME_COLLISIONCHECKER_H
 
 #include <memory>
-#include "Blocks/Entity.h"
+#include <vector>
+#include <Blocks/Dynamic.h>
+
 class CollisionChecker
 {
 public:
-    bool checkAABB(std::shared_ptr<Entity> left, std::shared_ptr<Dynamic> right);
+    CollisionChecker()= default;
+    bool checkAABB(std::shared_ptr<Entity> & left, std::shared_ptr<Dynamic> & right);
+    void checkEntityWitchArray( std::vector<std::shared_ptr<Entity>> & mapEntity,
+                                std::shared_ptr<Dynamic> entity);
 };
 
 

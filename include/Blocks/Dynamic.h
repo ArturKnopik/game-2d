@@ -20,8 +20,6 @@ enum MovingStatus
     STOP=2
 };
 
-
-
 class Dynamic
         : public Entity
 {

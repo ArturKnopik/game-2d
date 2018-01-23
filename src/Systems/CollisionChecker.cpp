@@ -21,7 +21,7 @@ bool CollisionChecker::checkAABB(std::shared_ptr<Entity> & left, std::shared_ptr
 
 }
 
-void CollisionChecker::checkEntityInhArray(std::vector<std::shared_ptr<Entity>> &mapEntity)
+void CollisionChecker::checkEntityInhArray(std::vector<std::shared_ptr<Entity>> & mapEntity)
 {
     //checkAABB(mapEntity[0], entity);
 
@@ -37,14 +37,14 @@ void CollisionChecker::checkEntityInhArray(std::vector<std::shared_ptr<Entity>> 
                     if (checkAABB(mapEntity[i], mapEntity[j]))
                     {
                         std::cout<<"Collision detected for:"<<i<<" and "<<j<<std::endl;
-                        mapEntity[j]->setCollisionStatus(CAN_BE_COLLIDET);
-                        mapEntity[i]->setCollisionStatus(CAN_BE_COLLIDET);
+                        mapEntity[i]->setCollisionStatus(IS_COLLIDET);
+                        mapEntity[j]->setCollisionStatus(IS_COLLIDET);
                         break;
                     }
                     else
                     {
-                        mapEntity[j]->setCollisionStatus(CAN_NOT_BE_COLLIDET);
-                        mapEntity[i]->setCollisionStatus(CAN_NOT_BE_COLLIDET);
+                        mapEntity[j]->setCollisionStatus(NO_COLLISION);
+                        mapEntity[i]->setCollisionStatus(NO_COLLISION);
                     }
                 }
             }

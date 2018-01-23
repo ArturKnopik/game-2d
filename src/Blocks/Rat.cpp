@@ -79,7 +79,7 @@ void Rat::update(const float dt)
         getRandomMovment();
     }
 
-    if(!getCollsionStatus())
+    if(getCollsionStatus()==CAN_BE_COLLIDET)
     {
         positions=positions;
         oldPositions=positions;
@@ -90,7 +90,6 @@ void Rat::update(const float dt)
         positions=oldPositions;
         getRandomMovment();
     }
-    //std::cout<<"Mouse: "<<positions.x<<":"<<positions.y<<std::endl;
     switch (getStatus()) {
 
         case MOVING:
@@ -136,6 +135,14 @@ void Rat::update(const float dt)
             break;
     };
     sprite.setPosition(positions.x,positions.y);
+    if(getCollsionStatus()==CAN_BE_COLLIDET)
+    {
+        std::cout<<"Rat colidet = true"<<std::endl;
+    }
+    else
+    {
+        std::cout << "Rat colidet = false" << std::endl;
+    }
 }
 
 void Rat::getRandomMovment()

@@ -5,6 +5,18 @@
 #include <iostream>
 #include "Blocks/Player.h"
 
+Player::Player(float cX, float cY, int cWidth, int cHeight, float cSpeed)
+        : Dynamic(cX, cY, cWidth, cHeight, cSpeed)
+{
+    setCollisionAble(CollisionEnum::CAN_BE_COLLIDET);
+    if(texture.loadFromFile("resource/image/playerJMP.png"))
+    {
+        sprite.setTexture(texture);
+        sprite.setTextureRect(sf::IntRect(0,0,spriteData.spriteWidth,spriteData.spriteHeight));
+        sprite.setPosition(cX,cY);
+    };
+}
+
 void Player::draw(std::shared_ptr<sf::RenderWindow> window)
 {
     switch (getStatus()) {
@@ -58,15 +70,14 @@ void Player::draw(std::shared_ptr<sf::RenderWindow> window)
 
 void Player::update(const float dt)
 {
-    if(!getCollsionStatus())
+    if(getCollsionStatus()==IsCollidet::NO_COLLISION)
     {
-        positions=positions;
-        oldPositions=positions;
-        sprite.setPosition(positions.x,positions.y);
+        positions=oldPositions;
     }
     else
     {
-        positions=oldPositions;
+        oldPositions=positions;
+        sprite.setPosition(positions.x,positions.y);
     }
 
     switch (getStatus()) {
@@ -116,29 +127,25 @@ void Player::update(const float dt)
 
             break;
     };
+
     if(getStatus()!=IDLE)
     {
         idleTime+=dt;
     }
 
-
-   // positions=oldPositions;
-\
-
-}
-
-Player::Player(float cX, float cY, int cWidth, int cHeight, float cSpeed)
-        : Dynamic(cX, cY, cWidth, cHeight, cSpeed)
-{
-    setCollisionAble(CAN_BE_COLLIDET);
-    setCollisionStatus(CAN_BE_COLLIDET);
-    if(texture.loadFromFile("resource/image/playerJMP.png"))
+    if(getCollsionStatus()==IS_COLLIDET)
     {
-        sprite.setTexture(texture);
-        sprite.setTextureRect(sf::IntRect(0,0,spriteData.spriteWidth,spriteData.spriteHeight));
-        sprite.setPosition(cX,cY);
-    };
+        std::cout<<"Player colidet = true"<<std::endl;
+    }
+    else
+    {
+        std::cout << "Player colidet = false" << std::endl;
+    }
+   // positions=oldPositions;
+
+
 }
+
 
 void Player::input(std::shared_ptr<sf::Event> event)
 {

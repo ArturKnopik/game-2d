@@ -10,7 +10,7 @@ Water::Water(float cX, float cY, int cWidth, int cHeight, AnimatedEnum cAnimated
     dataSprite.currentFrame=0;
     dataSprite.currentTime=0;
     spriteData.timeToNextFrame=900000;
-    setCollisionAble(CAN_BE_COLLIDET);
+    setCollisionAble(CollisionEnum::CAN_BE_COLLIDET);
     if(texture.loadFromFile("resource/image/Water.png"))
     {
         sprite.setTexture(texture);
@@ -48,14 +48,15 @@ Water::Water(float cX, float cY, int cWidth, int cHeight, AnimatedEnum cAnimated
         }
         else
        {
-          spriteData.spriteOffsetY=96;
+           spriteData.spriteOffsetY=96;
        }
     };
     sprite.setPosition(positions.x, positions.y);
 
 }
 
-Water::~Water() {
+Water::~Water()
+{
 
 }
 
@@ -112,5 +113,12 @@ void Water::update(const float dt)
                 break;
         }
     }
-
+   if(getCollsionStatus()==IS_COLLIDET)
+    {
+        std::cout<<"WATER colidet = true"<<std::endl;
+    }
+    else
+    {
+        std::cout << "WATER colidet = false" << std::endl;
+    }
 }

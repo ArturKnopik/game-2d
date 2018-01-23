@@ -42,7 +42,7 @@ Positions & Positions::operator =( const Positions & right )
 
 bool Entity::getCollsionStatus()
 {
-    if(collisionStatus==CAN_BE_COLLIDET)
+    if(collisionStatus==IsCollidet::IS_COLLIDET)
     {
         return true;
     }
@@ -50,7 +50,7 @@ bool Entity::getCollsionStatus()
 }
 bool Entity::isCollisionAble()
 {
-    if(collisionAble==CAN_BE_COLLIDET)
+    if(collisionAble==CollisionEnum::CAN_BE_COLLIDET)
     {
         return true;
     }
@@ -62,7 +62,7 @@ void Entity::setCollisionAble(CollisionEnum newCollisionAble)
     this->collisionAble = newCollisionAble;
 }
 
-void Entity::setCollisionStatus(CollisionEnum newCollisionStatus)
+void Entity::setCollisionStatus(IsCollidet newCollisionStatus)
 {
     this->collisionStatus = newCollisionStatus;
 }

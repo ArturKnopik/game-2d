@@ -10,10 +10,14 @@
 #include <iostream>
 enum CollisionEnum
 {
-    CAN_BE_COLLIDET=0,
-    CAN_NOT_BE_COLLIDET=1
+    CAN_BE_COLLIDET,
+    CAN_NOT_BE_COLLIDET
 };
-
+enum IsCollidet
+{
+    IS_COLLIDET,
+    NO_COLLISION
+};
 struct SpriteData
 {
     int timeToNextFrame=300000; //1000000 = 1s
@@ -42,7 +46,7 @@ class Entity
 {
 private:
     int id;
-    CollisionEnum collisionStatus=CAN_NOT_BE_COLLIDET;
+    IsCollidet collisionStatus=NO_COLLISION;
     CollisionEnum collisionAble=CAN_NOT_BE_COLLIDET;
 public:
     Positions positions;
@@ -55,7 +59,7 @@ public:
     void setEntityID(int i);
     int getEntityID();
     bool getCollsionStatus();
-    void setCollisionStatus(CollisionEnum newCollisionStatus);
+    void setCollisionStatus(IsCollidet newCollisionStatus);
     bool isCollisionAble();
     void setCollisionAble(CollisionEnum newCollisionAble);
 };

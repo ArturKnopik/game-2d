@@ -18,7 +18,7 @@ private:
     bool animated;
 public:
     Ground()=delete;
-    Ground(float cX,float cY, int cWidth, int cHeight, CollisionEnum collisionAble, siteOfPicture cSiteOfPic);
+    Ground(float cX,float cY, int cWidth, int cHeight, IsCollidet collisionAble, siteOfPicture cSiteOfPic);
     ~Ground();
     void draw(std::shared_ptr<sf::RenderWindow> window);
     void update(const float dt);

@@ -4,11 +4,8 @@
 
 #include <Blocks/Water.h>
 #include "GameStates/PlayState.h"
-//#include "GameStates/MenuState.h"
 #include "GameStates/PauseState.h"
-//#include <SFML/Graphics.hpp>
-//#include "GameStates/GameState.h"
-//#include <cstdlib>
+
 
 PlayState::~PlayState()
 {
@@ -24,7 +21,9 @@ void PlayState::draw()
 
 void PlayState::update(const float dt)
 {
+    system("CLS");
     ch.checkEntityInhArray(mapEntity);
+
     cSpawner->spawnCreatureDeltaTime(dt);
 
     for(int i=0;i<mapEntity.size();i++)
@@ -66,7 +65,7 @@ PlayState::PlayState(std::shared_ptr<Game> game)
 
     mapEntity.push_back(player);
     mapEntity.push_back(std::make_shared<Water>(68,132,32,32,CAN_NOT_BE_ANIMATED,C));
-    mapEntity.push_back(std::make_shared<Water>(68,164,32,32,CAN_BE_ANIMATED,C));
+   /* mapEntity.push_back(std::make_shared<Water>(68,164,32,32,CAN_BE_ANIMATED,C));
     mapEntity.push_back(std::make_shared<Water>(100,164,32,32,CAN_BE_ANIMATED,C));
     //
     mapEntity.push_back(std::make_shared<Water>(100,196,32,32,CAN_BE_ANIMATED,C));
@@ -77,11 +76,13 @@ PlayState::PlayState(std::shared_ptr<Game> game)
     mapEntity.push_back(std::make_shared<Water>(100,164,32,32,CAN_BE_ANIMATED,C));
     mapEntity.push_back(std::make_shared<Water>(100,164,32,32,CAN_BE_ANIMATED,C));
     mapEntity.push_back(std::make_shared<Water>(100,164,32,32,CAN_BE_ANIMATED,C));
-     */
-    mapEntity.push_back(std::make_shared<Ground>(100,100,32,32,CAN_NOT_BE_COLLIDET,C));
-    mapEntity.push_back(std::make_shared<Ground>(68,100,32,32,CAN_NOT_BE_COLLIDET,W));
-    mapEntity.push_back(std::make_shared<Ground>(100,132,32,32,CAN_NOT_BE_COLLIDET,C));
-    mapEntity.push_back(std::make_shared<Ground>(68,132,32,32,CAN_NOT_BE_COLLIDET,SW));
+
+    mapEntity.push_back(std::make_shared<Ground>(100,100,32,32,IS_COLLIDET,C));
+    mapEntity.push_back(std::make_shared<Ground>(68,68,32,32,IS_COLLIDET,C));
+    mapEntity.push_back(std::make_shared<Ground>(68,100,32,32,IS_COLLIDET,W));
+    mapEntity.push_back(std::make_shared<Ground>(100,132,32,32,IS_COLLIDET,C));
+    */
+    mapEntity.push_back(std::make_shared<Ground>(68,132,32,32,IS_COLLIDET,SW));
 
     cSpawner=std::make_shared<CreatureSpawner> (150,250, mapEntity, RAT, 4000000);
 

@@ -8,7 +8,7 @@
 Dynamic::Dynamic(float cX, float cY, int cWidth, int cHeight, float cSpeed)
         :Entity(cX, cY, cWidth, cHeight), speed(cSpeed)
 {
-    setCollisionStatus(CAN_BE_COLLIDET);
+    setCollisionStatus(IS_COLLIDET);
     texture.setSmooth(true);
     if(speed<0)
     {

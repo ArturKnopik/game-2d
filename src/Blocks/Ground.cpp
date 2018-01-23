@@ -4,11 +4,11 @@
 
 #include "Blocks/Ground.h"
 
-Ground::Ground(float cX, float cY, int cWidth, int cHeight, CollisionEnum collisionAble, siteOfPicture cSiteOfPic)
+Ground::Ground(float cX, float cY, int cWidth, int cHeight,IsCollidet cCollisionAble, siteOfPicture cSiteOfPic)
         : Static(cX, cY, cWidth, cHeight), pictureSite(cSiteOfPic)
 {
 
-    setCollisionStatus(collisionAble);
+    setCollisionStatus(cCollisionAble);
     if(texture.loadFromFile("resource/image/Grass.png"))
     {
         sprite.setTexture(texture);

@@ -21,8 +21,8 @@ enum siteOfPicture
 };
 enum AnimatedEnum
 {
-    ANIMATE_TRUE,
-    ANIMATE_FALSE
+    CAN_BE_ANIMATED=0,
+    CAN_NOT_BE_ANIMATED=1
 };
 
 class Static :

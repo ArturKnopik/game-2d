@@ -13,9 +13,8 @@ class CollisionChecker
 {
 public:
     CollisionChecker()= default;
-    bool checkAABB(std::shared_ptr<Entity> & left, std::shared_ptr<Dynamic> & right);
-    void checkEntityWitchArray( std::vector<std::shared_ptr<Entity>> & mapEntity,
-                                std::shared_ptr<Dynamic> entity);
+    bool checkAABB(std::shared_ptr<Entity> & left, std::shared_ptr<Entity> & right);
+    void checkEntityInhArray(std::vector<std::shared_ptr<Entity>> &mapEntity);
 };
 
 

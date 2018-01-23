@@ -6,14 +6,14 @@
 #define SFML_GAME_DYNAMIC_H
 
 #include "Blocks/Entity.h"
-enum Directory
+enum MovingDirectory
 {
     UP=0,
     DOWN=1,
     LEFT=2,
     RIGHT=3
 };
-enum Status
+enum MovingStatus
 {
     IDLE=0,
     MOVING=1,
@@ -26,17 +26,17 @@ class Dynamic
         : public Entity
 {
 private:
-    Status status;
-    Directory dir;
+    MovingStatus status;
+    MovingDirectory dir;
     float speed;
 protected:
     sf::Texture texture;
     sf::Sprite sprite;
     SpriteData spriteData;
-    virtual Status getStatus() const;
-    void setStatus(Status status);
-    Directory getDirectory() const ;
-    void setDir(Directory dir);
+    virtual MovingStatus getStatus() const;
+    void setStatus(MovingStatus status);
+    MovingDirectory getDirectory() const ;
+    void setDir(MovingDirectory dir);
 public:
     Positions oldPositions;
     Dynamic()=delete;

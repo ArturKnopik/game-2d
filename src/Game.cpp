@@ -63,7 +63,7 @@ void Game::gameLoop()
         CurrentState()->input();
         CurrentState()->update(dt);
         window->clear();
-        CurrentState()->draw(dt);
+        CurrentState()->draw();
         window->display();
     }
 }

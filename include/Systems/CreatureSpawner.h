@@ -9,27 +9,30 @@
 #include "SFML/System/Time.hpp"
 #include <vector>
 #include <memory>
-#include "Blocks/Block.h"
 #include <cstdlib>
-
+#include <Blocks/Creature.h>
+enum CreatureType
+{
+    RAT
+};
 class CreatureSpawner {
 private:
-    sf::Clock clock;
-    sf::Time currenttime;
+
     float currentTimeDT=0;
-    //float totalTime;
     static int idCounter;
     int thisID;
-    int i=0;
-    bool isCreatureLive=false;
     bool resteTimer=true;
-    std::vector<std::shared_ptr<Block>> *creatureVector;
+    std::vector<std::shared_ptr<Entity>> *creatureVector;
+    float x;
+    float y;
+    float timeToWait;
+    CreatureType typeOfCreatureToSpawn;
 public:
-    void drawTime(sf::Time time);
-    void spawnCreature(sf::Time time);
-    void init(std::vector<std::shared_ptr<Block>> &vector);
-    void spawnCreatureDeltaTime(float timeToWait, float dt);
-
+    CreatureSpawner()=delete;
+    CreatureSpawner(float cX, float cY, std::vector<std::shared_ptr<Entity>> &vector, CreatureType cType, float cTimeToWait);
+    void spawnCreatureDeltaTime(float dt);
+    void setCreatureToSpawn(CreatureType creature);
+    CreatureType getCreatureToSpawn();
 
 
 };

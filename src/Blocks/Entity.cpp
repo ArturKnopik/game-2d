@@ -16,9 +16,9 @@ Entity::Entity(float cX, float cY,  int cWidth,  int cHeight)
     this->positions.width=cWidth;
     this->positions.height=cHeight;
     this->positions.xCollision=cX;
-    this->positions.yCollsion=cX;
-    this->positions.xCollsionWidth=cWidth;
-    this->positions.yCollsionHeight=cHeight;
+    this->positions.yCollision=cX;
+    this->positions.xCollisionWidth=cWidth;
+    this->positions.yCollisionHeight=cHeight;
 
 }
 
@@ -32,23 +32,47 @@ Positions & Positions::operator =( const Positions & right )
         width=right.width;
         height=right.height;
         xCollision=right.xCollision;
-        yCollsion=right.yCollsion;
-        xCollsionWidth=right.xCollsionWidth;
-        yCollsionHeight=right.yCollsionHeight;
+        yCollision=right.yCollision;
+        xCollisionWidth=right.xCollisionWidth;
+        yCollisionHeight=right.yCollisionHeight;
     }
     return * this;
 }
 
 
-bool Entity::isColsion()
+bool Entity::getCollsionStatus()
 {
-    if(colision==COLLISIONTRUE)
+    if(collisionStatus==CAN_BE_COLLIDET)
+    {
+        return true;
+    }
+    else return false;
+}
+bool Entity::isCollisionAble()
+{
+    if(collisionAble==CAN_BE_COLLIDET)
     {
         return true;
     }
     else return false;
 }
 
-void Entity::setColsion(CollisionEnum colision) {
-    this->colision = colision;
+void Entity::setCollisionAble(CollisionEnum newCollisionAble)
+{
+    this->collisionAble = newCollisionAble;
+}
+
+void Entity::setCollisionStatus(CollisionEnum newCollisionStatus)
+{
+    this->collisionStatus = newCollisionStatus;
+}
+
+void Entity::setEntityID(int i)
+{
+    this->id=i;
+}
+
+int Entity::getEntityID()
+{
+    return id;
 }

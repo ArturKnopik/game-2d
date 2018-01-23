@@ -12,7 +12,7 @@ class Player
         :public Dynamic
 {
 private:
-    float idleTime; //1000000 = 1s
+    int idleTime=0; //1000000 = 1s
 public:
     Player()=delete;
     Player(float cX, float cY, int cWidth, int cHeight, float cSpeed);

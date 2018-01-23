@@ -10,11 +10,11 @@ Water::Water(float cX, float cY, int cWidth, int cHeight, AnimatedEnum cAnimated
     dataSprite.currentFrame=0;
     dataSprite.currentTime=0;
     spriteData.timeToNextFrame=900000;
-    setColsion(COLLISIONTRUE);
+    setCollisionAble(CAN_BE_COLLIDET);
     if(texture.loadFromFile("resource/image/Water.png"))
     {
         sprite.setTexture(texture);
-       if(!animated)
+       if(animated==CAN_NOT_BE_ANIMATED)
         {
             switch (pictureSite) {
                 case NW:
@@ -66,7 +66,7 @@ void Water::draw(std::shared_ptr<sf::RenderWindow> window)
 
 void Water::update(const float dt)
 {
-    if(animated)
+    if(animated==CAN_BE_ANIMATED)
     {
         spriteData.currentTime += dt;
         if (spriteData.currentTime >= spriteData.timeToNextFrame)

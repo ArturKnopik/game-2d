@@ -7,5 +7,5 @@
 Static::Static(float cX, float cY, int cWidth, int cHeight)
 :Entity(cX, cY, cWidth, cHeight)
 {
-  setColsion(COLLISIONFALSE);
+    setCollisionStatus(CAN_NOT_BE_COLLIDET);
 }

@@ -6,10 +6,11 @@
 #define SFML_GAME_SIMPLEENEMY_H
 
 
-#include "Dynamic.h"
+
+#include "Creature.h"
 
 class Rat
-: public Dynamic
+: public Creature
 {
 private:
     int timeToChangeStateAndDir=5000000;

@@ -58,7 +58,7 @@ void Player::draw(std::shared_ptr<sf::RenderWindow> window)
 
 void Player::update(const float dt)
 {
-    if(!isColsion())
+    if(!getCollsionStatus())
     {
         positions=positions;
         oldPositions=positions;
@@ -109,13 +109,17 @@ void Player::update(const float dt)
             };
             break;
         case IDLE:
-        std::cout<<"IDLE: "<<idleTime<<std::endl;
+        std::cout<<"PLAYER: IDLE STATUS "<<std::endl;
+
             break;
         case STOP:
 
             break;
     };
-    idleTime+=dt;
+    if(getStatus()!=IDLE)
+    {
+        idleTime+=dt;
+    }
 
 
    // positions=oldPositions;
@@ -126,6 +130,8 @@ void Player::update(const float dt)
 Player::Player(float cX, float cY, int cWidth, int cHeight, float cSpeed)
         : Dynamic(cX, cY, cWidth, cHeight, cSpeed)
 {
+    setCollisionAble(CAN_BE_COLLIDET);
+    setCollisionStatus(CAN_BE_COLLIDET);
     if(texture.loadFromFile("resource/image/playerJMP.png"))
     {
         sprite.setTexture(texture);

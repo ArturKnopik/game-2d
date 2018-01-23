@@ -8,7 +8,7 @@
 Dynamic::Dynamic(float cX, float cY, int cWidth, int cHeight, float cSpeed)
         :Entity(cX, cY, cWidth, cHeight), speed(cSpeed)
 {
-    setColsion(COLLISIONTRUE);
+    setCollisionStatus(CAN_BE_COLLIDET);
     texture.setSmooth(true);
     if(speed<0)
     {
@@ -44,22 +44,22 @@ void Dynamic::moveRight(float dt)
     positions.x=positions.x+(speed*dt);
 }
 
-Status Dynamic::getStatus() const
+MovingStatus Dynamic::getStatus() const
 {
     return status;
 }
 
-void Dynamic::setStatus(Status status)
+void Dynamic::setStatus(MovingStatus status)
 {
     this->status = status;
 }
 
-Directory Dynamic::getDirectory() const
+MovingDirectory Dynamic::getDirectory() const
 {
     return dir;
 }
 
-void Dynamic::setDir(Directory dir)
+void Dynamic::setDir(MovingDirectory dir)
 {
     this->dir=dir;
 }

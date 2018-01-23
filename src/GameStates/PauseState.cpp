@@ -18,7 +18,7 @@ PauseState::~PauseState()
 
 }
 
-void PauseState::draw(const float dt)
+void PauseState::draw()
 {
     sf::RectangleShape rect;
     rect.setPosition(sf::Vector2f(100, 100));

@@ -8,7 +8,7 @@ Ground::Ground(float cX, float cY, int cWidth, int cHeight, CollisionEnum collis
         : Static(cX, cY, cWidth, cHeight), pictureSite(cSiteOfPic)
 {
 
-    setColsion(collisionAble);
+    setCollisionStatus(collisionAble);
     if(texture.loadFromFile("resource/image/Grass.png"))
     {
         sprite.setTexture(texture);

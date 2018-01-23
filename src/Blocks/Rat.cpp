@@ -5,8 +5,10 @@
 #include "Blocks/Rat.h"
 
 Rat::Rat(float cX, float cY, int cWidth, int cHeight, float cSpeed)
-        : Dynamic(cX, cY, cWidth, cHeight, cSpeed)
+        : Creature(cX, cY, cWidth, cHeight, cSpeed)
 {
+    getRandomMovment();
+    setCollisionAble(CAN_BE_COLLIDET);
     if(texture.loadFromFile("resource/image/EnemyGraphic.png"))
     {
         sprite.setTexture(texture);
@@ -77,7 +79,7 @@ void Rat::update(const float dt)
         getRandomMovment();
     }
 
-    if(!isColsion())
+    if(!getCollsionStatus())
     {
         positions=positions;
         oldPositions=positions;

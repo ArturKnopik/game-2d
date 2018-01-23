@@ -24,12 +24,12 @@ public:
     Block(float cX,float cY, int cWidth, int cHeight, std::string urlToImage);
     ~Block();
     void draw(std::shared_ptr<sf::RenderWindow> window);
-    void setID(int i);
+    void setEntityID(int i);
     void update(const float dt);
     void input(std::shared_ptr<sf::Event> event);
     void setIsCollidet(bool isCollidet);
     bool getIsCollidet();
-    int creatureID();
+    int getEntityID();
 };
 
 #endif //SFML_GAME_BLOCK_H

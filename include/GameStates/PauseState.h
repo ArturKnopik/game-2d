@@ -20,7 +20,7 @@ public:
 
     PauseState(std::shared_ptr<Game> game);
     ~PauseState();
-    void draw(const float dt);
+    void draw();
     void update(const float dt);
     void input();
 };

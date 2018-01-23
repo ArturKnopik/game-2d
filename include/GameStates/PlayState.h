@@ -17,19 +17,16 @@
 class PlayState : public GameState
 {
 private:
-    std::vector <std::shared_ptr<Block>> creatureVector;
+
     std::shared_ptr<sf::Event> event;
     std::shared_ptr<Rat> simpleRat;
-    CreatureSpawner cChecker;
-    CreatureSpawner cChecker1;
+    std::shared_ptr<CreatureSpawner> cSpawner;
     CollisionChecker ch;
     std::shared_ptr<Player> player;
-
-
     std::vector<std::shared_ptr<Entity>> mapEntity;
 public:
     ~PlayState();
-    void draw(const float dt);
+    void draw();
     void update(const float dt);
     void input();
     PlayState(std::shared_ptr<Game> game);

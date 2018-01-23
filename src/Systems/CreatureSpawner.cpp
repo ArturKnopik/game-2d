@@ -4,62 +4,15 @@
 
 #include "Systems/CreatureSpawner.h"
 #include <iostream>
+#include <Blocks/Rat.h>
 
 int CreatureSpawner::idCounter=0;
 
-void CreatureSpawner::drawTime(sf::Time time)
-{
-        std::cout<<"Call restart: "<<i<<" : "<<currenttime.asMilliseconds()<<std::endl;
-}
-
-void CreatureSpawner::init(std::vector<std::shared_ptr<Block>> &vector)
-{
-    creatureVector=&vector;
-    idCounter++;
-    thisID=idCounter;
-    currenttime=clock.restart();
-
-}
-
-
-void CreatureSpawner::spawnCreature(sf::Time time)
+void CreatureSpawner::spawnCreatureDeltaTime(float dt)
 {
     for(int i=0; i<creatureVector->size(); i++)
     {
-        if((*creatureVector)[i]->creatureID()==thisID)
-        {
-            currenttime=clock.restart();
-            resteTimer=true;
-            return;
-        }
-    }
-
-    if(resteTimer)
-    {
-        currenttime=clock.restart();
-        resteTimer= false;
-    }
-    else
-    {
-        currenttime = clock.getElapsedTime();
-    }
-
-    if( currenttime.asSeconds() >= time.asSeconds())
-    {
-        std::shared_ptr<Block> tempBlock = std::make_shared<Block>(300+((rand() % 400)-200), 300+((rand() % 400)-200), 60, 60, sf::Color::Yellow);
-        tempBlock->setID(thisID);
-        creatureVector->push_back(tempBlock);
-        drawTime(time);
-        currenttime=clock.restart();
-        resteTimer= true;
-    }
-}
-
-void CreatureSpawner::spawnCreatureDeltaTime(float timeToWait, float dt)
-{
-    for(int i=0; i<creatureVector->size(); i++)
-    {
-        if((*creatureVector)[i]->creatureID()==thisID)
+        if((*creatureVector)[i]->getEntityID()==thisID)
         {
             currentTimeDT=0;
             resteTimer=true;
@@ -79,12 +32,53 @@ void CreatureSpawner::spawnCreatureDeltaTime(float timeToWait, float dt)
 
     if( currentTimeDT >= timeToWait)
     {
-        std::shared_ptr<Block> tempBlock = std::make_shared<Block>(300+((rand() % 400)-200), 300+((rand() % 400)-200), 20, 20, sf::Color::Yellow);
-        tempBlock->setID(thisID);
-        creatureVector->push_back(tempBlock);
-        std::cout<<"Current time: "<<currentTimeDT<<std::endl;
-        currentTimeDT=0;
-        std::cout<<"Current time: "<<currentTimeDT<<std::endl;
-        resteTimer= true;
+        switch(typeOfCreatureToSpawn)
+        {
+            case RAT:
+                //std::shared_ptr<Creature> tempCreature = std::make_shared<Rat>(x+((rand() % 400)-200), y+((rand() % 400)-200), 32, 32, 0.00002);
+                std::shared_ptr<Creature> tempCreature = std::make_shared<Rat>(x, y, 32, 32, 0.00002);
+
+                tempCreature->setEntityID(thisID);
+                creatureVector->push_back(tempCreature);
+                std::cout<<"Current time: "<<currentTimeDT<<std::endl;
+                currentTimeDT=0;
+                std::cout<<"Current time: "<<currentTimeDT<<std::endl;
+                resteTimer= true;
+                break;
+        }
+
     }
+}
+
+CreatureSpawner::CreatureSpawner(float cX, float cY, std::vector<std::shared_ptr<Entity>> &vector,
+                                 CreatureType cType, float cTimeToWait)
+:x(cX), y(cY), timeToWait(cTimeToWait), typeOfCreatureToSpawn(cType)
+{
+    creatureVector=&vector;
+    idCounter++;
+    thisID=idCounter;
+    switch(typeOfCreatureToSpawn)
+    {
+        case RAT:
+            //std::shared_ptr<Creature> tempCreature = std::make_shared<Rat>(x+((rand() % 400)-200), y+((rand() % 400)-200), 32, 32, 0.00002);
+            std::shared_ptr<Creature> tempCreature = std::make_shared<Rat>(x, y, 32, 32, 0.00002);
+
+            tempCreature->setEntityID(thisID);
+            creatureVector->push_back(tempCreature);
+            std::cout<<"Current time: "<<currentTimeDT<<std::endl;
+            currentTimeDT=0;
+            std::cout<<"Current time: "<<currentTimeDT<<std::endl;
+            resteTimer= true;
+            break;
+    }
+}
+
+void CreatureSpawner::setCreatureToSpawn(CreatureType creature)
+{
+    typeOfCreatureToSpawn=creature;
+}
+
+CreatureType CreatureSpawner::getCreatureToSpawn()
+{
+    return typeOfCreatureToSpawn;
 }

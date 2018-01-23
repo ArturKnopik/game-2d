@@ -15,7 +15,7 @@ public:
 
     std::shared_ptr<Game> game;
 
-    virtual void draw(const float dt) = 0;
+    virtual void draw() = 0;
     virtual void update(const float dt) = 0;
     virtual void input() = 0;
     ~GameState();

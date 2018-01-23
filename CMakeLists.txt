@@ -3,6 +3,8 @@ cmake_minimum_required(VERSION 3.1)
 
 project(SFML_GAME)
 
+
+
 set(CMAKE_BUILD_TYPE Release)
 
 set(SFML_ROOT "C:/SFML-2.4.2")
@@ -49,7 +51,7 @@ set(SOURCE_FILES
         #include/Other/dirent.h
         src/Blocks/Ground.cpp
         include/Blocks/Ground.h
-        src/Blocks/Water.cpp include/Blocks/Water.h)
+        src/Blocks/Water.cpp include/Blocks/Water.h src/Map/MapChunk.cpp include/Map/MapChunk.h src/Map/Map.cpp include/Map/Map.h src/Blocks/Creature.cpp include/Blocks/Creature.h)
 
 set(EXECUTABLE_NAME ${PROJECT_NAME})
 

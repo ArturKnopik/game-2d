@@ -67,12 +67,12 @@ Block::Block(const float cX, const float cY,const  int cWidth,const int cHeight,
     boxRect.setOutlineColor(sf::Color::Red);
 }
 
-void Block::setID(int i)
+void Block::setEntityID(int i)
 {
   this->id=i;
 }
 
-int Block::creatureID()
+int Block::getEntityID()
 {
     return id;
 }

@@ -134,7 +134,7 @@ void MenuState::update(const float dt)
 
 
 
-void MenuState::draw(const float dt)
+void MenuState::draw()
 {
 
     for (int i=0; i < menuButtonElements.size(); i++)

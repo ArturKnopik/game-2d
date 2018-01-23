@@ -10,8 +10,8 @@
 #include <iostream>
 enum CollisionEnum
 {
-    COLLISIONTRUE=0,
-    COLLISIONFALSE=1
+    CAN_BE_COLLIDET=0,
+    CAN_NOT_BE_COLLIDET=1
 };
 
 struct SpriteData
@@ -32,19 +32,19 @@ struct Positions
     int width=32;
     int height=32;
     float xCollision;
-    float yCollsion;
-    float xCollsionWidth;
-    float yCollsionHeight;
+    float yCollision;
+    float xCollisionWidth;
+    float yCollisionHeight;
     Positions & operator =( const Positions & right );
 };
 
 class Entity
 {
 private:
-    CollisionEnum colision=COLLISIONFALSE;
+    int id;
+    CollisionEnum collisionStatus=CAN_NOT_BE_COLLIDET;
+    CollisionEnum collisionAble=CAN_NOT_BE_COLLIDET;
 public:
-    bool isColsion();
-    void setColsion(CollisionEnum colision);
     Positions positions;
     Entity()= delete;
     Entity( float cX,  float cY,  int cWidth,  int cHeight);
@@ -52,6 +52,12 @@ public:
     virtual void draw(std::shared_ptr<sf::RenderWindow> window) =0;
     virtual void update(const float dt)=0;
     //virtual void input(std::shared_ptr<sf::Event> event)=0;
+    void setEntityID(int i);
+    int getEntityID();
+    bool getCollsionStatus();
+    void setCollisionStatus(CollisionEnum newCollisionStatus);
+    bool isCollisionAble();
+    void setCollisionAble(CollisionEnum newCollisionAble);
 };
 
 #endif //SFML_GAME_ENTITY_H

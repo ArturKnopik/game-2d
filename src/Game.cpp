@@ -17,11 +17,6 @@ Game::Game()
 
 }
 
-
-/*!
- *
- * @param state
- */
 void Game::pushState(std::shared_ptr<GameState> state)
 {
     states.push_back(state);

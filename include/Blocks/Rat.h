@@ -21,7 +21,7 @@ private:
 public:
     Rat()=delete;
     Rat(float cX, float cY, int cWidth, int cHeight, float cSpeed);
-    void draw(std::shared_ptr<sf::RenderWindow> window) override;
+    void draw(std::shared_ptr<sf::RenderWindow> window);
     void update(const float dt) override;
 
 };

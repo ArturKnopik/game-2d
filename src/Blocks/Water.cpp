@@ -113,12 +113,4 @@ void Water::update(const float dt)
                 break;
         }
     }
-   if(getCollsionStatus()==IS_COLLIDET)
-    {
-        std::cout<<"WATER colidet = true"<<std::endl;
-    }
-    else
-    {
-        std::cout << "WATER colidet = false" << std::endl;
-    }
 }

@@ -132,18 +132,6 @@ void Player::update(const float dt)
     {
         idleTime+=dt;
     }
-
-    if(getCollsionStatus()==IS_COLLIDET)
-    {
-        std::cout<<"Player colidet = true"<<std::endl;
-    }
-    else
-    {
-        std::cout << "Player colidet = false" << std::endl;
-    }
-   // positions=oldPositions;
-
-
 }
 
 

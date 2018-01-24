@@ -6,6 +6,7 @@
 MenuState::MenuState(std::shared_ptr<Game> game)
 {
     this->game = game;
+    game->window->setView(game->window->getDefaultView());
     font.loadFromFile("resource/font/arial.ttf");
     sf::Text tempText("hello", font);
     menuText = tempText;
@@ -136,7 +137,7 @@ void MenuState::update(const float dt)
 
 void MenuState::draw()
 {
-
+    game->window->setView(game->window->getDefaultView());
     for (int i=0; i < menuButtonElements.size(); i++)
     {
         menuButtonElements[i]->draw(game->window);

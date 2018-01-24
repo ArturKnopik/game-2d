@@ -119,3 +119,7 @@ void Dynamic::update(const float dt)
 {
 
 }
+
+SpriteData Dynamic::getSpriteData() {
+    return spriteData;
+}

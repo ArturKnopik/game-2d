@@ -8,6 +8,7 @@
 #include <Blocks/Player.h>
 #include <Blocks/Rat.h>
 #include <Blocks/Ground.h>
+#include <Blocks/PlayerInterface.h>
 #include "GameState.h"
 #include "Buttoms/Button.h"
 #include "Blocks/Block.h"
@@ -17,7 +18,8 @@
 class PlayState : public GameState
 {
 private:
-
+    PlayerInterface pInterface;
+    sf::View gameAreaViewe;
     std::shared_ptr<sf::Event> event;
     std::shared_ptr<Rat> simpleRat;
     std::shared_ptr<CreatureSpawner> cSpawner;

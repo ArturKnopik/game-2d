@@ -135,14 +135,6 @@ void Rat::update(const float dt)
             break;
     };
     sprite.setPosition(positions.x,positions.y);
-    if(getCollsionStatus()==CAN_BE_COLLIDET)
-    {
-        std::cout<<"Rat colidet = true"<<std::endl;
-    }
-    else
-    {
-        std::cout << "Rat colidet = false" << std::endl;
-    }
 }
 
 void Rat::getRandomMovment()

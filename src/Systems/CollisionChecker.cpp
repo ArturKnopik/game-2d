@@ -31,19 +31,15 @@ void CollisionChecker::checkEntityInhArray(std::vector<std::shared_ptr<Entity>> 
         {
             if(i!=j)
             {
-               // std::cout<<"Collision check for:"<<i<<" and "<<j<<std::endl;
                 if (mapEntity[i]->isCollisionAble() && (mapEntity[j]->isCollisionAble()))
                 {
                     if (checkAABB(mapEntity[i], mapEntity[j]))
                     {
-                        std::cout<<"Collision detected for:"<<i<<" and "<<j<<std::endl;
                         mapEntity[i]->setCollisionStatus(IS_COLLIDET);
-                        mapEntity[j]->setCollisionStatus(IS_COLLIDET);
                         break;
                     }
                     else
                     {
-                        mapEntity[j]->setCollisionStatus(NO_COLLISION);
                         mapEntity[i]->setCollisionStatus(NO_COLLISION);
                     }
                 }

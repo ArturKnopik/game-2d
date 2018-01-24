@@ -51,7 +51,7 @@ set(SOURCE_FILES
         #include/Other/dirent.h
         src/Blocks/Ground.cpp
         include/Blocks/Ground.h
-        src/Blocks/Water.cpp include/Blocks/Water.h src/Map/MapChunk.cpp include/Map/MapChunk.h src/Map/Map.cpp include/Map/Map.h src/Blocks/Creature.cpp include/Blocks/Creature.h)
+        src/Blocks/Water.cpp include/Blocks/Water.h src/Map/MapChunk.cpp include/Map/MapChunk.h src/Map/Map.cpp include/Map/Map.h src/Blocks/Creature.cpp include/Blocks/Creature.h include/Blocks/PlayerInterface.cpp include/Blocks/PlayerInterface.h)
 
 set(EXECUTABLE_NAME ${PROJECT_NAME})
 

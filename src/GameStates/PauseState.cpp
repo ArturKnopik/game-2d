@@ -11,6 +11,7 @@
 PauseState::PauseState(std::shared_ptr<Game> game)
 {
     this->game = game;
+    game->window->setView(game->window->getDefaultView());
 }
 
 PauseState::~PauseState()
@@ -30,7 +31,7 @@ void PauseState::draw()
 
 void PauseState::update(const float dt)
 {
-
+    game->window->setView(game->window->getDefaultView());
 }
 
 void PauseState::input()

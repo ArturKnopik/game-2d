@@ -40,9 +40,7 @@ void CreatureSpawner::spawnCreatureDeltaTime(float dt)
 
                 tempCreature->setEntityID(thisID);
                 creatureVector->push_back(tempCreature);
-                std::cout<<"Current time: "<<currentTimeDT<<std::endl;
                 currentTimeDT=0;
-                std::cout<<"Current time: "<<currentTimeDT<<std::endl;
                 resteTimer= true;
                 break;
         }
@@ -65,9 +63,7 @@ CreatureSpawner::CreatureSpawner(float cX, float cY, std::vector<std::shared_ptr
 
             tempCreature->setEntityID(thisID);
             creatureVector->push_back(tempCreature);
-            std::cout<<"Current time: "<<currentTimeDT<<std::endl;
             currentTimeDT=0;
-            std::cout<<"Current time: "<<currentTimeDT<<std::endl;
             resteTimer= true;
             break;
     }

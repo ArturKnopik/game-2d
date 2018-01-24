@@ -45,6 +45,7 @@ public:
     void moveRight(float dt);
     virtual void draw(std::shared_ptr<sf::RenderWindow> window);
     virtual void update(const float dt);
+    SpriteData getSpriteData();
 
 
 };

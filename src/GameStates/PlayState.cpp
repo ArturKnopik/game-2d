@@ -13,26 +13,23 @@ PlayState::~PlayState()
 
 void PlayState::draw()
 {
-     // gameArea
-    gameAreaViewe.setCenter(player->oldPositions.x+player->getSpriteData().spriteWidth/2,
-                            player->oldPositions.y+player->getSpriteData().spriteHeight/2);
-    game->window->setView(gameAreaViewe);
-    //for(auto i=mapEntity.size(); i!=0;i--)
     std::vector<std::shared_ptr<Entity>>::reverse_iterator iter;
+    std::cout<<currentOffSet.x<< " : "<<currentOffSet.y<<std::endl;
     for(iter=mapEntity.rbegin();iter != mapEntity.rend();iter++)
     {
         if((*iter)->positions.x - player->positions.x<400 && (*iter)->positions.x - player->positions.x>-400 &&
            (*iter)->positions.y - player->positions.y<300 && (*iter)->positions.y - player->positions.y>-300)
         {
+
             (*iter)->draw(game->window);
         }
     }
 
-    game->window->setView(game->window->getDefaultView());
+   // game->window->setView(game->window->getDefaultView());
     //interface
 
-    pInterface.draw(game->window);
-    
+   //qpInterface.draw(game->window);
+
 }
 
 void PlayState::update(const float dt)
@@ -41,12 +38,12 @@ void PlayState::update(const float dt)
     ch.checkEntityInhArray(mapEntity);
 
     cSpawner->spawnCreatureDeltaTime(dt);
+
     std::vector<std::shared_ptr<Entity>>::iterator iter;
     for(iter=mapEntity.begin();iter != mapEntity.end();iter++)
     {
         (*iter)->update(dt);
     }
-
 }
 
 void PlayState::input()
@@ -64,12 +61,17 @@ void PlayState::input()
                 if (event->key.code == sf::Keyboard::Escape)
                     game->pushState(std::make_shared<PauseState>(game));
 
-                if (event->key.code == sf::Keyboard::F1)
-                    gameAreaViewe.zoom(1.3);
+                if (event->key.code == sf::Keyboard::F1) {
+                  //  zoom = 1.3f;
+                  //  gameAreaViewe.zoom(zoom);
+                }
 
-                if (event->key.code == sf::Keyboard::F2)
-                    gameAreaViewe.zoom(0.7);
+                if (event->key.code == sf::Keyboard::F2) {
+                  //  zoom = 0.7f;
+                  //  gameAreaViewe.zoom(zoom);
+                }
                 break;
+
         }
     }
 }
@@ -80,10 +82,6 @@ PlayState::PlayState(std::shared_ptr<Game> game)
 
         player = std::make_shared<Player>(200,200,32,32 ,0.0001);
 
-        gameAreaViewe.reset(sf::FloatRect(200, 60, 800, 600));
-        gameAreaViewe.setCenter(player->oldPositions.x+player->getSpriteData().spriteWidth,player->oldPositions.y+player->getSpriteData().spriteHeight);
-        gameAreaViewe.setViewport(sf::FloatRect(0.19f, 0.08f, 0.62f, 0.84f));
-        gameAreaViewe.zoom(0.7f);
         this->game = game;
 
         mapEntity.push_back(player);
@@ -104,5 +102,11 @@ PlayState::PlayState(std::shared_ptr<Game> game)
         mapEntity.push_back(std::make_shared<Ground>(68,132,32,32,IS_COLLIDET,SW));
 
         cSpawner=std::make_shared<CreatureSpawner> (150,250, mapEntity, RAT, 4000000);
-
+        for(int i=0;i<320;i++)
+        {
+            for(int j=0;j<180;j++)
+            {
+                gridMapCollision[i][j]=false;
+            }
+        }
 }

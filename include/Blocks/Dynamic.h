@@ -27,8 +27,9 @@ private:
     MovingStatus status;
     MovingDirectory dir;
     float speed;
+   // TypeOfEntity typeOfEntity=Creature;
 protected:
-    sf::Texture texture;
+        sf::Texture texture;
     sf::Sprite sprite;
     SpriteData spriteData;
     virtual MovingStatus getStatus() const;

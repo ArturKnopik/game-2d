@@ -7,5 +7,6 @@
 Static::Static(float cX, float cY, int cWidth, int cHeight)
 :Entity(cX, cY, cWidth, cHeight)
 {
+    typeOfEntity=GROUND;
     setCollisionStatus(NO_COLLISION);
 }

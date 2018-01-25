@@ -7,7 +7,6 @@
 Ground::Ground(float cX, float cY, int cWidth, int cHeight,IsCollidet cCollisionAble, siteOfPicture cSiteOfPic)
         : Static(cX, cY, cWidth, cHeight), pictureSite(cSiteOfPic)
 {
-
     setCollisionStatus(cCollisionAble);
     if(texture.loadFromFile("resource/image/Grass.png"))
     {

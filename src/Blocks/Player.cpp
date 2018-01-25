@@ -8,6 +8,7 @@
 Player::Player(float cX, float cY, int cWidth, int cHeight, float cSpeed)
         : Dynamic(cX, cY, cWidth, cHeight, cSpeed)
 {
+    typeOfEntity=PLAYER;
     setCollisionAble(CollisionEnum::CAN_BE_COLLIDET);
     if(texture.loadFromFile("resource/image/playerJMP.png"))
     {

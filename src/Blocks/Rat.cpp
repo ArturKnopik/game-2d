@@ -72,7 +72,7 @@ void Rat::draw(std::shared_ptr<sf::RenderWindow> window)
 void Rat::update(const float dt)
 {
    // std::cout<<currentTimeToChangeStateAndDir<<std::endl;
-
+    std::cout<<"timeToChangeStateAndDir: "<<timeToChangeStateAndDir<<std::endl;
     currentTimeToChangeStateAndDir+=dt;
     if(currentTimeToChangeStateAndDir>timeToChangeStateAndDir) {
         currentTimeToChangeStateAndDir = 0;
@@ -139,6 +139,7 @@ void Rat::update(const float dt)
 
 void Rat::getRandomMovment()
 {
+    timeToChangeStateAndDir=((rand()%70)*100000)+5000000;
     int randomStatus= rand()%2;
     switch(randomStatus)
     {

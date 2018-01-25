@@ -8,6 +8,12 @@
 #include "SFML/Graphics.hpp"
 #include <memory>
 #include <iostream>
+enum TypeOfEntity
+{
+    GROUND,
+    CREATURE,
+    PLAYER,
+};
 enum CollisionEnum
 {
     CAN_BE_COLLIDET,
@@ -48,6 +54,8 @@ private:
     int id;
     IsCollidet collisionStatus=NO_COLLISION;
     CollisionEnum collisionAble=CAN_NOT_BE_COLLIDET;
+protected:
+    TypeOfEntity typeOfEntity;
 public:
     Positions positions;
     Entity()= delete;

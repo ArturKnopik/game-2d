@@ -19,7 +19,9 @@ class PlayState : public GameState
 {
 private:
     PlayerInterface pInterface;
-    sf::View gameAreaViewe;
+    sf::Vector2i currentOffSet;
+    float zoom=0.7f;
+    bool gridMapCollision[320][180];
     std::shared_ptr<sf::Event> event;
     std::shared_ptr<Rat> simpleRat;
     std::shared_ptr<CreatureSpawner> cSpawner;

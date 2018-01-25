@@ -3,7 +3,7 @@
 //
 
 #include <SFML/Graphics/RectangleShape.hpp>
-#include "PlayerInterface.h"
+#include "Blocks/PlayerInterface.h"
 
 PlayerInterface::PlayerInterface()
 {

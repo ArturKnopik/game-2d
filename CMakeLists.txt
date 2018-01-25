@@ -15,6 +15,8 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 include_directories(include)
 set(SOURCE_FILES
         main.cpp
+        src/settings.cpp
+        #include/Other/dirent.h
         src/GameStates/MenuState.cpp
         include/GameStates/MenuState.h
         src/Buttoms/BasicButton.cpp
@@ -33,7 +35,6 @@ set(SOURCE_FILES
         include/Blocks/Entity.h
         src/Game.cpp
         include/Game.h
-        src/settings.cpp
         src/SomeRandomStaff/Test.cpp
         include/SomeRandomStaff/Test.h
         src/Systems/CollisionChecker.cpp
@@ -48,13 +49,22 @@ set(SOURCE_FILES
         include/Blocks/Player.h
         src/Blocks/Rat.cpp
         include/Blocks/Rat.h
-        #include/Other/dirent.h
         src/Blocks/Ground.cpp
         include/Blocks/Ground.h
-        src/Blocks/Water.cpp include/Blocks/Water.h src/Map/MapChunk.cpp include/Map/MapChunk.h src/Map/Map.cpp include/Map/Map.h src/Blocks/Creature.cpp include/Blocks/Creature.h include/Blocks/PlayerInterface.cpp include/Blocks/PlayerInterface.h)
+        src/Blocks/Water.cpp
+        include/Blocks/Water.h
+        src/Map/MapChunk.cpp
+        include/Map/MapChunk.h
+        src/Map/Map.cpp
+        include/Map/Map.h
+        src/Blocks/Creature.cpp
+        include/Blocks/Creature.h
+        src/Blocks/PlayerInterface.cpp
+        include/Blocks/PlayerInterface.h)
 
 set(EXECUTABLE_NAME ${PROJECT_NAME})
-
+#Set Linker flags
+#set(CMAKE_EXE_LINKER_FLAGS "-static-libgcc -static-libstdc++ ")
 add_executable(${EXECUTABLE_NAME} ${SOURCE_FILES})
 
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake")

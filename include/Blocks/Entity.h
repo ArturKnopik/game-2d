@@ -57,6 +57,11 @@ private:
 protected:
     TypeOfEntity typeOfEntity;
 public:
+    TypeOfEntity getTypeOfEntity() const;
+
+    void setTypeOfEntity(TypeOfEntity typeOfEntity);
+
+public:
     Positions positions;
     Entity()= delete;
     Entity( float cX,  float cY,  int cWidth,  int cHeight);

@@ -13,6 +13,7 @@ PlayState::~PlayState()
 
 void PlayState::draw()
 {
+
     std::vector<std::shared_ptr<Entity>>::reverse_iterator iter;
     std::cout<<currentOffSet.x<< " : "<<currentOffSet.y<<std::endl;
     for(iter=mapEntity.rbegin();iter != mapEntity.rend();iter++)
@@ -25,16 +26,17 @@ void PlayState::draw()
         }
     }
 
-   // game->window->setView(game->window->getDefaultView());
-    //interface
-
-   //qpInterface.draw(game->window);
-
+    ch.mouseCheckerWitchEntity(mapEntity, game->window);
+    ch.drawGrid(mapEntity,game->window);
 }
 
 void PlayState::update(const float dt)
 {
     system("CLS");
+
+    ch.getMapCollisionGridOnVisibleArea(mapEntity);
+    viewe.setCenter(player->oldPositions.x, player->oldPositions.y);
+    game->window->setView(viewe);
     ch.checkEntityInhArray(mapEntity);
 
     cSpawner->spawnCreatureDeltaTime(dt);
@@ -42,6 +44,7 @@ void PlayState::update(const float dt)
     std::vector<std::shared_ptr<Entity>>::iterator iter;
     for(iter=mapEntity.begin();iter != mapEntity.end();iter++)
     {
+
         (*iter)->update(dt);
     }
 }
@@ -62,13 +65,11 @@ void PlayState::input()
                     game->pushState(std::make_shared<PauseState>(game));
 
                 if (event->key.code == sf::Keyboard::F1) {
-                  //  zoom = 1.3f;
-                  //  gameAreaViewe.zoom(zoom);
+                    viewe.zoom(0.7);
                 }
 
                 if (event->key.code == sf::Keyboard::F2) {
-                  //  zoom = 0.7f;
-                  //  gameAreaViewe.zoom(zoom);
+                    viewe.zoom(1.3);
                 }
                 break;
 
@@ -80,9 +81,15 @@ PlayState::PlayState(std::shared_ptr<Game> game)
     {
         event=std::make_shared<sf::Event>();
 
-        player = std::make_shared<Player>(200,200,32,32 ,0.0001);
+        player = std::make_shared<Player>(0,0,32,32 ,0.0001);
+
 
         this->game = game;
+        viewe.setSize(game->window->getSize().x, game->window->getSize().y);
+
+
+      //  game->window->setView(viewe);
+
 
         mapEntity.push_back(player);
         mapEntity.push_back(std::make_shared<Water>(68,132,32,32,CAN_NOT_BE_ANIMATED,C));
@@ -102,11 +109,5 @@ PlayState::PlayState(std::shared_ptr<Game> game)
         mapEntity.push_back(std::make_shared<Ground>(68,132,32,32,IS_COLLIDET,SW));
 
         cSpawner=std::make_shared<CreatureSpawner> (150,250, mapEntity, RAT, 4000000);
-        for(int i=0;i<320;i++)
-        {
-            for(int j=0;j<180;j++)
-            {
-                gridMapCollision[i][j]=false;
-            }
-        }
+
 }

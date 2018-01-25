@@ -76,3 +76,11 @@ int Entity::getEntityID()
 {
     return id;
 }
+
+TypeOfEntity Entity::getTypeOfEntity() const {
+    return typeOfEntity;
+}
+
+void Entity::setTypeOfEntity(TypeOfEntity typeOfEntity) {
+    Entity::typeOfEntity = typeOfEntity;
+}

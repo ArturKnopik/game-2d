@@ -9,12 +9,22 @@
 #include <vector>
 #include <Blocks/Dynamic.h>
 
-class CollisionChecker
-{
+class CollisionChecker {
+    bool gridMap[320][180];
 public:
-    CollisionChecker()= default;
-    bool checkAABB(std::shared_ptr<Entity> & left, std::shared_ptr<Entity> & right);
+    CollisionChecker();
+
+    void
+    mouseCheckerWitchEntity(std::vector<std::shared_ptr<Entity>> &mapEntity, std::shared_ptr<sf::RenderWindow> &window);
+
+    bool checkAABB(std::shared_ptr<Entity> &left, std::shared_ptr<Entity> &right);
+
     void checkEntityInhArray(std::vector<std::shared_ptr<Entity>> &mapEntity);
+
+    void getMapCollisionGridOnVisibleArea(std::vector<std::shared_ptr<Entity>> & mapEntity);
+
+    void drawGrid(std::vector<std::shared_ptr<Entity>> & mapEntity, std::shared_ptr<sf::RenderWindow> &window);
+
 };
 
 

@@ -4,10 +4,6 @@ Skład:
   
 | Imię i nazwisko | Rola |  
 | -------- | -------- |  
-<<<<<<< HEAD
-| Piotr Rozponczyk   | Developer (c++)   |  
-=======
->>>>>>> Krecik
 | Artur Knopik  | Developer (c++)   |  
 
 -----
@@ -29,13 +25,9 @@ W przypadku gdy do Projektu dochodzi nowy plik ```.dll``` należy uaktualnić TE
 # Co aktualnie jest zrobione
  * Głównu szablon aplikacji
  * Przełączanie między stanami gry (Menu, Gra, Pause)
-<<<<<<< HEAD
- * Podstawowe przyciski (sterowane klawiaturą)
-=======
  * Podstawowe przyciski (sterowane klawiaturą) (do przerobienia)
  * podstawowy elementy mapy takie jak trawa, woda, przeciwnik, domek oraz gracz
  * wykrywanie kolizji
  * optymalizacja podczas rysowania obiektów(wycinek mapy jest rysowany)
  * mapa kolizji aktualne widzianego rejony, przygotowania do implementacji A* algorytmu wyszukiwania najkrótszej drogi dla przeciwników
  
->>>>>>> Krecik

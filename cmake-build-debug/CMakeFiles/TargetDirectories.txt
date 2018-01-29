@@ -1,3 +1,0 @@
-C:/Projekty/game-2d/cmake-build-debug/CMakeFiles/SFML_GAME.dir
-C:/Projekty/game-2d/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Projekty/game-2d/cmake-build-debug/CMakeFiles/rebuild_cache.dir

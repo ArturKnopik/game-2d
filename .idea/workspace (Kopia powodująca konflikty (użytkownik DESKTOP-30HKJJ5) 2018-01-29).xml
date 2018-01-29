@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
+    <generated>
+      <config projectName="SFML_GAME" targetName="SFML_GAME" />
+      <config projectName="SFML_GAME" targetName="testet" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7b26c0c4-3505-4792-9cf1-6c224f2f8662" name="Default" comment="Prepare to true work">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/include/Blocks/Entity.h" afterPath="$PROJECT_DIR$/include/Blocks/Entity.h" />
+      <change beforePath="$PROJECT_DIR$/include/Systems/CollisionChecker.h" afterPath="$PROJECT_DIR$/include/Systems/CollisionChecker.h" />
+      <change beforePath="$PROJECT_DIR$/src/Blocks/Player.cpp" afterPath="$PROJECT_DIR$/src/Blocks/Player.cpp" />
+      <change beforePath="$PROJECT_DIR$/src/Blocks/Water.cpp" afterPath="$PROJECT_DIR$/src/Blocks/Water.cpp" />
+      <change beforePath="$PROJECT_DIR$/src/GameStates/PlayState.cpp" afterPath="$PROJECT_DIR$/src/GameStates/PlayState.cpp" />
+      <change beforePath="$PROJECT_DIR$/src/Systems/CollisionChecker.cpp" afterPath="$PROJECT_DIR$/src/Systems/CollisionChecker.cpp" />
+    </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.6060427">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="PlayState.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/GameStates/PlayState.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1260">
+                  <caret line="70" column="42" lean-forward="false" selection-start-line="70" selection-start-column="42" selection-end-line="70" selection-end-column="42" />
+                  <folding>
+                    <element signature="e#46#71#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Game.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/include/Game.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="18">
+                  <caret line="1" column="38" lean-forward="false" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="CollisionChecker.cpp" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Systems/CollisionChecker.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="360">
+                  <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="162">
+                  <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Entity.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Blocks/Entity.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1152">
+                  <caret line="64" column="13" lean-forward="false" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Water.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Blocks/Water.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1152">
+                  <caret line="64" column="25" lean-forward="false" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Water.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/include/Blocks/Water.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="414">
+                  <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Player.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Blocks/Player.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1692">
+                  <caret line="94" column="26" lean-forward="false" selection-start-line="94" selection-start-column="26" selection-end-line="94" selection-end-column="26" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="PlayState.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/include/GameStates/PlayState.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="486">
+                  <caret line="27" column="14" lean-forward="false" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+                  <folding>
+                    <element signature="e#107#133#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="CollisionChecker.h" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/include/Systems/CollisionChecker.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="270">
+                  <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+                  <folding>
+                    <element signature="e#121#138#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Salt Wireframe" />
+        <option value="UML Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>EXECUTABLE_NAME</find>
+      <find>SlidingPuzzle</find>
+      <find>creatureSpawn.drawTime();</find>
+      <find>drawTime</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/include/GameState.h" />
+        <option value="$PROJECT_DIR$/include/settings.cpp" />
+        <option value="$PROJECT_DIR$/include/BasicButton.h" />
+        <option value="$PROJECT_DIR$/src/MenuState.cpp" />
+        <option value="$PROJECT_DIR$/src/BasicButton.cpp" />
+        <option value="$PROJECT_DIR$/include/Game.cpp" />
+        <option value="$PROJECT_DIR$/src/Buttoms/BasicButton.cpp" />
+        <option value="$PROJECT_DIR$/include/Buttoms/BasicButton.h" />
+        <option value="$PROJECT_DIR$/include/Buttoms/Button.h" />
+        <option value="$PROJECT_DIR$/include/Blocks/Block.h" />
+        <option value="$PROJECT_DIR$/src/Blocks/Block.cpp" />
+        <option value="$PROJECT_DIR$/include/Blocks/SimpleEnemy.cpp" />
+        <option value="$PROJECT_DIR$/include/Blocks/SimpleEnemy.h" />
+        <option value="$PROJECT_DIR$/include/Blocks/Water.cpp" />
+        <option value="$PROJECT_DIR$/include/Map/Map.h" />
+        <option value="$PROJECT_DIR$/include/GameStates/GameState.h" />
+        <option value="$PROJECT_DIR$/include/GameStates/MenuState.h" />
+        <option value="$PROJECT_DIR$/include/GameStates/PauseState.h" />
+        <option value="$PROJECT_DIR$/include/Map/MapChunk.h" />
+        <option value="$PROJECT_DIR$/src/Map/MapChunk.cpp" />
+        <option value="$PROJECT_DIR$/include/Blocks/Creature.h" />
+        <option value="$PROJECT_DIR$/src/Blocks/Creature.cpp" />
+        <option value="$PROJECT_DIR$/include/Systems/CreatureSpawner.h" />
+        <option value="$PROJECT_DIR$/include/Blocks/Player.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/include/Blocks/Static.h" />
+        <option value="$PROJECT_DIR$/include/Blocks/Ground.h" />
+        <option value="$PROJECT_DIR$/src/Systems/CreatureSpawner.cpp" />
+        <option value="$PROJECT_DIR$/include/Blocks/Rat.h" />
+        <option value="$PROJECT_DIR$/src/settings.cpp" />
+        <option value="$PROJECT_DIR$/src/GameStates/MenuState.cpp" />
+        <option value="$PROJECT_DIR$/src/GameStates/PauseState.cpp" />
+        <option value="$PROJECT_DIR$/src/Game.cpp" />
+        <option value="$PROJECT_DIR$/include/Blocks/PlayerInterface.cpp" />
+        <option value="$PROJECT_DIR$/include/Blocks/PlayerInterface.h" />
+        <option value="$PROJECT_DIR$/src/Blocks/Rat.cpp" />
+        <option value="$PROJECT_DIR$/include/Blocks/Dynamic.h" />
+        <option value="$PROJECT_DIR$/src/Blocks/Dynamic.cpp" />
+        <option value="$PROJECT_DIR$/src/Blocks/Static.cpp" />
+        <option value="$PROJECT_DIR$/src/Blocks/Ground.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/include/GameStates/PlayState.h" />
+        <option value="$PROJECT_DIR$/include/Game.h" />
+        <option value="$PROJECT_DIR$/src/Blocks/Entity.cpp" />
+        <option value="$PROJECT_DIR$/src/Blocks/Player.cpp" />
+        <option value="$PROJECT_DIR$/include/Blocks/Entity.h" />
+        <option value="$PROJECT_DIR$/src/Blocks/Water.cpp" />
+        <option value="$PROJECT_DIR$/include/Blocks/Water.h" />
+        <option value="$PROJECT_DIR$/src/GameStates/PlayState.cpp" />
+        <option value="$PROJECT_DIR$/src/Systems/CollisionChecker.cpp" />
+        <option value="$PROJECT_DIR$/include/Systems/CollisionChecker.h" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="42" />
+    <option name="width" value="1563" />
+    <option name="height" value="1038" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>C/C++</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SFML_GAME" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="game-2d" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SFML_GAME" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="game-2d" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SFML_GAME" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="game-2d" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="Blocks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SFML_GAME" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="game-2d" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="Map" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SFML_GAME" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="game-2d" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="Other" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SFML_GAME" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="game-2d" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="Systems" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SFML_GAME" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="game-2d" type="462c0819:PsiDirectoryNode" />
+              <item name="resource" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SFML_GAME" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="game-2d" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SFML_GAME" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="game-2d" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Blocks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SFML_GAME" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="game-2d" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="GameStates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SFML_GAME" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="game-2d" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Map" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SFML_GAME" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="game-2d" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Systems" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.statistic.project.settings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cmake" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Dropbox\projekty\game-2d\src\Blocks" />
+      <recent name="C:\Dropbox\projekty\game-2d\include\Blocks" />
+      <recent name="C:\Dropbox\projekty\game-2d\include\Map" />
+      <recent name="C:\Dropbox\projekty\game-2d\src\Map" />
+      <recent name="C:\Dropbox\projekty\game-2d\src\Systems" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.SFML_Game_Laptop">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="SFML_GAME" RUN_TARGET_NAME="SFML_GAME" EXPLICIT_BUILD_TARGET_NAME="all">
+      <envs />
+    </configuration>
+    <configuration name="SFML_Game_Laptop" type="CMakeRunConfiguration" factoryName="Application" activateToolWindowBeforeRun="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="SFML_GAME" TARGET_NAME="SFML_GAME" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="SFML_GAME" RUN_TARGET_NAME="SFML_GAME">
+      <envs />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
+      <item index="1" class="java.lang.String" itemvalue="Application.SFML_Game_Laptop" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7b26c0c4-3505-4792-9cf1-6c224f2f8662" name="Default" comment="" />
+      <created>1513188104836</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1513188104836</updated>
+      <workItem from="1513188106501" duration="58000" />
+      <workItem from="1513188232167" duration="3244000" />
+      <workItem from="1513193919513" duration="36000" />
+      <workItem from="1513194063004" duration="703000" />
+      <workItem from="1513199346111" duration="4699000" />
+      <workItem from="1513206324409" duration="833000" />
+      <workItem from="1513273259374" duration="2823000" />
+      <workItem from="1514399283426" duration="768000" />
+      <workItem from="1514400171857" duration="8136000" />
+      <workItem from="1514417721709" duration="5933000" />
+      <workItem from="1514465030860" duration="1839000" />
+      <workItem from="1514918534167" duration="37000" />
+      <workItem from="1514919382913" duration="2136000" />
+      <workItem from="1515117673192" duration="1403000" />
+      <workItem from="1515189083569" duration="139000" />
+      <workItem from="1515192015247" duration="128000" />
+      <workItem from="1515202062341" duration="256000" />
+      <workItem from="1515202858949" duration="14479000" />
+      <workItem from="1515240973189" duration="2383000" />
+      <workItem from="1515399351578" duration="1879000" />
+      <workItem from="1515445240039" duration="27000" />
+      <workItem from="1515451113123" duration="868000" />
+      <workItem from="1515790713078" duration="353000" />
+      <workItem from="1515835410091" duration="14641000" />
+      <workItem from="1516171783995" duration="426000" />
+      <workItem from="1516174502368" duration="941000" />
+      <workItem from="1516246684993" duration="4419000" />
+      <workItem from="1516341944720" duration="9230000" />
+      <workItem from="1516353911543" duration="588000" />
+      <workItem from="1516354525885" duration="3850000" />
+      <workItem from="1516360559886" duration="3872000" />
+      <workItem from="1516365630555" duration="716000" />
+      <workItem from="1516376696333" duration="2852000" />
+      <workItem from="1516418170025" duration="596000" />
+      <workItem from="1516442782531" duration="3268000" />
+      <workItem from="1516548562813" duration="7160000" />
+      <workItem from="1516571600082" duration="1668000" />
+      <workItem from="1516695158800" duration="66000" />
+      <workItem from="1516695331682" duration="14809000" />
+      <workItem from="1516718859382" duration="7123000" />
+      <workItem from="1516726825598" duration="1151000" />
+      <workItem from="1516774638573" duration="177000" />
+      <workItem from="1516774900577" duration="5186000" />
+      <workItem from="1516803099149" duration="988000" />
+      <workItem from="1516806671256" duration="9973000" />
+      <workItem from="1516829420225" duration="8321000" />
+      <workItem from="1516875326551" duration="1037000" />
+      <workItem from="1516888906255" duration="5128000" />
+      <workItem from="1516906495730" duration="4812000" />
+      <workItem from="1517002209080" duration="55000" />
+      <workItem from="1517002406134" duration="8232000" />
+      <workItem from="1517082102650" duration="2088000" />
+      <workItem from="1517166142887" duration="962000" />
+      <workItem from="1517172390300" duration="1184000" />
+    </task>
+    <task id="LOCAL-00001" summary="Projek początkowy&#10;Lista zmian | data | co zmienione">
+      <created>1514400378582</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1514400378582</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="178679000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="41" width="1938" height="1048" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1203125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867885" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32707182" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17400645" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14585635" sideWeight="0.50625" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16863587" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24947916" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14500538" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39937106" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31979167" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15037593" sideWeight="0.49375" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32760474" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Prepare to true work" />
+    <MESSAGE value="Projek początkowy&#10;Lista zmian | data | co zmienione" />
+    <option name="LAST_COMMIT_MESSAGE" value="Projek początkowy&#10;Lista zmian | data | co zmienione" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="5" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../Demo app clean — kopia/DemoApp/PlayState.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Other/dirent.h" />
+    <entry file="file://$PROJECT_DIR$/../Demo app clean — kopia/DemoApp/MenuState.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-544">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/new_allocator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="119" column="6" lean-forward="false" selection-start-line="119" selection-start-column="6" selection-end-line="119" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/shared_ptr.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="103" column="16" lean-forward="false" selection-start-line="103" selection-start-column="16" selection-end-line="103" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boost_1_66_0/index.htm" />
+    <entry file="file://$PROJECT_DIR$/boost_1_66_0/INSTALL" />
+    <entry file="file://$PROJECT_DIR$/include/GameStates/MenuState.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="28" column="14" lean-forward="false" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/GameStates/PauseState.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="14" lean-forward="false" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/GameStates/GameState.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Map/Map.h" />
+    <entry file="file://$PROJECT_DIR$/include/Blocks/Block.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="22" column="6" lean-forward="false" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blocks/Block.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="6" column="7" lean-forward="false" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Map/Map.cpp" />
+    <entry file="file://$PROJECT_DIR$/include/Map/MapChunk.h" />
+    <entry file="file://$PROJECT_DIR$/src/Map/MapChunk.cpp" />
+    <entry file="file://C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/lib/gcc/i686-w64-mingw32/7.2.0/include/c++/ext/new_allocator.h" />
+    <entry file="file://$PROJECT_DIR$/include/Systems/CreatureSpawner.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Blocks/Creature.h" />
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/lib/gcc/i686-w64-mingw32/7.2.0/include/c++/bits/move.h" />
+    <entry file="file://C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/lib/gcc/i686-w64-mingw32/7.2.0/include/c++/bits/stl_vector.h" />
+    <entry file="file://$PROJECT_DIR$/src/Blocks/Creature.cpp" />
+    <entry file="file://$PROJECT_DIR$/src/Systems/CreatureSpawner.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="65" column="28" lean-forward="false" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameStates/MenuState.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="139" column="58" lean-forward="false" selection-start-line="139" selection-start-column="58" selection-end-line="139" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameStates/PauseState.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameStates/GameState.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blocks/PlayerInterface.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="26" lean-forward="false" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Blocks/Rat.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="39" lean-forward="false" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blocks/Rat.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="141" column="38" lean-forward="false" selection-start-line="141" selection-start-column="38" selection-end-line="141" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blocks/Dynamic.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Blocks/Dynamic.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="10" lean-forward="false" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Blocks/Player.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="7" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Blocks/Static.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="543">
+          <caret line="38" column="8" lean-forward="false" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blocks/Static.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Blocks/Ground.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blocks/Ground.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Blocks/PlayerInterface.h" />
+    <entry file="file://$PROJECT_DIR$/src/settings.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/GameStates/PlayState.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="27" column="14" lean-forward="false" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+          <folding>
+            <element signature="e#107#133#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Blocks/Entity.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="25" column="48" lean-forward="false" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Blocks/Water.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blocks/Water.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1152">
+          <caret line="64" column="25" lean-forward="false" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Game.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="38" lean-forward="false" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blocks/Entity.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1152">
+          <caret line="64" column="13" lean-forward="false" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blocks/Player.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1692">
+          <caret line="94" column="26" lean-forward="false" selection-start-line="94" selection-start-column="26" selection-end-line="94" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameStates/PlayState.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="70" column="42" lean-forward="false" selection-start-line="70" selection-start-column="42" selection-end-line="70" selection-end-column="42" />
+          <folding>
+            <element signature="e#46#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Systems/CollisionChecker.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+          <folding>
+            <element signature="e#121#138#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Systems/CollisionChecker.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

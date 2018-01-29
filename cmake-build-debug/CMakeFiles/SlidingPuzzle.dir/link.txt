@@ -1,3 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\SlidingPuzzle.dir/objects.a
-C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\ar.exe cr CMakeFiles\SlidingPuzzle.dir/objects.a @CMakeFiles\SlidingPuzzle.dir\objects1.rsp
-C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE  -std=c++11 -O3 -DNDEBUG   -Wl,--whole-archive CMakeFiles\SlidingPuzzle.dir/objects.a -Wl,--no-whole-archive  -o ..\SlidingPuzzle.exe -Wl,--out-implib,libSlidingPuzzle.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\SlidingPuzzle.dir\linklibs.rsp

@@ -14,6 +14,12 @@ class Creature
 
 public:
     Creature()=delete;
+    /// Default Creature constructor
+    /// @param cX - global position  x of Player
+    /// @param cY - global position  y of Player
+    /// @param cWidth - Width player sprite(affect collision to)
+    /// @param cHeight - Height player sprite(affect collision to)
+    /// @param cSpeed - speed of Dynamic entity
     Creature(float cX, float cY, int cWidth, int cHeight, float cSpeed);
 };
 

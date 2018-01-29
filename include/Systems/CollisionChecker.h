@@ -10,9 +10,12 @@
 #include <Blocks/Dynamic.h>
 
 class CollisionChecker {
+    int mapGridX, mapGridY;
     bool gridMap[320][180];
 public:
     CollisionChecker();
+
+    void init(std::vector<std::shared_ptr<Entity>> &mapEntity);
 
     void
     mouseCheckerWitchEntity(std::vector<std::shared_ptr<Entity>> &mapEntity, std::shared_ptr<sf::RenderWindow> &window);
@@ -21,9 +24,9 @@ public:
 
     void checkEntityInhArray(std::vector<std::shared_ptr<Entity>> &mapEntity);
 
-    void getMapCollisionGridOnVisibleArea(std::vector<std::shared_ptr<Entity>> & mapEntity);
+    void getMapCollisionGridOnVisibleArea(std::vector<std::shared_ptr<Entity>> &mapEntity);
 
-    void drawGrid(std::vector<std::shared_ptr<Entity>> & mapEntity, std::shared_ptr<sf::RenderWindow> &window);
+    void drawGrid(std::vector<std::shared_ptr<Entity>> &mapEntity, std::shared_ptr<sf::RenderWindow> &window);
 
 };
 

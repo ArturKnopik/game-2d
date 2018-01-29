@@ -8,17 +8,14 @@
 #include <Blocks/Player.h>
 #include <Blocks/Rat.h>
 #include <Blocks/Ground.h>
-#include <Blocks/PlayerInterface.h>
 #include "GameState.h"
 #include "Buttoms/Button.h"
-#include "Blocks/Block.h"
 #include "Systems/CollisionChecker.h"
 #include "Systems/CreatureSpawner.h"
 #include "Blocks/Water.h"
 class PlayState : public GameState
 {
 private:
-    PlayerInterface pInterface;
     sf::Vector2i currentOffSet;
     sf::View viewe;
     bool gridMapCollision[320][180];

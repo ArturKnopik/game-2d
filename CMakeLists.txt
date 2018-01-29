@@ -29,8 +29,6 @@ set(SOURCE_FILES
         include/GameStates/PlayState.h
         src/GameStates/PauseState.cpp
         include/GameStates/PauseState.h
-        src/Blocks/Block.cpp
-        include/Blocks/Block.h
         src/Blocks/Entity.cpp
         include/Blocks/Entity.h
         src/Game.cpp
@@ -59,8 +57,7 @@ set(SOURCE_FILES
         include/Map/Map.h
         src/Blocks/Creature.cpp
         include/Blocks/Creature.h
-        src/Blocks/PlayerInterface.cpp
-        include/Blocks/PlayerInterface.h)
+        )
 
 set(EXECUTABLE_NAME ${PROJECT_NAME})
 #Set Linker flags

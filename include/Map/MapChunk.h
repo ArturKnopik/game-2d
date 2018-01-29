@@ -6,7 +6,6 @@
 #define SFML_GAME_MAPCHUNK_H
 
 
-#include <Blocks/Block.h>
 #include <Systems/CreatureSpawner.h>
 
 class MapChunk

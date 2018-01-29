@@ -10,6 +10,6 @@ const int HEIGHT = 720;
 
 //game settings
 
-//double GRAVITY = 0.9;
 const int FPS = 60;
-//float dt;
+// some informations
+// float idleTime; //1000000 = 1s

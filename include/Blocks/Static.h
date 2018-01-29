@@ -7,39 +7,44 @@
 
 #include "Blocks/Entity.h"
 
-enum siteOfPicture
-{
-    NW=0,
-    N=1,
-    NE=2,
-    W=3,
-    C=4,
-    E=5,
-    SW=6,
-    S=7,
-    SE=8
+/// Enum stored sprite position by compass (C=center)
+enum siteOfPicture {
+    NW = 0,
+    N = 1,
+    NE = 2,
+    W = 3,
+    C = 4,
+    E = 5,
+    SW = 6,
+    S = 7,
+    SE = 8
 };
-enum AnimatedEnum
-{
-    CAN_BE_ANIMATED=0,
-    CAN_NOT_BE_ANIMATED=1
+/// Enum stored information about about the possibility to animation obiect
+enum AnimatedEnum {
+    CAN_BE_ANIMATED = 0,
+    CAN_NOT_BE_ANIMATED = 1
 };
 
 class Static :
-        public Entity
-{
+        public Entity {
 private:
-
+    SpriteData spriteData;
 protected:
     sf::Texture texture;
     sf::Sprite sprite;
-    SpriteData spriteData;
 public:
-    Static()=delete;
-    Static(float cX,float cY, int cWidth, int cHeight);
+    Static() = delete;
+    /// Default Static constructor
+    /// @param cX - global position  x of Player
+    /// @param cY - global position  y of Player
+    /// @param cWidth - Width player sprite(affect collision to)
+    /// @param cHeight - Height player sprite(affect collision to)
+    Static(float cX, float cY, int cWidth, int cHeight);
+    /// Return Srite informations
+    /// \return SpriteData obiect
+    SpriteData getSpriteData();
+    void setSpriteData(SpriteData spriteData);
 };
-
-
 
 
 #endif //SFML_GAME_STATIC_H

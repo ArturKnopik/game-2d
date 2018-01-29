@@ -12,7 +12,7 @@ Game::Game()
     sf::ContextSettings settings;
     settings.antialiasingLevel = 8;
     window=std::make_shared<sf::RenderWindow>();
-    window->create(sf::VideoMode(WIDTH, HEIGHT), "Small Game", sf::Style::Titlebar, settings);
+    window->create(sf::VideoMode(WIDTH, HEIGHT), "Game-2d", sf::Style::Titlebar, settings);
     window->setFramerateLimit(FPS);
 
 }

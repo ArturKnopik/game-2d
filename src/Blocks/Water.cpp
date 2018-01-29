@@ -5,111 +5,153 @@
 #include "Blocks/Water.h"
 
 Water::Water(float cX, float cY, int cWidth, int cHeight, AnimatedEnum cAnimated, siteOfPicture cSiteOfPic)
-        : Static(cX, cY, cWidth, cHeight), pictureSite(cSiteOfPic), animated(cAnimated)
-{
-    dataSprite.currentFrame=0;
-    dataSprite.currentTime=0;
-    spriteData.timeToNextFrame=900000;
-    setCollisionAble(CollisionEnum::CAN_BE_COLLIDET);
-    if(texture.loadFromFile("resource/image/Water.png"))
-    {
+        : Static(cX, cY, cWidth, cHeight), pictureSite(cSiteOfPic), animated(cAnimated) {
+    dataSprite.currentFrame = 0;
+    dataSprite.currentTime = 0;
+    SpriteData tempSpriteData;
+    tempSpriteData.currentFrame = 0;
+    tempSpriteData.currentTime = 0;
+    tempSpriteData.timeToNextFrame = 900000;
+    std::cout<<"sprite data 0"<<std::endl;
+    setCollisionAble(CAN_BE_COLLIDET);
+    if (texture.loadFromFile("resource/image/Water.png")) {
         sprite.setTexture(texture);
-       if(animated==CAN_NOT_BE_ANIMATED)
-        {
+        if (animated == CAN_NOT_BE_ANIMATED) {
             switch (pictureSite) {
                 case NW:
-                    sprite.setTextureRect(sf::IntRect(spriteData.spriteOffsetX + 0,spriteData.spriteOffsetY+0,spriteData.spriteWidth,spriteData.spriteHeight));
+                    sprite.setTextureRect(
+                            sf::IntRect(getSpriteData().spriteOffsetX + 0, getSpriteData().spriteOffsetY + 0,
+                                        getSpriteData().spriteWidth, getSpriteData().spriteHeight));
                     break;
                 case N:
-                    sprite.setTextureRect(sf::IntRect(spriteData.spriteOffsetX+32,spriteData.spriteOffsetY+0,spriteData.spriteWidth,spriteData.spriteHeight));
+                    sprite.setTextureRect(
+                            sf::IntRect(getSpriteData().spriteOffsetX + 32, getSpriteData().spriteOffsetY + 0,
+                                        getSpriteData().spriteWidth, getSpriteData().spriteHeight));
                     break;
                 case NE:
-                    sprite.setTextureRect(sf::IntRect(spriteData.spriteOffsetX+64,spriteData.spriteOffsetY+0,spriteData.spriteWidth,spriteData.spriteHeight));
+                    sprite.setTextureRect(
+                            sf::IntRect(getSpriteData().spriteOffsetX + 64, getSpriteData().spriteOffsetY + 0,
+                                        getSpriteData().spriteWidth, getSpriteData().spriteHeight));
                     break;
                 case W:
-                    sprite.setTextureRect(sf::IntRect(spriteData.spriteOffsetX+0,spriteData.spriteOffsetY+32,spriteData.spriteWidth,spriteData.spriteHeight));
+                    sprite.setTextureRect(
+                            sf::IntRect(getSpriteData().spriteOffsetX + 0, getSpriteData().spriteOffsetY + 32,
+                                        getSpriteData().spriteWidth, getSpriteData().spriteHeight));
                     break;
                 case C:
-                    sprite.setTextureRect(sf::IntRect(spriteData.spriteOffsetX+32,spriteData.spriteOffsetY+32,spriteData.spriteWidth,spriteData.spriteHeight));
+                    sprite.setTextureRect(
+                            sf::IntRect(getSpriteData().spriteOffsetX + 32, getSpriteData().spriteOffsetY + 32,
+                                        getSpriteData().spriteWidth, getSpriteData().spriteHeight));
                     break;
                 case E:
-                    sprite.setTextureRect(sf::IntRect(spriteData.spriteOffsetX+64,spriteData.spriteOffsetY+32,spriteData.spriteWidth,spriteData.spriteHeight));
+                    sprite.setTextureRect(
+                            sf::IntRect(getSpriteData().spriteOffsetX + 64, getSpriteData().spriteOffsetY + 32,
+                                        getSpriteData().spriteWidth, getSpriteData().spriteHeight));
                     break;
                 case SW:
-                    sprite.setTextureRect(sf::IntRect(spriteData.spriteOffsetX+0,spriteData.spriteOffsetY+64,spriteData.spriteWidth,spriteData.spriteHeight));
+                    sprite.setTextureRect(
+                            sf::IntRect(getSpriteData().spriteOffsetX + 0, getSpriteData().spriteOffsetY + 64,
+                                        getSpriteData().spriteWidth, getSpriteData().spriteHeight));
                     break;
                 case S:
-                    sprite.setTextureRect(sf::IntRect(spriteData.spriteOffsetX+32,spriteData.spriteOffsetY+64,spriteData.spriteWidth,spriteData.spriteHeight));
+                    sprite.setTextureRect(
+                            sf::IntRect(getSpriteData().spriteOffsetX + 32, getSpriteData().spriteOffsetY + 64,
+                                        getSpriteData().spriteWidth, getSpriteData().spriteHeight));
                     break;
                 case SE:
-                    sprite.setTextureRect(sf::IntRect(spriteData.spriteOffsetX+64,spriteData.spriteOffsetY+64,spriteData.spriteWidth,spriteData.spriteHeight));
+                    sprite.setTextureRect(
+                            sf::IntRect(getSpriteData().spriteOffsetX + 64, getSpriteData().spriteOffsetY + 64,
+                                        getSpriteData().spriteWidth, getSpriteData().spriteHeight));
                     break;
             }
+        } else {
+
+            tempSpriteData.spriteOffsetY = 96;
         }
-        else
-       {
-           spriteData.spriteOffsetY=96;
-       }
     };
-    sprite.setPosition(positions.x, positions.y);
+    setSpriteData(tempSpriteData);
+    sprite.setPosition(getPositions().x, getPositions().y);
 
 }
 
-Water::~Water()
-{
+Water::~Water() {
 
 }
 
-void Water::draw(std::shared_ptr<sf::RenderWindow> window)
-{
+void Water::draw(std::shared_ptr<sf::RenderWindow> window) {
     window->draw(sprite);
 }
 
-void Water::update(const float dt)
-{
-    if(animated==CAN_BE_ANIMATED)
-    {
-        spriteData.currentTime += dt;
-        if (spriteData.currentTime >= spriteData.timeToNextFrame)
-        {
-            spriteData.currentTime = 0;
-            if (spriteData.currentFrame >= spriteData.numbersOfFrame)
-            {
-                spriteData.currentFrame = 0;
-                spriteData.spriteOffsetX=0;
+void Water::update(const float dt) {
+    if (animated == CAN_BE_ANIMATED) {
+
+        SpriteData temp = getSpriteData();
+        temp.currentTime += dt;
+        if (temp.currentTime >= temp.timeToNextFrame) {
+            temp.currentTime = 0;
+            if (temp.currentFrame >= temp.numbersOfFrame) {
+                temp.currentFrame = 0;
+                temp.spriteOffsetX = 0;
             } else {
-                spriteData.currentFrame++;
-                spriteData.spriteOffsetX+=96;
+                temp.currentFrame++;
+                temp.spriteOffsetX += 96;
             }
         }
+        setSpriteData(temp);
+
+
+
         // Need Add sprite offset value to x and Y!
         switch (pictureSite) {
             case NW:
-                sprite.setTextureRect(sf::IntRect(spriteData.spriteOffsetX + 0,spriteData.spriteOffsetY+0,spriteData.spriteWidth,spriteData.spriteHeight));
+                sprite.setTextureRect(
+                        sf::IntRect(getSpriteData().spriteOffsetX + 0, getSpriteData().spriteOffsetY + 0,
+                                    getSpriteData().spriteWidth,
+                                    getSpriteData().spriteHeight));
                 break;
             case N:
-                sprite.setTextureRect(sf::IntRect(spriteData.spriteOffsetX+32,spriteData.spriteOffsetY+0,spriteData.spriteWidth,spriteData.spriteHeight));
+                sprite.setTextureRect(
+                        sf::IntRect(getSpriteData().spriteOffsetX + 32, getSpriteData().spriteOffsetY + 0,
+                                    getSpriteData().spriteWidth,
+                                    getSpriteData().spriteHeight));
                 break;
             case NE:
-                sprite.setTextureRect(sf::IntRect(spriteData.spriteOffsetX+64,spriteData.spriteOffsetY+0,spriteData.spriteWidth,spriteData.spriteHeight));
+                sprite.setTextureRect(
+                        sf::IntRect(getSpriteData().spriteOffsetX + 64, getSpriteData().spriteOffsetY + 0,
+                                    getSpriteData().spriteWidth,
+                                    getSpriteData().spriteHeight));
                 break;
             case W:
-                sprite.setTextureRect(sf::IntRect(spriteData.spriteOffsetX+0,spriteData.spriteOffsetY+32,spriteData.spriteWidth,spriteData.spriteHeight));
+                sprite.setTextureRect(
+                        sf::IntRect(getSpriteData().spriteOffsetX + 0, getSpriteData().spriteOffsetY + 32,
+                                    getSpriteData().spriteWidth,
+                                    getSpriteData().spriteHeight));
                 break;
             case C:
-                sprite.setTextureRect(sf::IntRect(spriteData.spriteOffsetX+32,spriteData.spriteOffsetY+32,spriteData.spriteWidth,spriteData.spriteHeight));
+                sprite.setTextureRect(
+                        sf::IntRect(getSpriteData().spriteOffsetX + 32, getSpriteData().spriteOffsetY + 32,
+                                    getSpriteData().spriteWidth, getSpriteData().spriteHeight));
                 break;
             case E:
-                sprite.setTextureRect(sf::IntRect(spriteData.spriteOffsetX+64,spriteData.spriteOffsetY+32,spriteData.spriteWidth,spriteData.spriteHeight));
+                sprite.setTextureRect(
+                        sf::IntRect(getSpriteData().spriteOffsetX + 64, getSpriteData().spriteOffsetY + 32,
+                                    getSpriteData().spriteWidth, getSpriteData().spriteHeight));
                 break;
             case SW:
-                sprite.setTextureRect(sf::IntRect(spriteData.spriteOffsetX+0,spriteData.spriteOffsetY+64,spriteData.spriteWidth,spriteData.spriteHeight));
+                sprite.setTextureRect(
+                        sf::IntRect(getSpriteData().spriteOffsetX + 0, getSpriteData().spriteOffsetY + 64,
+                                    getSpriteData().spriteWidth,
+                                    getSpriteData().spriteHeight));
                 break;
             case S:
-                sprite.setTextureRect(sf::IntRect(spriteData.spriteOffsetX+32,spriteData.spriteOffsetY+64,spriteData.spriteWidth,spriteData.spriteHeight));
+                sprite.setTextureRect(
+                        sf::IntRect(getSpriteData().spriteOffsetX + 32, getSpriteData().spriteOffsetY + 64,
+                                    getSpriteData().spriteWidth, getSpriteData().spriteHeight));
                 break;
             case SE:
-                sprite.setTextureRect(sf::IntRect(spriteData.spriteOffsetX+64,spriteData.spriteOffsetY+64,spriteData.spriteWidth,spriteData.spriteHeight));
+                sprite.setTextureRect(
+                        sf::IntRect(getSpriteData().spriteOffsetX + 64, getSpriteData().spriteOffsetY + 64,
+                                    getSpriteData().spriteWidth, getSpriteData().spriteHeight));
                 break;
         }
     }

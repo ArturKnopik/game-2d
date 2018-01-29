@@ -7,14 +7,12 @@
 
 #include "GameState.h"
 //#include "TestEnemy.h"
-#include "Blocks/Block.h"
 class PauseState :
         public GameState
 {
 private:
     sf::Event event;
     //TestEnemy * te;
-   std::shared_ptr< Block> block;
 public:
 
 

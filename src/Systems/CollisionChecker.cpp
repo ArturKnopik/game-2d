@@ -75,8 +75,8 @@ void CollisionChecker::mouseCheckerWitchEntity(std::vector<std::shared_ptr<Entit
 
 void CollisionChecker::getMapCollisionGridOnVisibleArea(std::vector<std::shared_ptr<Entity>> &mapEntity) {
     //restarting grid
-    for (int i = 0; i < mapGridX; i++) {
-        for (int j = 0; j < mapGridY; j++) {
+    for (int i = 0; i < 320; i++) {
+        for (int j = 0; j < 180; j++) {
             gridMap[i][j] = false;
         }
     }
@@ -87,12 +87,11 @@ void CollisionChecker::getMapCollisionGridOnVisibleArea(std::vector<std::shared_
             mapEntity[i]->getPositions().y > mapEntity[0]->getPositions().y - 300 &
             mapEntity[i]->isCollisionAble() != CAN_BE_COLLIDET) {
 
-
             int startX, endX, startY, endY;
-            startX = (static_cast<int>(mapEntity[i]->getPositions().x ) / 4) - 1;
-            endX = static_cast<int>(mapEntity[i]->getPositions().x + mapEntity[i]->getSize().width ) / 4;
-            startY = (static_cast<int>(mapEntity[i]->getPositions().y) / 4) - 1;
-            endY = static_cast<int>(mapEntity[i]->getPositions().y + mapEntity[i]->getSize().height ) / 4;
+            startX = (static_cast<int>(mapEntity[i]->getPositions().x-(mapEntity[0]->getPositions().x-640) ) / 4) - 1;
+            endX = static_cast<int>(mapEntity[i]->getPositions().x + mapEntity[i]->getSize().width -(mapEntity[0]->getPositions().x-640)) / 4;
+            startY = (static_cast<int>(mapEntity[i]->getPositions().y-(mapEntity[0]->getPositions().y-360)) / 4) - 1;
+            endY = static_cast<int>(mapEntity[i]->getPositions().y + mapEntity[i]->getSize().height -(mapEntity[0]->getPositions().y-360)) / 4;
             if (startX < 0) {
                 startX = 0;
             }
@@ -119,17 +118,12 @@ void
 CollisionChecker::drawGrid(std::vector<std::shared_ptr<Entity>> &mapEntity, std::shared_ptr<sf::RenderWindow> &window) {
     sf::RectangleShape rect;
     rect.setSize(sf::Vector2f(4, 4));
-    for (int i = 0; i < mapGridX; i++) {
-        for (int j = 0; j < mapGridY; j++) {
+    for (int i = 0; i < 320; i++) {
+        for (int j = 0; j < 180; j++) {
             if (gridMap[i][j] == true) {
-                rect.setPosition((i * 4), (j * 4));
+                rect.setPosition((i * 4)+mapEntity[0]->getPositions().x-640, (j * 4)+mapEntity[0]->getPositions().y-360);
                 rect.setFillColor(sf::Color(250, 0, 0, 100));
                 window->draw(rect);
-            } else {
-                rect.setPosition((i * 4), (j * 4));
-                rect.setFillColor(sf::Color(0, 250, 0, 100));
-                window->draw(rect);
-
             }
         }
     }

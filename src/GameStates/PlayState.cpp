@@ -10,7 +10,6 @@ PlayState::~PlayState() {
 }
 
 void PlayState::draw() {
-
     std::vector<std::shared_ptr<Entity>>::reverse_iterator iter;
     for (iter = mapEntity.rbegin(); iter != mapEntity.rend(); iter++) {
         if ((*iter)->getPositions().x - player->getPositions().x < 600 &&
@@ -31,7 +30,7 @@ void PlayState::update(const float dt) {
 
     ch.getMapCollisionGridOnVisibleArea(mapEntity);
     viewe.setCenter(player->getOldPositions().x, player->getOldPositions().y);
-    //game->window->setView(viewe);
+    game->window->setView(viewe);
     ch.checkEntityInhArray(mapEntity);
 
     cSpawner->spawnCreatureDeltaTime(dt);
@@ -75,9 +74,9 @@ PlayState::PlayState(std::shared_ptr<Game> game) {
 
 
     this->game = game;
-    //viewe.setSize(game->window->getSize().x, game->window->getSize().y);
+    viewe.setSize(game->window->getSize().x, game->window->getSize().y);
 
-    //game->window->setView(viewe);
+    game->window->setView(viewe);
 
     mapEntity.push_back(player);
     mapEntity.push_back(std::make_shared<Water>(68, 132, 32, 32, CAN_NOT_BE_ANIMATED, C));

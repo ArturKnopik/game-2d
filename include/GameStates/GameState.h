@@ -6,18 +6,20 @@
 #define SFML_GAME_GAMESTATE_H
 
 
-#include "Game.h" //doesn't' exist yet
+#include "Game.h"
 
 
-class GameState
-{
+class GameState {
 public:
 
     std::shared_ptr<Game> game;
 
     virtual void draw() = 0;
+
     virtual void update(const float dt) = 0;
+
     virtual void input() = 0;
+
     ~GameState();
 };
 

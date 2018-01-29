@@ -11,7 +11,7 @@
 class Water
         : public Static {
 private:
-    SpriteData dataSprite;
+  //  SpriteData dataSprite;
     siteOfPicture pictureSite;
     bool animated;
 public:

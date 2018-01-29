@@ -3,6 +3,8 @@
 //
 
 #include <Blocks/Water.h>
+#include <Blocks/RockArea.h>
+#include <Blocks/SimpeHouse1.h>
 #include "GameStates/PlayState.h"
 #include "GameStates/PauseState.h"
 
@@ -22,7 +24,7 @@ void PlayState::draw() {
     }
 
     ch.mouseCheckerWitchEntity(mapEntity, game->window);
-    ch.drawGrid(mapEntity, game->window);
+    //ch.drawGrid(mapEntity, game->window);
 }
 
 void PlayState::update(const float dt) {
@@ -70,7 +72,7 @@ void PlayState::input() {
 PlayState::PlayState(std::shared_ptr<Game> game) {
     event = std::make_shared<sf::Event>();
 
-    player = std::make_shared<Player>(game->window->getSize().x / 2, game->window->getSize().y / 2, 32, 32, 0.0001);
+    player = std::make_shared<Player>(250, 300, 32, 32, 0.0001);
 
 
     this->game = game;
@@ -79,22 +81,28 @@ PlayState::PlayState(std::shared_ptr<Game> game) {
     game->window->setView(viewe);
 
     mapEntity.push_back(player);
-    mapEntity.push_back(std::make_shared<Water>(68, 132, 32, 32, CAN_NOT_BE_ANIMATED, C));
-    mapEntity.push_back(std::make_shared<Water>(68, 164, 32, 32, CAN_BE_ANIMATED, C));
-    mapEntity.push_back(std::make_shared<Water>(100, 164, 32, 32, CAN_BE_ANIMATED, C));
-    mapEntity.push_back(std::make_shared<Water>(100, 196, 32, 32, CAN_BE_ANIMATED, C));
-    mapEntity.push_back(std::make_shared<Water>(100, 228, 32, 32, CAN_BE_ANIMATED, C));
-    mapEntity.push_back(std::make_shared<Water>(100, 260, 32, 32, CAN_BE_ANIMATED, C));
-    mapEntity.push_back(std::make_shared<Water>(100, 92, 32, 32, CAN_BE_ANIMATED, C));
-    mapEntity.push_back(std::make_shared<Water>(132, 260, 32, 32, CAN_BE_ANIMATED, C));
+    cSpawner = std::make_shared<CreatureSpawner>(250, 200, mapEntity, RAT, 4000000);
+    mapEntity.push_back(std::make_shared<SimpeHouse1>(340, 200, 96, 96));
+    mapEntity.push_back(std::make_shared<Water>(132, 132, 32, 32, CAN_BE_ANIMATED, NW));
+    mapEntity.push_back(std::make_shared<Water>(164, 132, 32, 32, CAN_BE_ANIMATED, N));
+    mapEntity.push_back(std::make_shared<Water>(196, 132, 32, 32, CAN_BE_ANIMATED, NE));
+    mapEntity.push_back(std::make_shared<Water>(132, 164, 32, 32, CAN_BE_ANIMATED, W));
     mapEntity.push_back(std::make_shared<Water>(164, 164, 32, 32, CAN_BE_ANIMATED, C));
-    mapEntity.push_back(std::make_shared<Water>(196, 164, 32, 32, CAN_BE_ANIMATED, C));
+    mapEntity.push_back(std::make_shared<Water>(196, 164, 32, 32, CAN_BE_ANIMATED, E));
+    mapEntity.push_back(std::make_shared<Water>(132, 196, 32, 32, CAN_BE_ANIMATED, SW));
+    mapEntity.push_back(std::make_shared<Water>(164, 196, 32, 32, CAN_BE_ANIMATED, S));
+    mapEntity.push_back(std::make_shared<Water>(196, 196, 32, 32, CAN_BE_ANIMATED, SE));
+    mapEntity.push_back(std::make_shared<RockArea>(300, 132, 32, 32, C));
+    mapEntity.push_back(std::make_shared<RockArea>(300, 164, 32, 32, C));
+    mapEntity.push_back(std::make_shared<RockArea>(300, 196, 32, 32, C));
+    mapEntity.push_back(std::make_shared<RockArea>(300, 228, 32, 32, C));
+    mapEntity.push_back(std::make_shared<RockArea>(300, 260, 32, 32, C));
 
-    mapEntity.push_back(std::make_shared<Ground>(228, 164, 32, 32, IS_COLLIDET, C));
-    mapEntity.push_back(std::make_shared<Ground>(68, 68, 32, 32, IS_COLLIDET, C));
-    mapEntity.push_back(std::make_shared<Ground>(68, 100, 32, 32, IS_COLLIDET, W));
-    mapEntity.push_back(std::make_shared<Ground>(100, 132, 32, 32, IS_COLLIDET, C));
-    mapEntity.push_back(std::make_shared<Ground>(68, 132, 32, 32, IS_COLLIDET, SW));
-    cSpawner = std::make_shared<CreatureSpawner>(150, 200, mapEntity, RAT, 4000000);
+    for (int i = 0; i < 20; i++) {
+        for (int j = 0; j < 20; j++) {
+            mapEntity.push_back(std::make_shared<Ground>(i * 32, j * 32, 32, 32, NO_COLLISION, C));
+        }
+    }
+
 
 }

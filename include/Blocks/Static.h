@@ -9,15 +9,9 @@
 
 /// Enum stored sprite position by compass (C=center)
 enum siteOfPicture {
-    NW = 0,
-    N = 1,
-    NE = 2,
-    W = 3,
-    C = 4,
-    E = 5,
-    SW = 6,
-    S = 7,
-    SE = 8
+    NW = 0,  N = 1,  NE = 2,
+    W  = 3,  C = 4,  E  = 5,
+    SW = 6,  S = 7,  SE = 8
 };
 /// Enum stored information about about the possibility to animation obiect
 enum AnimatedEnum {

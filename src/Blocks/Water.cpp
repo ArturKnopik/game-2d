@@ -6,8 +6,6 @@
 
 Water::Water(float cX, float cY, int cWidth, int cHeight, AnimatedEnum cAnimated, siteOfPicture cSiteOfPic)
         : Static(cX, cY, cWidth, cHeight), pictureSite(cSiteOfPic), animated(cAnimated) {
-    dataSprite.currentFrame = 0;
-    dataSprite.currentTime = 0;
     SpriteData tempSpriteData;
     tempSpriteData.currentFrame = 0;
     tempSpriteData.currentTime = 0;

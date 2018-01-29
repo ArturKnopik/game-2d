@@ -106,7 +106,6 @@ void CollisionChecker::getMapCollisionGridOnVisibleArea(std::vector<std::shared_
             }
             for (int j = startX; j <= endX; j++) {
                 for (int k = startY; k <= endY; k++) {
-
                     gridMap[j][k] = true;
                 }
             }

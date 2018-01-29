@@ -57,7 +57,7 @@ set(SOURCE_FILES
         include/Map/Map.h
         src/Blocks/Creature.cpp
         include/Blocks/Creature.h
-        )
+        src/Blocks/RockArea.cpp include/Blocks/RockArea.h include/Blocks/SimpeHouse1.cpp include/Blocks/SimpeHouse1.h)
 
 set(EXECUTABLE_NAME ${PROJECT_NAME})
 #Set Linker flags

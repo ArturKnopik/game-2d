@@ -98,4 +98,9 @@ void Entity::setSize( Size size) {
     Entity::size = size;
 }
 
+void Entity::setSize( int width, int height) {
+    size.width = width;
+    size.height=height;
+}
+
 

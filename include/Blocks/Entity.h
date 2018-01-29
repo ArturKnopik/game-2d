@@ -164,6 +164,7 @@ public:
     /// \param size - Size Obiect
     void setSize(Size size);
 
+    void setSize(int width, int height);
 };
 
 #endif //SFML_GAME_ENTITY_H

@@ -17,7 +17,7 @@
 class MenuState : public GameState
 {
 private:
-    short menuSwitch=1;
+    short menuSwitch=0;
 
     sf::Font font;
     sf::Text menuText;

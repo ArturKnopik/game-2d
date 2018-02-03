@@ -29,7 +29,6 @@ private:
     MovingDirection direction;
     SpriteData spriteData;
     float speed;
-    Positions oldPositions;
 protected:
     sf::Texture texture;
     sf::Sprite sprite;
@@ -92,13 +91,6 @@ public:
 /// \param spriteData - SpriteData obiect
     void setSpriteData(SpriteData spriteData);
 
-/// return previous value of positions
-/// \return Positions obiect
-    Positions getOldPositions();
-
-/// Set previous value of positions
-/// \param oldPositions - obiect
-    void setOldPositions(Positions oldPositions);
 };
 
 

@@ -14,17 +14,17 @@ PlayState::~PlayState() {
 void PlayState::draw() {
     std::vector<std::shared_ptr<Entity>>::reverse_iterator iter;
     for (iter = mapEntity.rbegin(); iter != mapEntity.rend(); iter++) {
-        if ((*iter)->getPositions().x - player->getPositions().x < 600 &&
-            (*iter)->getPositions().x - player->getPositions().x > -600 &&
-            (*iter)->getPositions().y - player->getPositions().y < 300 &&
-            (*iter)->getPositions().y - player->getPositions().y > -300) {
+        if ((*iter)->getPositions().x - player->getPositions().x < 800 &&
+            (*iter)->getPositions().x - player->getPositions().x > -800 &&
+            (*iter)->getPositions().y - player->getPositions().y < 400 &&
+            (*iter)->getPositions().y - player->getPositions().y > -400) {
 
             (*iter)->draw(game->window);
         }
     }
 
     ch.mouseCheckerWitchEntity(mapEntity, game->window);
-    //ch.drawGrid(mapEntity, game->window);
+    ch.drawGrid(mapEntity, game->window);
 }
 
 void PlayState::update(const float dt) {
@@ -86,14 +86,21 @@ PlayState::PlayState(std::shared_ptr<Game> game) {
     mapEntity.push_back(std::make_shared<Water>(132, 132, 32, 32, CAN_BE_ANIMATED, NW));
     mapEntity.push_back(std::make_shared<Water>(164, 132, 32, 32, CAN_BE_ANIMATED, N));
     mapEntity.push_back(std::make_shared<Water>(196, 132, 32, 32, CAN_BE_ANIMATED, NE));
+    /*
     mapEntity.push_back(std::make_shared<Water>(132, 164, 32, 32, CAN_BE_ANIMATED, W));
     mapEntity.push_back(std::make_shared<Water>(164, 164, 32, 32, CAN_BE_ANIMATED, C));
     mapEntity.push_back(std::make_shared<Water>(196, 164, 32, 32, CAN_BE_ANIMATED, E));
     mapEntity.push_back(std::make_shared<Water>(132, 196, 32, 32, CAN_BE_ANIMATED, SW));
     mapEntity.push_back(std::make_shared<Water>(164, 196, 32, 32, CAN_BE_ANIMATED, S));
     mapEntity.push_back(std::make_shared<Water>(196, 196, 32, 32, CAN_BE_ANIMATED, SE));
+     */
+    mapEntity.push_back(std::make_shared<Ground>(64, 64, 32, 32, NO_COLLISION, C));
+    mapEntity.push_back(std::make_shared<Ground>(96, 64, 32, 32, NO_COLLISION, C));
+    mapEntity.push_back(std::make_shared<Ground>(64, 96, 32, 32, NO_COLLISION, C));
+    mapEntity.push_back(std::make_shared<Ground>(96, 96, 32, 32, NO_COLLISION, C));
     mapEntity.push_back(std::make_shared<RockArea>(300, 132, 32, 32, C));
     mapEntity.push_back(std::make_shared<RockArea>(300, 164, 32, 32, C));
+    /*
     mapEntity.push_back(std::make_shared<RockArea>(300, 196, 32, 32, C));
     mapEntity.push_back(std::make_shared<RockArea>(300, 228, 32, 32, C));
     mapEntity.push_back(std::make_shared<RockArea>(300, 260, 32, 32, C));
@@ -104,5 +111,5 @@ PlayState::PlayState(std::shared_ptr<Game> game) {
         }
     }
 
-
+*/
 }

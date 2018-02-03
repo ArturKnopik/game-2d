@@ -10,7 +10,6 @@ Water::Water(float cX, float cY, int cWidth, int cHeight, AnimatedEnum cAnimated
     tempSpriteData.currentFrame = 0;
     tempSpriteData.currentTime = 0;
     tempSpriteData.timeToNextFrame = 900000;
-    std::cout<<"sprite data 0"<<std::endl;
     setCollisionAble(CAN_BE_COLLIDET);
     if (texture.loadFromFile("resource/image/Water.png")) {
         sprite.setTexture(texture);

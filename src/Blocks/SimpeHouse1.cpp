@@ -2,7 +2,7 @@
 // Created by Streaming on 2018-01-29.
 //
 
-#include "SimpeHouse1.h"
+#include "Blocks/SimpeHouse1.h"
 
 SimpeHouse1::SimpeHouse1(float cX, float cY, int cWidth, int cHeight)
         : Static(cX, cY, cWidth, cHeight) {

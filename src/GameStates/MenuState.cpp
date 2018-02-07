@@ -13,6 +13,7 @@ MenuState::MenuState(std::shared_ptr<Game> game)
     menuButtonElements.push_back(new BasicButton("Game", 100, 100, 600, 50, 50, sf::Color(0,100,255,200), sf::Color(100,255,0,180)));
     menuButtonElements.push_back(new BasicButton("About", 100, 200, 600, 50, 50, sf::Color(0, 0, 255, 200), sf::Color(0, 255, 0, 200)));
     menuButtonElements.push_back(new BasicButton("Quit", 100, 300, 600, 50, 50, sf::Color(0, 100, 155, 200), sf::Color::Red));
+    std::cout << "MenuState::MenuState  |  ";
 }
 
 

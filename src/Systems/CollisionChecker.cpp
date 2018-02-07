@@ -6,7 +6,11 @@
 #include "Systems/CollisionChecker.h"
 
 CollisionChecker::CollisionChecker() {
-    clearGrid();
+    for (int i = 0; i < 320; i++) {
+        for (int j = 0; j < 180; j++) {
+            gridMap[i][j] = false;
+        }
+    }
 }
 
 bool CollisionChecker::checkAABB(std::shared_ptr<Entity> &left, std::shared_ptr<Entity> &right) {
@@ -64,14 +68,18 @@ void CollisionChecker::mouseCheckerWitchEntity(std::vector<std::shared_ptr<Entit
             }
         }
     }
-    // std::cout << "Mouse Positions: " << sf::Mouse::getPosition(*window).x << " : " << sf::Mouse::getPosition(*window).y
-    //     << std::endl;
+    std::cout << "Mouse Positions: " << sf::Mouse::getPosition(*window).x << " : " << sf::Mouse::getPosition(*window).y
+              << std::endl;
 
 }
 
 void CollisionChecker::getMapCollisionGridOnVisibleArea(std::vector<std::shared_ptr<Entity>> &mapEntity) {
     //restarting grid
-    clearGrid();
+    for (int i = 0; i < 320; i++) {
+        for (int j = 0; j < 180; j++) {
+            gridMap[i][j] = false;
+        }
+    }
     for (int i = 0; i < mapEntity.size(); i++) {
         if (mapEntity[i]->getPositions().x > mapEntity[0]->getPositions().x - 600 &&
             mapEntity[i]->getPositions().x < mapEntity[0]->getPositions().x + 600 &&
@@ -80,20 +88,10 @@ void CollisionChecker::getMapCollisionGridOnVisibleArea(std::vector<std::shared_
             mapEntity[i]->isCollisionAble() != CAN_BE_COLLIDET) {
 
             int startX, endX, startY, endY;
-            startX = (static_cast<int>(mapEntity[i]->getPositions().x - (mapEntity[0]->getPositions().x - 640)) /
-                      4) - 1;
-            endX = static_cast<int>(mapEntity[i]->getPositions().x + mapEntity[i]->getSize().width -
-                                    (mapEntity[0]->getPositions().x - 640)) / 4;
-            startY = (static_cast<int>(mapEntity[i]->getPositions().y - (mapEntity[0]->getPositions().y - 360)) /
-                      4) - 1;
-            endY = static_cast<int>(mapEntity[i]->getPositions().y + mapEntity[i]->getSize().height -
-                                    (mapEntity[0]->getPositions().y - 360)) / 4;
-            std::cout << "X:" << endX - startX << " X:" << endY - endY << std::endl;
-            std::cout << " X lef:"
-                      << (static_cast<int>(mapEntity[i]->getPositions().x - (mapEntity[0]->getPositions().x - 640)) % 4)
-                      << " Y lef:"
-                      << (static_cast<int>(mapEntity[i]->getPositions().y - (mapEntity[0]->getPositions().y - 360)) % 4)
-                      << std::endl;
+            startX = (static_cast<int>(mapEntity[i]->getPositions().x-(mapEntity[0]->getPositions().x-640) ) / 4) - 1;
+            endX = static_cast<int>(mapEntity[i]->getPositions().x + mapEntity[i]->getSize().width -(mapEntity[0]->getPositions().x-640)) / 4;
+            startY = (static_cast<int>(mapEntity[i]->getPositions().y-(mapEntity[0]->getPositions().y-360)) / 4) - 1;
+            endY = static_cast<int>(mapEntity[i]->getPositions().y + mapEntity[i]->getSize().height -(mapEntity[0]->getPositions().y-360)) / 4;
             if (startX < 0) {
                 startX = 0;
             }
@@ -118,14 +116,12 @@ void CollisionChecker::getMapCollisionGridOnVisibleArea(std::vector<std::shared_
 void
 CollisionChecker::drawGrid(std::vector<std::shared_ptr<Entity>> &mapEntity, std::shared_ptr<sf::RenderWindow> &window) {
     sf::RectangleShape rect;
-    rect.setFillColor(sf::Color(250, 0, 0, 100));
     rect.setSize(sf::Vector2f(4, 4));
     for (int i = 0; i < 320; i++) {
         for (int j = 0; j < 180; j++) {
             if (gridMap[i][j] == true) {
-                rect.setPosition(static_cast<int>((i * 4) + mapEntity[0]->getOldPositions().x - 640),
-                                 static_cast<int>((j * 4) + mapEntity[0]->getOldPositions().y - 360));
-                //rect.setFillColor(sf::Color(250, 0, 0, 100));
+                rect.setPosition((i * 4)+mapEntity[0]->getPositions().x-640, (j * 4)+mapEntity[0]->getPositions().y-360);
+                rect.setFillColor(sf::Color(250, 0, 0, 100));
                 window->draw(rect);
             }
         }
@@ -133,15 +129,6 @@ CollisionChecker::drawGrid(std::vector<std::shared_ptr<Entity>> &mapEntity, std:
 }
 
 void CollisionChecker::init(std::vector<std::shared_ptr<Entity>> &mapEntity) {
-
-}
-
-void CollisionChecker::clearGrid() {
-    for (int i = 0; i < 320; i++) {
-        for (int j = 0; j < 180; j++) {
-            gridMap[i][j] = false;
-        }
-    }
 
 }
 

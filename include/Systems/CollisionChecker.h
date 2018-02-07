@@ -12,7 +12,6 @@
 class CollisionChecker {
     int mapGridX, mapGridY;
     bool gridMap[320][180];
-    void clearGrid();
 public:
     CollisionChecker();
 

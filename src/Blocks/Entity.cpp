@@ -9,7 +9,7 @@ Entity::~Entity() {
 }
 
 Entity::Entity(float cX, float cY, int cWidth, int cHeight)
-        : positions(Positions(cX, cY)),oldPositions(Positions(cX, cY)) {
+        : positions(Positions(cX, cY)) {
     this->size.width = cWidth;
     this->size.height = cHeight;
     this->collisonParameters.xCollision = cX;
@@ -90,25 +90,17 @@ SpriteData &SpriteData::operator=(const SpriteData &right) {
 }
 
 
-Size Entity::getSize() {
+ Size Entity::getSize() {
     return size;
 }
 
-void Entity::setSize(Size size) {
+void Entity::setSize( Size size) {
     Entity::size = size;
 }
 
-void Entity::setSize(int width, int height) {
+void Entity::setSize( int width, int height) {
     size.width = width;
-    size.height = height;
-}
-
-Positions Entity::getOldPositions() {
-    return oldPositions;
-}
-
-void Entity::setOldPositions(Positions oldPositions) {
-    this->oldPositions = oldPositions;
+    size.height=height;
 }
 
 

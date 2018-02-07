@@ -6,11 +6,20 @@ project(SFML_GAME)
 
 
 set(CMAKE_BUILD_TYPE Release)
+if (WIN32)
+    set(SFML_ROOT "C:/SFML-2.4.2")
+    set(SFML_INCLUDE_DIR "${SFML_ROOT}/include")
+    set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "c:/SFML_GAME_PROJECT")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+endif (WIN32)
 
-set(SFML_ROOT "C:/SFML-2.4.2")
-set(SFML_INCLUDE_DIR "${SFML_ROOT}/include")
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "c:/SFML_GAME_PROJECT")
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+if (UNIX)
+    set(SFML_ROOT "$ENV{HOME}/SFML-2.4.2")
+    set(SFML_INCLUDE_DIR "${SFML_ROOT}/include")
+    set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "$ENV{HOME}/SFML_GAME_PROJECT")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+
+endif (UNIX)
 
 include_directories(include)
 set(SOURCE_FILES
@@ -57,21 +66,30 @@ set(SOURCE_FILES
         include/Map/Map.h
         src/Blocks/Creature.cpp
         include/Blocks/Creature.h
-        src/Blocks/RockArea.cpp include/Blocks/RockArea.h include/Blocks/SimpeHouse1.cpp include/Blocks/SimpeHouse1.h src/Systems/CombatSystem.cpp include/Systems/CombatSystem.h src/Systems/Checker.cpp include/Systems/Checker.h)
+        src/Blocks/RockArea.cpp
+        include/Blocks/RockArea.h
+        src/Blocks/SimpeHouse1.cpp
+        include/Blocks/SimpeHouse1.h
+        src/Blocks/Player_test.cpp
+        include/Blocks/Player_test.h
+        )
 
 set(EXECUTABLE_NAME ${PROJECT_NAME})
 #Set Linker flags
 #set(CMAKE_EXE_LINKER_FLAGS "-static-libgcc -static-libstdc++ ")
 add_executable(${EXECUTABLE_NAME} ${SOURCE_FILES})
-
-list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake")
-
+if (WIN32)
+    list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake")
+endif (WIN32)
+if (UNIX)
+    set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake" ${CMAKE_MODULE_PATH})
+endif (UNIX)
 set(SFML_STATIC_LIBRARIES ON)
 find_package(SFML 2 REQUIRED graphics window system)
 if (SFML_FOUND)
-include_directories(${SFML_INCLUDE_DIR})
-target_link_libraries(${EXECUTABLE_NAME} ${SFML_LIBRARIES})
-target_link_libraries(${EXECUTABLE_NAME} ${SFML_DEPENDENCIES})
+    include_directories(${SFML_INCLUDE_DIR})
+    target_link_libraries(${EXECUTABLE_NAME} ${SFML_LIBRARIES})
+    target_link_libraries(${EXECUTABLE_NAME} ${SFML_DEPENDENCIES})
 else()
-message(SEND_ERROR "SFML library not found. Please set SFML_ROOT.")
+    message("SFML library not found. Please set SFML_ROOT.")
 endif()

@@ -6,7 +6,7 @@
 #include "Blocks/Dynamic.h"
 
 Dynamic::Dynamic(float cX, float cY, int cWidth, int cHeight, float cSpeed)
-        : Entity(cX, cY, cWidth, cHeight), speed(cSpeed) {
+        : Entity(cX, cY, cWidth, cHeight), speed(cSpeed), oldPositions(Positions(getPositions().x, getPositions().y)) {
     setTypeOfEntity(CREATURE);
     setCollisionStatus(IS_COLLIDET);
     texture.setSmooth(true);
@@ -15,27 +15,27 @@ Dynamic::Dynamic(float cX, float cY, int cWidth, int cHeight, float cSpeed)
     }
     direction = DOWN;
     status = STOP;
-    setOldPositions(getPositions());
+    oldPositions = getPositions();
     sprite.setPosition(getPositions().x, getPositions().y);
 }
 
 void Dynamic::moveUp(float dt) {
-    setOldPositions(Positions(getPositions().x,getPositions().y));
+    oldPositions.y = getPositions().y;
     setPositions(Positions(getPositions().x, getPositions().y - (speed * dt)));
 }
 
 void Dynamic::moveDown(float dt) {
-    setOldPositions(Positions(getPositions().x,getPositions().y));
+    oldPositions.y = getPositions().y;
     setPositions(Positions(getPositions().x, getPositions().y + (speed * dt)));
 }
 
 void Dynamic::moveLeft(float dt) {
-    setOldPositions(Positions(getPositions().x,getPositions().y));
+    oldPositions.x = getPositions().x;
     setPositions(Positions(getPositions().x - (speed * dt), getPositions().y));
 }
 
 void Dynamic::moveRight(float dt) {
-    setOldPositions(Positions(getPositions().x,getPositions().y));
+    oldPositions.x = getPositions().x;
     setPositions(Positions(getPositions().x + (speed * dt), getPositions().y));
 }
 
@@ -118,5 +118,12 @@ void Dynamic::setSpriteData(SpriteData spriteData) {
     this->spriteData = spriteData;
 }
 
+Positions Dynamic::getOldPositions()  {
+    return oldPositions;
+}
+
+void Dynamic::setOldPositions( Positions oldPositions) {
+    this->oldPositions = oldPositions;
+}
 
 

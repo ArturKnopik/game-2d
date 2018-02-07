@@ -7,11 +7,6 @@
 
 
 #include "Dynamic.h"
-enum CreatureStatusVSPlayer
-{
-    AGGRESIVE,
-    PASSIVE
-};
 
 class Creature
 : public Dynamic
